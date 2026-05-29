@@ -1,0 +1,7 @@
+node_modules/
+__pycache__/
+.DS_Store
+
+outputs/node-inspect/
+outputs/generated/
+web/generated-previews/

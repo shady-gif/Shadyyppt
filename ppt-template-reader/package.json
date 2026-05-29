@@ -1,5 +1,18 @@
 {
+  "type": "module",
   "scripts": {
-    "build": "mkdir -p dist && cp -R web/. dist/ && node -e \"const fs=require('fs'); fs.writeFileSync('dist/config.js', 'window.PPT_API_BASE = ' + JSON.stringify(process.env.PPT_API_BASE_URL || '') + ';\\n');\""
+    "build": "mkdir -p dist && cp -R web/. dist/ && node -e \"const fs=require('fs'); fs.writeFileSync('dist/config.js', 'window.PPT_API_BASE = ' + JSON.stringify(process.env.PPT_API_BASE_URL || '') + ';\\n');\"",
+    "inspect:pptx": "node src-node/cli/inspect-pptx.js",
+    "deck:ops": "node src-node/cli/apply-deck-operations.js",
+    "patch:pptx": "node src-node/cli/patch-pptx.js",
+    "text:slots": "node src-node/cli/text-slot-report.js",
+    "text:fit": "node src-node/cli/fit-text-operations.js",
+    "text:fit:rewrite": "node src-node/cli/fit-text-operations-rewrite.js",
+    "text:fit-updates": "node src-node/cli/fit-template-updates.js",
+    "test:node": "node --test tests-node/*.test.js"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.8.0",
+    "jszip": "^3.10.1"
   }
 }

@@ -1,0 +1,17 @@
+[
+  {
+    "type": "REPLACE_TEXT",
+    "slideId": "256",
+    "elementId": "7",
+    "text": "SHADYY PPT"
+  },
+  {
+    "type": "MOVE_SLIDE",
+    "slideId": "257",
+    "toIndex": 3
+  },
+  {
+    "type": "DELETE_SLIDE",
+    "slideId": "265"
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "type": "REPLACE_TEXT",
+    "slideId": "256",
+    "elementId": "7",
+    "text": "SHADYY PPT"
+  },
+  {
+    "type": "MOVE_SLIDE",
+    "slideId": "257",
+    "toIndex": 3
+  },
+  {
+    "type": "CLONE_SLIDE",
+    "sourceSlideId": "258",
+    "newSlideId": "258-clone-demo",
+    "index": 4
+  },
+  {
+    "type": "DELETE_SLIDE",
+    "slideId": "265"
+  }
+]

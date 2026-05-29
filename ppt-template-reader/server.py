@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import subprocess
 import sys
+import tempfile
 from urllib.parse import urlparse
 
 
@@ -106,6 +107,7 @@ class AppHandler(SimpleHTTPRequestHandler):
             template_config = _template_config(template_id)
             template = json.loads(template_config["jsonPath"].read_text(encoding="utf-8"))
             result = ContentGenerator(template, template_id=template_id).generate(raw_text, topic)
+            result = _fit_generation_text(template_config, result)
 
             GENERATED_DIR.mkdir(parents=True, exist_ok=True)
             output_stem = _safe_output_stem(result["topic"])
@@ -126,6 +128,7 @@ class AppHandler(SimpleHTTPRequestHandler):
                     "mapperSource": result["mapperSource"],
                     "curatedContent": result["curatedContent"],
                     "updates": result["updates"],
+                    "textFit": result.get("textFit"),
                     "templateMap": result["filledTemplateJson"]["generation"]["templateMap"],
                     "slidePreview": _slide_preview(result["filledTemplateJson"]),
                     "downloadPath": f"outputs/generated/{output_path.name}",
@@ -220,6 +223,111 @@ def _templates_payload() -> dict:
             for template_id, config in _visible_templates().items()
         ],
     }
+
+
+def _fit_generation_text(template_config: dict, result: dict) -> dict:
+    if os.environ.get("DISABLE_TEXT_FITTER", "").lower() in {"1", "true", "yes"}:
+        result["textFit"] = {"source": "disabled", "enabled": False}
+        return result
+
+    updates = result.get("updates") or []
+    if not updates:
+        result["textFit"] = {"source": "none", "enabled": True, "summary": {"total": 0}}
+        return result
+
+    try:
+        fitted = _run_text_fitter(template_config["pptxPath"], updates)
+    except Exception as exc:
+        result["textFit"] = {
+            "source": "unavailable",
+            "enabled": True,
+            "error": str(exc),
+        }
+        return result
+
+    fitted_updates = fitted.get("updates") or updates
+    result["updates"] = fitted_updates
+    result["filledTemplateJson"] = _apply_fitted_updates(result["filledTemplateJson"], fitted_updates)
+    result["textFit"] = {
+        "source": "node",
+        "enabled": True,
+        "summary": fitted.get("fitSummary", {}),
+        "report": fitted.get("fitReport", []),
+    }
+    return result
+
+
+def _run_text_fitter(pptx_path: Path, updates: list[dict]) -> dict:
+    GENERATED_DIR.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix="text-fit-", dir=GENERATED_DIR) as tmp_dir:
+        tmp_path = Path(tmp_dir)
+        updates_path = tmp_path / "updates.json"
+        output_path = tmp_path / "fitted-updates.json"
+        updates_path.write_text(json.dumps(updates), encoding="utf-8")
+
+        command = [
+            "node",
+            str(ROOT / "src-node" / "cli" / "fit-template-updates.js"),
+            str(pptx_path),
+            str(updates_path),
+            str(output_path),
+        ]
+        if os.environ.get("ENABLE_FIT_REWRITE", "").lower() in {"1", "true", "yes"}:
+            command.append("--rewrite")
+
+        completed = subprocess.run(
+            command,
+            cwd=str(ROOT),
+            check=False,
+            capture_output=True,
+            text=True,
+            timeout=int(os.environ.get("TEXT_FITTER_TIMEOUT", "45")),
+        )
+        if completed.returncode != 0:
+            detail = (completed.stderr or completed.stdout or "").strip()
+            raise RuntimeError(detail or "text fitter failed")
+        if not output_path.exists():
+            raise RuntimeError("text fitter did not write output")
+        return json.loads(output_path.read_text(encoding="utf-8"))
+
+
+def _apply_fitted_updates(filled_template: dict, updates: list[dict]) -> dict:
+    update_lookup = {
+        (int(update["slideIndex"]), str(update["shapeId"])): str(update["newText"])
+        for update in updates
+        if update.get("slideIndex") is not None and update.get("shapeId") is not None
+    }
+
+    for slide in filled_template.get("slides", []):
+        slide_index = int(slide.get("index"))
+        for text_box in slide.get("texts", []):
+            key = (slide_index, str(text_box.get("shapeId")))
+            if key not in update_lookup:
+                continue
+            _replace_text_box_text(text_box, update_lookup[key])
+
+        for shape in slide.get("shapes", []):
+            key = (slide_index, str(shape.get("shapeId")))
+            if key in update_lookup and shape.get("hasText"):
+                shape["text"] = update_lookup[key]
+
+    if "generation" in filled_template:
+        filled_template["generation"]["updates"] = updates
+    return filled_template
+
+
+def _replace_text_box_text(text_box: dict, new_text: str) -> None:
+    text_box["text"] = new_text
+    paragraphs = text_box.get("paragraphs") or []
+    if not paragraphs:
+        return
+
+    paragraphs[0]["text"] = new_text
+    runs = paragraphs[0].get("runs") or []
+    if runs:
+        runs[0]["text"] = new_text
+        for run in runs[1:]:
+            run["text"] = ""
 
 
 def _template_config(template_id: str) -> dict:

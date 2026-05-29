@@ -1,0 +1,32 @@
+[
+  {
+    "slideId": "256",
+    "elementId": "7",
+    "text": "Shadyy Presentation Intelligence"
+  },
+  {
+    "slideId": "257",
+    "elementId": "4",
+    "text": "A complete introduction to automated PowerPoint generation"
+  },
+  {
+    "slideId": "257",
+    "elementId": "13",
+    "text": "Built for clean, template-aware slides"
+  },
+  {
+    "slideId": "257",
+    "elementId": "14",
+    "text": "The system reads the uploaded content, identifies the most useful ideas, and places concise summaries into the template's existing text boxes. Each replacement is checked against strict character, word, line, and visual width limits before it is written into the PowerPoint file."
+  },
+  {
+    "slideId": "258",
+    "elementId": "17",
+    "text": "Instead of filling every available inch with dense text, the generator should create short, focused copy that respects the original design and leaves the slide feeling intentional."
+  },
+  {
+    "slideId": "258",
+    "elementId": "18",
+    "text": "Template-Aware Content Mapping"
+  }
+]

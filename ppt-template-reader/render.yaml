@@ -3,7 +3,7 @@ services:
     name: prompt-on-ppt-api
     env: python
     plan: free
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install -r requirements.txt && npm ci
     startCommand: HOST=0.0.0.0 python3 server.py
     healthCheckPath: /health
     envVars:

@@ -1,0 +1,14 @@
+[
+  {
+    "type": "CLONE_SLIDE",
+    "sourceSlideId": "258",
+    "newSlideId": "266",
+    "index": 4
+  },
+  {
+    "type": "REPLACE_TEXT",
+    "slideId": "266",
+    "elementId": "5",
+    "text": "Advanced Education"
+  }
+]
