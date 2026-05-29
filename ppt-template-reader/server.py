@@ -18,26 +18,62 @@ TEMPLATE_DIR = ROOT / "templates"
 TEMPLATE_PREVIEW_DIR = WEB_DIR / "template-previews"
 TEMPLATE_REGISTRY_PATH = ROOT / "outputs" / "template-registry.json"
 BUILTIN_TEMPLATES = {
-    "template-1-4": {
-        "name": "Template 1 (4)",
-        "jsonPath": ROOT / "outputs" / "template-1.json",
-        "pptxPath": ROOT / "templates" / "template-1-4.pptx",
-        "previewPath": "template-previews/template-1-4.pptx.png",
+    "profile": {
+        "name": "Profile",
+        "jsonPath": ROOT / "outputs" / "profile.json",
+        "pptxPath": ROOT / "templates" / "profile.pptx",
+        "previewPath": "template-previews/profile.pptx.png",
     },
-    "diagram-infographics": {
-        "name": "Diagram Infographics",
-        "jsonPath": ROOT / "outputs" / "diagram-infographics.json",
-        "pptxPath": ROOT / "templates" / "diagram-infographics.pptx",
-        "previewPath": "template-previews/diagram-infographics.pptx.png",
+    "pitch": {
+        "name": "Pitch",
+        "jsonPath": ROOT / "outputs" / "pitch.json",
+        "pptxPath": ROOT / "templates" / "pitch.pptx",
+        "previewPath": "template-previews/pitch.pptx.png",
     },
-    "tell-tale": {
-        "name": "Tell Tale",
-        "jsonPath": ROOT / "outputs" / "tell-tale.json",
-        "pptxPath": ROOT / "templates" / "tell-tale.pptx",
-        "previewPath": "template-previews/tell-tale.pptx.png",
+    "marketing": {
+        "name": "Marketing",
+        "jsonPath": ROOT / "outputs" / "marketing.json",
+        "pptxPath": ROOT / "templates" / "marketing.pptx",
+        "previewPath": "template-previews/marketing.pptx.png",
+    },
+    "journey": {
+        "name": "Journey",
+        "jsonPath": ROOT / "outputs" / "journey.json",
+        "pptxPath": ROOT / "templates" / "journey.pptx",
+        "previewPath": "template-previews/journey.pptx.png",
+    },
+    "technology": {
+        "name": "Technology",
+        "jsonPath": ROOT / "outputs" / "technology.json",
+        "pptxPath": ROOT / "templates" / "technology.pptx",
+        "previewPath": "template-previews/technology.pptx.png",
+    },
+    "brand": {
+        "name": "Brand",
+        "jsonPath": ROOT / "outputs" / "brand.json",
+        "pptxPath": ROOT / "templates" / "brand.pptx",
+        "previewPath": "template-previews/brand.pptx.png",
+    },
+    "portfolio": {
+        "name": "Portfolio",
+        "jsonPath": ROOT / "outputs" / "portfolio.json",
+        "pptxPath": ROOT / "templates" / "portfolio.pptx",
+        "previewPath": "template-previews/portfolio.pptx.png",
+    },
+    "creative": {
+        "name": "Creative",
+        "jsonPath": ROOT / "outputs" / "creative.json",
+        "pptxPath": ROOT / "templates" / "creative.pptx",
+        "previewPath": "template-previews/creative.pptx.png",
+    },
+    "time": {
+        "name": "Time",
+        "jsonPath": ROOT / "outputs" / "time.json",
+        "pptxPath": ROOT / "templates" / "time.pptx",
+        "previewPath": "template-previews/time.pptx.png",
     },
 }
-DEFAULT_TEMPLATE_ID = "template-1-4"
+DEFAULT_TEMPLATE_ID = "profile"
 
 sys.path.insert(0, str(ROOT / "src"))
 
