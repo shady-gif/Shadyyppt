@@ -1,0 +1,6078 @@
+{
+  "inventory": {
+    "sourceFile": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/templates/tell-tale.pptx",
+    "counts": {
+      "slides": 10,
+      "layouts": 11,
+      "masters": 1,
+      "themes": 1,
+      "media": 52,
+      "fonts": 4,
+      "relationships": 24
+    },
+    "parts": {
+      "slides": [
+        "ppt/slides/slide1.xml",
+        "ppt/slides/slide2.xml",
+        "ppt/slides/slide3.xml",
+        "ppt/slides/slide4.xml",
+        "ppt/slides/slide5.xml",
+        "ppt/slides/slide6.xml",
+        "ppt/slides/slide7.xml",
+        "ppt/slides/slide8.xml",
+        "ppt/slides/slide9.xml",
+        "ppt/slides/slide10.xml"
+      ],
+      "layouts": [
+        "ppt/slideLayouts/slideLayout1.xml",
+        "ppt/slideLayouts/slideLayout2.xml",
+        "ppt/slideLayouts/slideLayout3.xml",
+        "ppt/slideLayouts/slideLayout4.xml",
+        "ppt/slideLayouts/slideLayout5.xml",
+        "ppt/slideLayouts/slideLayout6.xml",
+        "ppt/slideLayouts/slideLayout7.xml",
+        "ppt/slideLayouts/slideLayout8.xml",
+        "ppt/slideLayouts/slideLayout9.xml",
+        "ppt/slideLayouts/slideLayout10.xml",
+        "ppt/slideLayouts/slideLayout11.xml"
+      ],
+      "masters": [
+        "ppt/slideMasters/slideMaster1.xml"
+      ],
+      "themes": [
+        "ppt/theme/theme1.xml"
+      ],
+      "media": [
+        "ppt/media/image1.jpeg",
+        "ppt/media/image2.png",
+        "ppt/media/image3.png",
+        "ppt/media/image4.png",
+        "ppt/media/image5.gif",
+        "ppt/media/image6.gif",
+        "ppt/media/image7.gif",
+        "ppt/media/image8.png",
+        "ppt/media/image9.png",
+        "ppt/media/image10.png",
+        "ppt/media/image11.png",
+        "ppt/media/image12.jpeg",
+        "ppt/media/image13.png",
+        "ppt/media/image14.png",
+        "ppt/media/image15.png",
+        "ppt/media/image16.png",
+        "ppt/media/image17.png",
+        "ppt/media/image18.png",
+        "ppt/media/image19.png",
+        "ppt/media/image20.jpeg",
+        "ppt/media/image21.png",
+        "ppt/media/image22.png",
+        "ppt/media/image23.jpeg",
+        "ppt/media/image24.jpeg",
+        "ppt/media/image25.jpeg",
+        "ppt/media/image26.png",
+        "ppt/media/image27.png",
+        "ppt/media/image28.png",
+        "ppt/media/image29.svg",
+        "ppt/media/image30.png",
+        "ppt/media/image31.jpeg",
+        "ppt/media/image32.jpeg",
+        "ppt/media/image33.jpeg",
+        "ppt/media/image34.gif",
+        "ppt/media/image35.png",
+        "ppt/media/image36.png",
+        "ppt/media/image37.png",
+        "ppt/media/image38.svg",
+        "ppt/media/image39.png",
+        "ppt/media/image40.png",
+        "ppt/media/image41.jpeg",
+        "ppt/media/image42.jpeg",
+        "ppt/media/image43.jpeg",
+        "ppt/media/image44.gif",
+        "ppt/media/image45.jpeg",
+        "ppt/media/image46.jpeg",
+        "ppt/media/image47.jpeg",
+        "ppt/media/image48.gif",
+        "ppt/media/image49.png",
+        "ppt/media/image50.png",
+        "ppt/media/image51.gif",
+        "ppt/media/image52.gif"
+      ],
+      "fonts": [
+        "ppt/fonts/font16.fntdata",
+        "ppt/fonts/font17.fntdata",
+        "ppt/fonts/font18.fntdata",
+        "ppt/fonts/font19.fntdata"
+      ],
+      "relationships": [
+        "_rels/.rels",
+        "ppt/_rels/presentation.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout2.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout3.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout4.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout5.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout6.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout7.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout8.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout9.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout10.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout11.xml.rels",
+        "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+        "ppt/slides/_rels/slide1.xml.rels",
+        "ppt/slides/_rels/slide2.xml.rels",
+        "ppt/slides/_rels/slide3.xml.rels",
+        "ppt/slides/_rels/slide4.xml.rels",
+        "ppt/slides/_rels/slide5.xml.rels",
+        "ppt/slides/_rels/slide6.xml.rels",
+        "ppt/slides/_rels/slide7.xml.rels",
+        "ppt/slides/_rels/slide8.xml.rels",
+        "ppt/slides/_rels/slide9.xml.rels",
+        "ppt/slides/_rels/slide10.xml.rels"
+      ]
+    }
+  },
+  "presentation": {
+    "size": {
+      "widthEmu": 18288000,
+      "heightEmu": 10287000,
+      "widthInches": 20.0,
+      "heightInches": 11.25
+    },
+    "slides": [
+      {
+        "index": 1,
+        "slideId": "256",
+        "relationshipId": "rId6"
+      },
+      {
+        "index": 2,
+        "slideId": "257",
+        "relationshipId": "rId7"
+      },
+      {
+        "index": 3,
+        "slideId": "258",
+        "relationshipId": "rId8"
+      },
+      {
+        "index": 4,
+        "slideId": "259",
+        "relationshipId": "rId9"
+      },
+      {
+        "index": 5,
+        "slideId": "260",
+        "relationshipId": "rId10"
+      },
+      {
+        "index": 6,
+        "slideId": "261",
+        "relationshipId": "rId11"
+      },
+      {
+        "index": 7,
+        "slideId": "262",
+        "relationshipId": "rId12"
+      },
+      {
+        "index": 8,
+        "slideId": "263",
+        "relationshipId": "rId13"
+      },
+      {
+        "index": 9,
+        "slideId": "264",
+        "relationshipId": "rId14"
+      },
+      {
+        "index": 10,
+        "slideId": "265",
+        "relationshipId": "rId15"
+      }
+    ]
+  },
+  "relationships": {
+    "_rels/.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+        "target": "ppt/presentation.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/presentation.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail",
+        "target": "docProps/thumbnail.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "docProps/thumbnail.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+        "target": "docProps/core.xml",
+        "targetMode": null,
+        "resolvedTarget": "docProps/core.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+        "target": "docProps/app.xml",
+        "targetMode": null,
+        "resolvedTarget": "docProps/app.xml"
+      }
+    ],
+    "ppt/_rels/presentation.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide5.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide5.xml"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide6.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide6.xml"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide7.xml"
+      },
+      {
+        "id": "rId13",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide8.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide8.xml"
+      },
+      {
+        "id": "rId14",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide9.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide9.xml"
+      },
+      {
+        "id": "rId15",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide10.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide10.xml"
+      },
+      {
+        "id": "rId16",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font16.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font16.fntdata"
+      },
+      {
+        "id": "rId17",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font17.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font17.fntdata"
+      },
+      {
+        "id": "rId18",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font18.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font18.fntdata"
+      },
+      {
+        "id": "rId19",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font19.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font19.fntdata"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/presProps",
+        "target": "presProps.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/presProps.xml"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/viewProps",
+        "target": "viewProps.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/viewProps.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+        "target": "theme/theme1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/theme/theme1.xml"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tableStyles",
+        "target": "tableStyles.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/tableStyles.xml"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide1.xml"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide2.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide2.xml"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide3.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide3.xml"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide4.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide4.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout10.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout11.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout2.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout3.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout4.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout5.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout6.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout7.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout8.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout9.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideMasters/_rels/slideMaster1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout1.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout10.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout10.xml"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout11.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout11.xml"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+        "target": "../theme/theme1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/theme/theme1.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout2.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout2.xml"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout3.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout3.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout4.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout4.xml"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout5.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout5.xml"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout6.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout6.xml"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout8.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout8.xml"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout9.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout9.xml"
+      }
+    ],
+    "ppt/slides/_rels/slide1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image1.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image1.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image2.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image2.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image3.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image3.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image4.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image4.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image5.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image5.gif"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image6.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image6.gif"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image7.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image7.gif"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image8.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image8.png"
+      }
+    ],
+    "ppt/slides/_rels/slide10.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image1.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image1.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image50.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image50.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image2.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image2.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image36.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image36.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image51.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image51.gif"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image52.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image52.gif"
+      }
+    ],
+    "ppt/slides/_rels/slide2.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image1.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image1.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image9.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image9.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image10.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image10.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image2.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image2.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image11.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image11.png"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image8.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image8.png"
+      }
+    ],
+    "ppt/slides/_rels/slide3.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image13.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image13.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image14.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image14.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image8.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image8.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image5.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image5.gif"
+      }
+    ],
+    "ppt/slides/_rels/slide4.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image15.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image15.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image16.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image16.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image6.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image6.gif"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image17.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image17.png"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image18.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image18.png"
+      }
+    ],
+    "ppt/slides/_rels/slide5.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image26.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image26.png"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image27.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image27.png"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image28.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image28.png"
+      },
+      {
+        "id": "rId13",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image29.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image29.svg"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image19.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image19.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image20.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image20.jpeg"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image21.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image21.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image22.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image22.png"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image23.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image23.jpeg"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image24.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image24.jpeg"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image25.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image25.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide6.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image35.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image35.png"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image36.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image36.png"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image37.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image37.png"
+      },
+      {
+        "id": "rId13",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image38.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image38.svg"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image1.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image1.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image30.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image30.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image3.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image3.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image31.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image31.jpeg"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image21.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image21.png"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image32.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image32.jpeg"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image33.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image33.jpeg"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image34.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image34.gif"
+      }
+    ],
+    "ppt/slides/_rels/slide7.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image28.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image28.png"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image29.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image29.svg"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image10.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image10.png"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image39.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image39.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image40.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image40.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image41.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image41.jpeg"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image21.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image21.png"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image42.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image42.jpeg"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image43.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image43.jpeg"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image44.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image44.gif"
+      }
+    ],
+    "ppt/slides/_rels/slide8.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image38.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image38.svg"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image45.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image45.jpeg"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image21.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image21.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image46.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image46.jpeg"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image47.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image47.jpeg"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image48.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image48.gif"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image10.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image10.png"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image37.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image37.png"
+      }
+    ],
+    "ppt/slides/_rels/slide9.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image40.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image40.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image30.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image30.png"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image49.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image49.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image7.gif",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image7.gif"
+      }
+    ]
+  },
+  "theme": {
+    "name": "Office Theme",
+    "colors": {
+      "dk1": {
+        "type": "system",
+        "systemColor": "windowText",
+        "lastColor": "#000000"
+      },
+      "lt1": {
+        "type": "system",
+        "systemColor": "window",
+        "lastColor": "#FFFFFF"
+      },
+      "dk2": {
+        "type": "srgb",
+        "hex": "#1F497D"
+      },
+      "lt2": {
+        "type": "srgb",
+        "hex": "#EEECE1"
+      },
+      "accent1": {
+        "type": "srgb",
+        "hex": "#4F81BD"
+      },
+      "accent2": {
+        "type": "srgb",
+        "hex": "#C0504D"
+      },
+      "accent3": {
+        "type": "srgb",
+        "hex": "#9BBB59"
+      },
+      "accent4": {
+        "type": "srgb",
+        "hex": "#8064A2"
+      },
+      "accent5": {
+        "type": "srgb",
+        "hex": "#4BACC6"
+      },
+      "accent6": {
+        "type": "srgb",
+        "hex": "#F79646"
+      },
+      "hlink": {
+        "type": "srgb",
+        "hex": "#0000FF"
+      },
+      "folHlink": {
+        "type": "srgb",
+        "hex": "#800080"
+      }
+    },
+    "fonts": {
+      "schemeName": "Office",
+      "major": {
+        "latin": "Calibri",
+        "eastAsian": "",
+        "complexScript": ""
+      },
+      "minor": {
+        "latin": "Calibri",
+        "eastAsian": "",
+        "complexScript": ""
+      }
+    }
+  },
+  "masters": [
+    {
+      "path": "ppt/slideMasters/slideMaster1.xml",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title Placeholder 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "3",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "4",
+          "size": "quarter"
+        }
+      ],
+      "layoutReferences": [
+        {
+          "id": "2147483649",
+          "relationshipId": "rId1"
+        },
+        {
+          "id": "2147483650",
+          "relationshipId": "rId2"
+        },
+        {
+          "id": "2147483651",
+          "relationshipId": "rId3"
+        },
+        {
+          "id": "2147483652",
+          "relationshipId": "rId4"
+        },
+        {
+          "id": "2147483653",
+          "relationshipId": "rId5"
+        },
+        {
+          "id": "2147483654",
+          "relationshipId": "rId6"
+        },
+        {
+          "id": "2147483655",
+          "relationshipId": "rId7"
+        },
+        {
+          "id": "2147483656",
+          "relationshipId": "rId8"
+        },
+        {
+          "id": "2147483657",
+          "relationshipId": "rId9"
+        },
+        {
+          "id": "2147483658",
+          "relationshipId": "rId10"
+        },
+        {
+          "id": "2147483659",
+          "relationshipId": "rId11"
+        }
+      ],
+      "textStyles": {
+        "title": {
+          "lvl1pPr": {
+            "alignment": "ctr",
+            "fontSize": 44.0,
+            "bold": null,
+            "font": {
+              "latin": "+mj-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.major.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        },
+        "body": {
+          "lvl1pPr": {
+            "alignment": "l",
+            "fontSize": 32.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl2pPr": {
+            "alignment": "l",
+            "fontSize": 28.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl3pPr": {
+            "alignment": "l",
+            "fontSize": 24.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl4pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl5pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl6pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl7pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl8pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl9pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        },
+        "other": {
+          "lvl1pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl2pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl3pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl4pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl5pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl6pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl7pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl8pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl9pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "path": "ppt/slideLayouts/slideLayout1.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "ctrTitle",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Subtitle 2",
+          "type": "subTitle",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout10.xml",
+      "name": "Title and Vertical Text",
+      "type": "vertTx",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Vertical Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout11.xml",
+      "name": "Vertical Title and Text",
+      "type": "vertTitleAndTx",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Vertical Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Vertical Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title and Content",
+      "type": "obj",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout3.xml",
+      "name": "Section Header",
+      "type": "secHead",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout4.xml",
+      "name": "Two Content",
+      "type": "twoObj",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": "half"
+        },
+        {
+          "shapeId": "4",
+          "name": "Content Placeholder 3",
+          "type": null,
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout5.xml",
+      "name": "Comparison",
+      "type": "twoTxTwoObj",
+      "preserve": "1",
+      "shapeCount": 8,
+      "placeholderCount": 8,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Content Placeholder 3",
+          "type": null,
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Text Placeholder 4",
+          "type": "body",
+          "index": "3",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Content Placeholder 5",
+          "type": null,
+          "index": "4",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Date Placeholder 6",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "8",
+          "name": "Footer Placeholder 7",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "9",
+          "name": "Slide Number Placeholder 8",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout6.xml",
+      "name": "Title Only",
+      "type": "titleOnly",
+      "preserve": "1",
+      "shapeCount": 4,
+      "placeholderCount": 4,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Date Placeholder 2",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "4",
+          "name": "Footer Placeholder 3",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "5",
+          "name": "Slide Number Placeholder 4",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout7.xml",
+      "name": "Blank",
+      "type": "blank",
+      "preserve": "1",
+      "shapeCount": 3,
+      "placeholderCount": 3,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Date Placeholder 1",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "3",
+          "name": "Footer Placeholder 2",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "4",
+          "name": "Slide Number Placeholder 3",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout8.xml",
+      "name": "Content with Caption",
+      "type": "objTx",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Text Placeholder 3",
+          "type": "body",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout9.xml",
+      "name": "Picture with Caption",
+      "type": "picTx",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Picture Placeholder 2",
+          "type": "pic",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Text Placeholder 3",
+          "type": "body",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "path": "ppt/slides/slide1.xml",
+      "relationshipPath": "ppt/slides/_rels/slide1.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 8,
+        "pictures": 3,
+        "groups": 0,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -788314,
+            "yEmu": 7923945,
+            "widthEmu": 15037415,
+            "heightEmu": 5423330,
+            "xInches": -0.8621,
+            "yInches": 8.6657,
+            "widthInches": 16.4451,
+            "heightInches": 5.931,
+            "rotationDegrees": 9.842
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2840881,
+            "yEmu": -535807,
+            "widthEmu": 16230600,
+            "heightEmu": 6289358,
+            "xInches": 3.1068,
+            "yInches": -0.586,
+            "widthInches": 17.75,
+            "heightInches": 6.8781,
+            "rotationDegrees": 6.6152
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "Freeform 5",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2937533,
+            "yEmu": 773113,
+            "widthEmu": 12412935,
+            "heightEmu": 8740775,
+            "xInches": 3.2125,
+            "yInches": 0.8455,
+            "widthInches": 13.575,
+            "heightInches": 9.559,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "Freeform 9",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 11706500,
+            "yEmu": 755101,
+            "widthEmu": 5018263,
+            "heightEmu": 2904320,
+            "xInches": 12.8024,
+            "yInches": 0.8258,
+            "widthInches": 5.488,
+            "heightInches": 3.1762,
+            "rotationDegrees": 19.5253
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 3477736,
+            "yEmu": 4191000,
+            "widthEmu": 11124221,
+            "heightEmu": 2476501,
+            "xInches": 3.8033,
+            "yInches": 4.5833,
+            "widthInches": 12.1656,
+            "heightInches": 2.7083,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Portfolio",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9850948,
+            "yEmu": 7320696,
+            "widthEmu": 2603325,
+            "heightEmu": 505749,
+            "xInches": 10.7731,
+            "yInches": 8.006,
+            "widthInches": 2.847,
+            "heightInches": 0.5531,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Cahaya Dewi",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5640930,
+            "yEmu": 7319882,
+            "widthEmu": 3842328,
+            "heightEmu": 505749,
+            "xInches": 6.169,
+            "yInches": 8.0051,
+            "widthInches": 4.202,
+            "heightInches": 0.5531,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Photographer",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "placeholderType": null,
+          "text": "Portfolio",
+          "paragraphs": [
+            {
+              "text": "Portfolio",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Portfolio",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 200.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "placeholderType": null,
+          "text": "Cahaya Dewi",
+          "paragraphs": [
+            {
+              "text": "Cahaya Dewi",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Cahaya Dewi",
+                  "font": {
+                    "latin": "Open Sans Bold",
+                    "eastAsian": "Open Sans Bold",
+                    "complexScript": "Open Sans Bold"
+                  },
+                  "fontSize": 29.63,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "placeholderType": null,
+          "text": "Photographer",
+          "paragraphs": [
+            {
+              "text": "Photographer",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Photographer",
+                  "font": {
+                    "latin": "Open Sans Bold",
+                    "eastAsian": "Open Sans Bold",
+                    "complexScript": "Open Sans Bold"
+                  },
+                  "fontSize": 29.63,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "6",
+          "name": "Picture 6",
+          "relationshipId": "rId6"
+        },
+        {
+          "shapeId": "7",
+          "name": "Picture 7",
+          "relationshipId": "rId7"
+        },
+        {
+          "shapeId": "8",
+          "name": "Picture 8",
+          "relationshipId": "rId8"
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "path": "ppt/slides/slide2.xml",
+      "relationshipPath": "ppt/slides/_rels/slide2.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 8,
+        "pictures": 0,
+        "groups": 0,
+        "textBoxes": 2
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5100392,
+            "yEmu": 7274511,
+            "widthEmu": 16230600,
+            "heightEmu": 5214080,
+            "xInches": 5.5779,
+            "yInches": 7.9555,
+            "widthInches": 17.75,
+            "heightInches": 5.7022,
+            "rotationDegrees": -19.193
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10778706,
+            "yEmu": 3925116,
+            "widthEmu": 10599423,
+            "heightEmu": 3974783,
+            "xInches": 11.7877,
+            "yInches": 4.2926,
+            "widthInches": 11.5917,
+            "heightInches": 4.3469,
+            "rotationDegrees": -19.2246
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "Freeform 5",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9073875,
+            "yEmu": -2163673,
+            "widthEmu": 13696686,
+            "heightEmu": 4939788,
+            "xInches": 9.9233,
+            "yInches": -2.3662,
+            "widthInches": 14.9789,
+            "heightInches": 5.4022,
+            "rotationDegrees": 12.5994
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9410932,
+            "yEmu": 1659473,
+            "widthEmu": 6511286,
+            "heightEmu": 10397263,
+            "xInches": 10.2919,
+            "yInches": 1.8148,
+            "widthInches": 7.1208,
+            "heightInches": 11.3706,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "Freeform 7",
+          "zOrder": 6,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -480795,
+            "yEmu": 1103777,
+            "widthEmu": 3018990,
+            "heightEmu": 1747240,
+            "xInches": -0.5258,
+            "yInches": 1.2071,
+            "widthInches": 3.3016,
+            "heightInches": 1.9108,
+            "rotationDegrees": -20.3793
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2418771,
+            "yEmu": 3280940,
+            "widthEmu": 5561502,
+            "heightEmu": 2924385,
+            "xInches": 2.6452,
+            "yInches": 3.5881,
+            "widthInches": 6.0821,
+            "heightInches": 3.1981,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "About me",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2418771,
+            "yEmu": 6148175,
+            "widthEmu": 6378643,
+            "heightEmu": 1819910,
+            "xInches": 2.6452,
+            "yInches": 6.7237,
+            "widthInches": 6.9758,
+            "heightInches": 1.9903,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Hi, I'm Cahaya Dewi. I'm a photographer with 7 years of experience. In this presentation, I'll showcase some of my work.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "About me",
+          "paragraphs": [
+            {
+              "text": "About me",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "About me",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 135.04,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "placeholderType": null,
+          "text": "Hi, I'm Cahaya Dewi. I'm a photographer with 7 years of experience. In this presentation, I'll showcase some of my work.",
+          "paragraphs": [
+            {
+              "text": "Hi, I'm Cahaya Dewi. I'm a photographer with 7 years of experience. In this presentation, I'll showcase some of my work.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Hi, I'm Cahaya Dewi. I'm a photographer with 7 years of experience. In this presentation, I'll showcase some of my work.",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 26.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 3,
+      "path": "ppt/slides/slide3.xml",
+      "relationshipPath": "ppt/slides/_rels/slide3.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 12,
+        "pictures": 1,
+        "groups": 0,
+        "textBoxes": 7
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "AutoShape 3",
+          "zOrder": 2,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1601551,
+            "yEmu": 4885774,
+            "widthEmu": 1394667,
+            "heightEmu": 0,
+            "xInches": 1.7515,
+            "yInches": 5.3431,
+            "widthInches": 1.5252,
+            "heightInches": 0.0,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 38100,
+            "widthPt": 3.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9903943,
+            "yEmu": -1242707,
+            "widthEmu": 10988812,
+            "heightEmu": 3763668,
+            "xInches": 10.8311,
+            "yInches": -1.359,
+            "widthInches": 12.0175,
+            "heightInches": 4.116,
+            "rotationDegrees": 21.2718
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "Freeform 5",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -634988,
+            "yEmu": 7992471,
+            "widthEmu": 18922988,
+            "heightEmu": 3595368,
+            "xInches": -0.6944,
+            "yInches": 8.7407,
+            "widthInches": 20.6944,
+            "heightInches": 3.9319,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9595562,
+            "yEmu": 2782076,
+            "widthEmu": 6429754,
+            "heightEmu": 3721220,
+            "xInches": 10.4938,
+            "yInches": 3.0425,
+            "widthInches": 7.0317,
+            "heightInches": 4.0696,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 7498393,
+            "yEmu": 7052671,
+            "widthEmu": 8526923,
+            "heightEmu": 1698626,
+            "xInches": 8.2003,
+            "yInches": 7.7129,
+            "widthInches": 9.3252,
+            "heightInches": 1.8576,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Education",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1601551,
+            "yEmu": 1499376,
+            "widthEmu": 7542449,
+            "heightEmu": 679450,
+            "xInches": 1.7515,
+            "yInches": 1.6397,
+            "widthInches": 8.2485,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Warner & Spencer",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1601551,
+            "yEmu": 2865839,
+            "widthEmu": 4668937,
+            "heightEmu": 905510,
+            "xInches": 1.7515,
+            "yInches": 3.1341,
+            "widthInches": 5.106,
+            "heightInches": 0.9903,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Bachelor of ArtsCum laude ( 3.7 /4.0)",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 9,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1601551,
+            "yEmu": 2102626,
+            "widthEmu": 2789334,
+            "heightEmu": 679450,
+            "xInches": 1.7515,
+            "yInches": 2.2995,
+            "widthInches": 3.0505,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2010 -2015",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 10,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1601551,
+            "yEmu": 5609037,
+            "widthEmu": 7542449,
+            "heightEmu": 679450,
+            "xInches": 1.7515,
+            "yInches": 6.1341,
+            "widthInches": 8.2485,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Larana, Inc.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "zOrder": 11,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1601551,
+            "yEmu": 6977462,
+            "widthEmu": 4668937,
+            "heightEmu": 905510,
+            "xInches": 1.7515,
+            "yInches": 7.6306,
+            "widthInches": 5.106,
+            "heightInches": 0.9903,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Master of ArtsCum laude ( 3.9 /4.0)",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "zOrder": 12,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1601551,
+            "yEmu": 6212287,
+            "widthEmu": 2789334,
+            "heightEmu": 679450,
+            "xInches": 1.7515,
+            "yInches": 6.7938,
+            "widthInches": 3.0505,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2016 -2018",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "Education",
+          "paragraphs": [
+            {
+              "text": "Education",
+              "alignment": "r",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Education",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 99.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "Warner & Spencer",
+          "paragraphs": [
+            {
+              "text": "Warner & Spencer",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Warner & Spencer",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 39.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "placeholderType": null,
+          "text": "Bachelor of Arts\nCum laude ( 3.7 /4.0)",
+          "paragraphs": [
+            {
+              "text": "Bachelor of Arts",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Bachelor of Arts",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 26.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Cum laude ( 3.7 /4.0)",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Cum laude ( 3.7 /4.0)",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 26.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "placeholderType": null,
+          "text": "2010 -2015",
+          "paragraphs": [
+            {
+              "text": "2010 -2015",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2010 -2015",
+                  "font": {
+                    "latin": "Roca One",
+                    "eastAsian": "Roca One",
+                    "complexScript": "Roca One"
+                  },
+                  "fontSize": 39.99,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "placeholderType": null,
+          "text": "Larana, Inc.",
+          "paragraphs": [
+            {
+              "text": "Larana, Inc.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Larana, Inc.",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 39.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "placeholderType": null,
+          "text": "Master of Arts\nCum laude ( 3.9 /4.0)",
+          "paragraphs": [
+            {
+              "text": "Master of Arts",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Master of Arts",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 26.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Cum laude ( 3.9 /4.0)",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Cum laude ( 3.9 /4.0)",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 26.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "placeholderType": null,
+          "text": "2016 -2018",
+          "paragraphs": [
+            {
+              "text": "2016 -2018",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2016 -2018",
+                  "font": {
+                    "latin": "Roca One",
+                    "eastAsian": "Roca One",
+                    "complexScript": "Roca One"
+                  },
+                  "fontSize": 39.99,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "14",
+          "name": "Picture 14",
+          "relationshipId": "rId6"
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "path": "ppt/slides/slide4.xml",
+      "relationshipPath": "ppt/slides/_rels/slide4.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 12,
+        "pictures": 1,
+        "groups": 0,
+        "textBoxes": 7
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -2467429,
+            "yEmu": 7129190,
+            "widthEmu": 11611429,
+            "heightEmu": 8229600,
+            "xInches": -2.6984,
+            "yInches": 7.7966,
+            "widthInches": 12.6984,
+            "heightInches": 9.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1853200,
+            "yEmu": 4234320,
+            "widthEmu": 6100191,
+            "heightEmu": 8229600,
+            "xInches": 2.0267,
+            "yInches": 4.6307,
+            "widthInches": 6.6712,
+            "heightInches": 9.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10863481,
+            "yEmu": 1370471,
+            "widthEmu": 5284035,
+            "heightEmu": 679450,
+            "xInches": 11.8804,
+            "yInches": 1.4988,
+            "widthInches": 5.7787,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Studio Shodwe",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "Freeform 7",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 16123304,
+            "yEmu": 4234320,
+            "widthEmu": 3621024,
+            "heightEmu": 8229600,
+            "xInches": 17.6327,
+            "yInches": 4.6307,
+            "widthInches": 3.96,
+            "heightInches": 9.0,
+            "rotationDegrees": 24.9238
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "Freeform 8",
+          "zOrder": 6,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12599193,
+            "yEmu": 8136315,
+            "widthEmu": 6353648,
+            "heightEmu": 4900251,
+            "xInches": 13.7786,
+            "yInches": 8.898,
+            "widthInches": 6.9484,
+            "heightInches": 5.359,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1853200,
+            "yEmu": 1646696,
+            "widthEmu": 7290800,
+            "heightEmu": 2587624,
+            "xInches": 2.0267,
+            "yInches": 1.8008,
+            "widthInches": 7.9733,
+            "heightInches": 2.8299,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Work Experience",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10863481,
+            "yEmu": 3211986,
+            "widthEmu": 4058580,
+            "heightEmu": 448310,
+            "xInches": 11.8804,
+            "yInches": 3.5127,
+            "widthInches": 4.4385,
+            "heightInches": 0.4903,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Junior Photographer",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 9,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10863481,
+            "yEmu": 1973721,
+            "widthEmu": 2789334,
+            "heightEmu": 679450,
+            "xInches": 11.8804,
+            "yInches": 2.1585,
+            "widthInches": 3.0505,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2018 - 2020",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "zOrder": 10,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10863481,
+            "yEmu": 4839365,
+            "widthEmu": 5284035,
+            "heightEmu": 679450,
+            "xInches": 11.8804,
+            "yInches": 5.2924,
+            "widthInches": 5.7787,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Thynk Unlimited",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "zOrder": 11,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10863481,
+            "yEmu": 6680880,
+            "widthEmu": 4668937,
+            "heightEmu": 448310,
+            "xInches": 11.8804,
+            "yInches": 7.3063,
+            "widthInches": 5.106,
+            "heightInches": 0.4903,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Senior Photographer",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "14",
+          "name": "TextBox 14",
+          "zOrder": 12,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10863481,
+            "yEmu": 5442615,
+            "widthEmu": 3471424,
+            "heightEmu": 679450,
+            "xInches": 11.8804,
+            "yInches": 5.9521,
+            "widthInches": 3.7964,
+            "heightInches": 0.7431,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2020 - Now",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Studio Shodwe",
+          "paragraphs": [
+            {
+              "text": "Studio Shodwe",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Studio Shodwe",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 39.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "placeholderType": null,
+          "text": "Work Experience",
+          "paragraphs": [
+            {
+              "text": "Work Experience",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Work Experience",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 99.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "placeholderType": null,
+          "text": "Junior Photographer",
+          "paragraphs": [
+            {
+              "text": "Junior Photographer ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Junior Photographer ",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 26.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "placeholderType": null,
+          "text": "2018 - 2020",
+          "paragraphs": [
+            {
+              "text": "2018 - 2020",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2018 - 2020",
+                  "font": {
+                    "latin": "Roca One",
+                    "eastAsian": "Roca One",
+                    "complexScript": "Roca One"
+                  },
+                  "fontSize": 39.99,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "placeholderType": null,
+          "text": "Thynk Unlimited",
+          "paragraphs": [
+            {
+              "text": "Thynk Unlimited",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Thynk Unlimited",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 39.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "placeholderType": null,
+          "text": "Senior Photographer",
+          "paragraphs": [
+            {
+              "text": "Senior Photographer ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Senior Photographer ",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 26.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "14",
+          "name": "TextBox 14",
+          "placeholderType": null,
+          "text": "2020 - Now",
+          "paragraphs": [
+            {
+              "text": "2020 - Now",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2020 - Now",
+                  "font": {
+                    "latin": "Roca One",
+                    "eastAsian": "Roca One",
+                    "complexScript": "Roca One"
+                  },
+                  "fontSize": 39.99,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "6",
+          "name": "Picture 6",
+          "relationshipId": "rId5"
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "path": "ppt/slides/slide5.xml",
+      "relationshipPath": "ppt/slides/_rels/slide5.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 6,
+        "pictures": 0,
+        "groups": 5,
+        "textBoxes": 1
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -1718326,
+            "yEmu": 7853024,
+            "widthEmu": 21724652,
+            "heightEmu": 5729877,
+            "xInches": -1.8792,
+            "yInches": 8.5882,
+            "widthInches": 23.7584,
+            "heightInches": 6.2663,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "19",
+          "name": "Freeform 19",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -2274732,
+            "yEmu": -677345,
+            "widthEmu": 4549463,
+            "heightEmu": 3167564,
+            "xInches": -2.4877,
+            "yInches": -0.7408,
+            "widthInches": 4.9754,
+            "heightInches": 3.4641,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "20",
+          "name": "Freeform 20",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12327308,
+            "yEmu": -3887975,
+            "widthEmu": 8002187,
+            "heightEmu": 5724456,
+            "xInches": 13.4813,
+            "yInches": -4.2519,
+            "widthInches": 8.7513,
+            "heightInches": 6.2603,
+            "rotationDegrees": 18.7402
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "21",
+          "name": "Freeform 21",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1113225,
+            "yEmu": 262319,
+            "widthEmu": 2907794,
+            "heightEmu": 2707883,
+            "xInches": 1.2174,
+            "yInches": 0.2869,
+            "widthInches": 3.18,
+            "heightInches": 2.9614,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "22",
+          "name": "TextBox 22",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5044431,
+            "yEmu": 1228725,
+            "widthEmu": 8199139,
+            "heightEmu": 1320799,
+            "xInches": 5.5167,
+            "yInches": 1.3438,
+            "widthInches": 8.9667,
+            "heightInches": 1.4444,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "My Project",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "22",
+          "name": "TextBox 22",
+          "placeholderType": null,
+          "text": "My Project",
+          "paragraphs": [
+            {
+              "text": "My Project",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "My Project",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 99.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 6,
+      "path": "ppt/slides/slide6.xml",
+      "relationshipPath": "ppt/slides/_rels/slide6.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 7,
+        "pictures": 1,
+        "groups": 3,
+        "textBoxes": 1
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 6196338,
+            "yEmu": -1546619,
+            "widthEmu": 16230600,
+            "heightEmu": 4564856,
+            "xInches": 6.7764,
+            "yInches": -1.6914,
+            "widthInches": 17.75,
+            "heightInches": 4.9922,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2375856,
+            "yEmu": 5143500,
+            "widthEmu": 16230600,
+            "heightEmu": 6289358,
+            "xInches": 2.5983,
+            "yInches": 5.625,
+            "widthInches": 17.75,
+            "heightInches": 6.8781,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "15",
+          "name": "Freeform 15",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 4319588,
+            "yEmu": 271231,
+            "widthEmu": 4775661,
+            "heightEmu": 1794853,
+            "xInches": 4.724,
+            "yInches": 0.2966,
+            "widthInches": 5.2227,
+            "heightInches": 1.9629,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1902639,
+            "yEmu": 4171018,
+            "widthEmu": 5368752,
+            "heightEmu": 2587624,
+            "xInches": 2.0808,
+            "yInches": 4.5615,
+            "widthInches": 5.8713,
+            "heightInches": 2.8299,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Studio Shodwe",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "17",
+          "name": "Freeform 17",
+          "zOrder": 6,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -2213051,
+            "yEmu": -1086012,
+            "widthEmu": 6560690,
+            "heightEmu": 2714486,
+            "xInches": -2.4202,
+            "yInches": -1.1877,
+            "widthInches": 7.1749,
+            "heightInches": 2.9686,
+            "rotationDegrees": -29.9707
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "18",
+          "name": "Freeform 18",
+          "zOrder": 7,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1440943,
+            "yEmu": 7441609,
+            "widthEmu": 2878646,
+            "heightEmu": 3031483,
+            "xInches": 1.5758,
+            "yInches": 8.1382,
+            "widthInches": 3.1481,
+            "heightInches": 3.3153,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "placeholderType": null,
+          "text": "Studio Shodwe",
+          "paragraphs": [
+            {
+              "text": "Studio Shodwe",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Studio Shodwe",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 99.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "14",
+          "name": "Picture 14",
+          "relationshipId": "rId9"
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "path": "ppt/slides/slide7.xml",
+      "relationshipPath": "ppt/slides/_rels/slide7.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 6,
+        "pictures": 1,
+        "groups": 3,
+        "textBoxes": 1
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12449291,
+            "yEmu": -1692275,
+            "widthEmu": 7828407,
+            "heightEmu": 8229600,
+            "xInches": 13.6147,
+            "yInches": -1.8507,
+            "widthInches": 8.5612,
+            "heightInches": 9.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 7522766,
+            "yEmu": 4258469,
+            "widthEmu": 10765234,
+            "heightEmu": 6028531,
+            "xInches": 8.227,
+            "yInches": 4.6571,
+            "widthInches": 11.773,
+            "heightInches": 6.5929,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "15",
+          "name": "Freeform 15",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 501786,
+            "yEmu": 7591576,
+            "widthEmu": 4418577,
+            "heightEmu": 4114800,
+            "xInches": 0.5488,
+            "yInches": 8.3022,
+            "widthInches": 4.8322,
+            "heightInches": 4.5,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1902639,
+            "yEmu": 3949700,
+            "widthEmu": 5368752,
+            "heightEmu": 2587624,
+            "xInches": 2.0808,
+            "yInches": 4.3194,
+            "widthInches": 5.8713,
+            "heightInches": 2.8299,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Studio Shodwe",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "17",
+          "name": "Freeform 17",
+          "zOrder": 6,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -3085358,
+            "yEmu": -1716161,
+            "widthEmu": 10599423,
+            "heightEmu": 3974783,
+            "xInches": -3.3742,
+            "yInches": -1.8768,
+            "widthInches": 11.5917,
+            "heightInches": 4.3469,
+            "rotationDegrees": -19.2246
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "placeholderType": null,
+          "text": "Studio Shodwe",
+          "paragraphs": [
+            {
+              "text": "Studio Shodwe",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Studio Shodwe",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 99.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "14",
+          "name": "Picture 14",
+          "relationshipId": "rId9"
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "path": "ppt/slides/slide8.xml",
+      "relationshipPath": "ppt/slides/_rels/slide8.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 4,
+        "pictures": 1,
+        "groups": 3,
+        "textBoxes": 1
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10712630,
+            "yEmu": 4300164,
+            "widthEmu": 6546670,
+            "heightEmu": 2587624,
+            "xInches": 11.7155,
+            "yInches": 4.7027,
+            "widthInches": 7.1595,
+            "heightInches": 2.8299,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Thynk Unlimited",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "14",
+          "name": "Freeform 14",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 8278381,
+            "yEmu": -1987392,
+            "widthEmu": 10599423,
+            "heightEmu": 3974783,
+            "xInches": 9.0533,
+            "yInches": -2.1734,
+            "widthInches": 11.5917,
+            "heightInches": 4.3469,
+            "rotationDegrees": 6.5499
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "15",
+          "name": "Freeform 15",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 13985965,
+            "yEmu": 1447466,
+            "widthEmu": 2878646,
+            "heightEmu": 3031483,
+            "xInches": 15.2952,
+            "yInches": 1.583,
+            "widthInches": 3.1481,
+            "heightInches": 3.3153,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "placeholderType": null,
+          "text": "Thynk Unlimited",
+          "paragraphs": [
+            {
+              "text": "Thynk Unlimited",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Thynk Unlimited",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 99.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "12",
+          "name": "Picture 12",
+          "relationshipId": "rId7"
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "path": "ppt/slides/slide9.xml",
+      "relationshipPath": "ppt/slides/_rels/slide9.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 8,
+        "pictures": 1,
+        "groups": 0,
+        "textBoxes": 4
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -655948,
+            "yEmu": 5928968,
+            "widthEmu": 10765234,
+            "heightEmu": 6028531,
+            "xInches": -0.7174,
+            "yInches": 6.484,
+            "widthInches": 11.773,
+            "heightInches": 6.5929,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -6838306,
+            "yEmu": -899938,
+            "widthEmu": 16230600,
+            "heightEmu": 4564856,
+            "xInches": -7.4785,
+            "yInches": -0.9842,
+            "widthInches": 17.75,
+            "heightInches": 4.9922,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "Freeform 5",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2124058,
+            "yEmu": 1607623,
+            "widthEmu": 5630002,
+            "heightEmu": 8901189,
+            "xInches": 2.3229,
+            "yInches": 1.7581,
+            "widthInches": 6.157,
+            "heightInches": 9.7345,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9442368,
+            "yEmu": 1340923,
+            "widthEmu": 6559997,
+            "heightEmu": 2323995,
+            "xInches": 10.3263,
+            "yInches": 1.4665,
+            "widthInches": 7.1741,
+            "heightInches": 2.5416,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Contact",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9442368,
+            "yEmu": 4529303,
+            "widthEmu": 5321292,
+            "heightEmu": 537845,
+            "xInches": 10.3263,
+            "yInches": 4.9533,
+            "widthInches": 5.8194,
+            "heightInches": 0.5882,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "123 Anywhere St., Any City",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9442368,
+            "yEmu": 6336862,
+            "widthEmu": 5731484,
+            "heightEmu": 537845,
+            "xInches": 10.3263,
+            "yInches": 6.9301,
+            "widthInches": 6.268,
+            "heightInches": 0.5882,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "hello@reallygreatsite.com",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9442368,
+            "yEmu": 8141532,
+            "widthEmu": 3593649,
+            "heightEmu": 537845,
+            "xInches": 10.3263,
+            "yInches": 8.9037,
+            "widthInches": 3.9301,
+            "heightInches": 0.5882,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "+123-456-7890",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "Contact",
+          "paragraphs": [
+            {
+              "text": "Contact",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Contact",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 135.04,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "123 Anywhere St., Any City",
+          "paragraphs": [
+            {
+              "text": "123 Anywhere St., Any City",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "123 Anywhere St., Any City",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 32.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "placeholderType": null,
+          "text": "hello@reallygreatsite.com",
+          "paragraphs": [
+            {
+              "text": "hello@reallygreatsite.com",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "hello@reallygreatsite.com",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 32.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "placeholderType": null,
+          "text": "+123-456-7890",
+          "paragraphs": [
+            {
+              "text": "+123-456-7890",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "+123-456-7890",
+                  "font": {
+                    "latin": "Open Sans",
+                    "eastAsian": "Open Sans",
+                    "complexScript": "Open Sans"
+                  },
+                  "fontSize": 32.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sans",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "6",
+          "name": "Picture 6",
+          "relationshipId": "rId6"
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "path": "ppt/slides/slide10.xml",
+      "relationshipPath": "ppt/slides/_rels/slide10.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 5,
+        "pictures": 2,
+        "groups": 0,
+        "textBoxes": 1
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -1175973,
+            "yEmu": 4014362,
+            "widthEmu": 5350261,
+            "heightEmu": 7351276,
+            "xInches": -1.2861,
+            "yInches": 4.3902,
+            "widthInches": 5.8511,
+            "heightInches": 8.0395,
+            "rotationDegrees": -14.1603
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 6708504,
+            "yEmu": -1865300,
+            "widthEmu": 13696686,
+            "heightEmu": 4939788,
+            "xInches": 7.3365,
+            "yInches": -2.0399,
+            "widthInches": 14.9789,
+            "heightInches": 5.4022,
+            "rotationDegrees": 18.7375
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "Freeform 5",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2220143,
+            "yEmu": 2278754,
+            "widthEmu": 13847714,
+            "heightEmu": 5729492,
+            "xInches": 2.428,
+            "yInches": 2.4921,
+            "widthInches": 15.144,
+            "heightInches": 6.2658,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 3571826,
+            "yEmu": 4540140,
+            "widthEmu": 11144348,
+            "heightEmu": 2009775,
+            "xInches": 3.9062,
+            "yInches": 4.9652,
+            "widthInches": 12.1876,
+            "heightInches": 2.1979,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Thank You",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "Thank You",
+          "paragraphs": [
+            {
+              "text": "Thank You",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Thank You",
+                  "font": {
+                    "latin": "Roca One Bold",
+                    "eastAsian": "Roca One Bold",
+                    "complexScript": "Roca One Bold"
+                  },
+                  "fontSize": 150.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Roca One Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": [
+        {
+          "shapeId": "6",
+          "name": "Picture 6",
+          "relationshipId": "rId6"
+        },
+        {
+          "shapeId": "7",
+          "name": "Picture 7",
+          "relationshipId": "rId7"
+        }
+      ]
+    }
+  ],
+  "assets": [
+    {
+      "pptxPath": "ppt/media/image1.jpeg",
+      "fileName": "image1.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 2182512,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image1.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image10.png",
+      "fileName": "image10.png",
+      "contentType": "image/png",
+      "sizeBytes": 1297951,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image10.png"
+    },
+    {
+      "pptxPath": "ppt/media/image11.png",
+      "fileName": "image11.png",
+      "contentType": "image/png",
+      "sizeBytes": 2778079,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image11.png"
+    },
+    {
+      "pptxPath": "ppt/media/image12.jpeg",
+      "fileName": "image12.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 840316,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image12.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image13.png",
+      "fileName": "image13.png",
+      "contentType": "image/png",
+      "sizeBytes": 1637898,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image13.png"
+    },
+    {
+      "pptxPath": "ppt/media/image14.png",
+      "fileName": "image14.png",
+      "contentType": "image/png",
+      "sizeBytes": 848314,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image14.png"
+    },
+    {
+      "pptxPath": "ppt/media/image15.png",
+      "fileName": "image15.png",
+      "contentType": "image/png",
+      "sizeBytes": 2346562,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image15.png"
+    },
+    {
+      "pptxPath": "ppt/media/image16.png",
+      "fileName": "image16.png",
+      "contentType": "image/png",
+      "sizeBytes": 1810305,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image16.png"
+    },
+    {
+      "pptxPath": "ppt/media/image17.png",
+      "fileName": "image17.png",
+      "contentType": "image/png",
+      "sizeBytes": 296927,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image17.png"
+    },
+    {
+      "pptxPath": "ppt/media/image18.png",
+      "fileName": "image18.png",
+      "contentType": "image/png",
+      "sizeBytes": 1104384,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image18.png"
+    },
+    {
+      "pptxPath": "ppt/media/image19.png",
+      "fileName": "image19.png",
+      "contentType": "image/png",
+      "sizeBytes": 1220995,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image19.png"
+    },
+    {
+      "pptxPath": "ppt/media/image2.png",
+      "fileName": "image2.png",
+      "contentType": "image/png",
+      "sizeBytes": 152911,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image2.png"
+    },
+    {
+      "pptxPath": "ppt/media/image20.jpeg",
+      "fileName": "image20.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 476076,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image20.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image21.png",
+      "fileName": "image21.png",
+      "contentType": "image/png",
+      "sizeBytes": 292085,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image21.png"
+    },
+    {
+      "pptxPath": "ppt/media/image22.png",
+      "fileName": "image22.png",
+      "contentType": "image/png",
+      "sizeBytes": 1339056,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image22.png"
+    },
+    {
+      "pptxPath": "ppt/media/image23.jpeg",
+      "fileName": "image23.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 595686,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image23.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image24.jpeg",
+      "fileName": "image24.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 665786,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image24.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image25.jpeg",
+      "fileName": "image25.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 398162,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image25.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image26.png",
+      "fileName": "image26.png",
+      "contentType": "image/png",
+      "sizeBytes": 620732,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image26.png"
+    },
+    {
+      "pptxPath": "ppt/media/image27.png",
+      "fileName": "image27.png",
+      "contentType": "image/png",
+      "sizeBytes": 482812,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image27.png"
+    },
+    {
+      "pptxPath": "ppt/media/image28.png",
+      "fileName": "image28.png",
+      "contentType": "image/png",
+      "sizeBytes": 364838,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image28.png"
+    },
+    {
+      "pptxPath": "ppt/media/image29.svg",
+      "fileName": "image29.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 39588,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image29.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image3.png",
+      "fileName": "image3.png",
+      "contentType": "image/png",
+      "sizeBytes": 1289592,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image3.png"
+    },
+    {
+      "pptxPath": "ppt/media/image30.png",
+      "fileName": "image30.png",
+      "contentType": "image/png",
+      "sizeBytes": 1326819,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image30.png"
+    },
+    {
+      "pptxPath": "ppt/media/image31.jpeg",
+      "fileName": "image31.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 294616,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image31.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image32.jpeg",
+      "fileName": "image32.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 881618,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image32.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image33.jpeg",
+      "fileName": "image33.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 494299,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image33.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image34.gif",
+      "fileName": "image34.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 1135465,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image34.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image35.png",
+      "fileName": "image35.png",
+      "contentType": "image/png",
+      "sizeBytes": 541456,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image35.png"
+    },
+    {
+      "pptxPath": "ppt/media/image36.png",
+      "fileName": "image36.png",
+      "contentType": "image/png",
+      "sizeBytes": 1536741,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image36.png"
+    },
+    {
+      "pptxPath": "ppt/media/image37.png",
+      "fileName": "image37.png",
+      "contentType": "image/png",
+      "sizeBytes": 380172,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image37.png"
+    },
+    {
+      "pptxPath": "ppt/media/image38.svg",
+      "fileName": "image38.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 76756,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image38.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image39.png",
+      "fileName": "image39.png",
+      "contentType": "image/png",
+      "sizeBytes": 2016585,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image39.png"
+    },
+    {
+      "pptxPath": "ppt/media/image4.png",
+      "fileName": "image4.png",
+      "contentType": "image/png",
+      "sizeBytes": 4978868,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image4.png"
+    },
+    {
+      "pptxPath": "ppt/media/image40.png",
+      "fileName": "image40.png",
+      "contentType": "image/png",
+      "sizeBytes": 1160590,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image40.png"
+    },
+    {
+      "pptxPath": "ppt/media/image41.jpeg",
+      "fileName": "image41.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 375997,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image41.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image42.jpeg",
+      "fileName": "image42.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 577870,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image42.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image43.jpeg",
+      "fileName": "image43.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 333986,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image43.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image44.gif",
+      "fileName": "image44.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 137087,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image44.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image45.jpeg",
+      "fileName": "image45.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 458975,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image45.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image46.jpeg",
+      "fileName": "image46.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 880772,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image46.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image47.jpeg",
+      "fileName": "image47.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1022712,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image47.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image48.gif",
+      "fileName": "image48.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 2309686,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image48.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image49.png",
+      "fileName": "image49.png",
+      "contentType": "image/png",
+      "sizeBytes": 1675351,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image49.png"
+    },
+    {
+      "pptxPath": "ppt/media/image5.gif",
+      "fileName": "image5.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 9685,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image5.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image50.png",
+      "fileName": "image50.png",
+      "contentType": "image/png",
+      "sizeBytes": 1182605,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image50.png"
+    },
+    {
+      "pptxPath": "ppt/media/image51.gif",
+      "fileName": "image51.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 1803186,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image51.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image52.gif",
+      "fileName": "image52.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 552506,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image52.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image6.gif",
+      "fileName": "image6.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 455628,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image6.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image7.gif",
+      "fileName": "image7.gif",
+      "contentType": "image/gif",
+      "sizeBytes": 2648993,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image7.gif"
+    },
+    {
+      "pptxPath": "ppt/media/image8.png",
+      "fileName": "image8.png",
+      "contentType": "image/png",
+      "sizeBytes": 1157408,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image8.png"
+    },
+    {
+      "pptxPath": "ppt/media/image9.png",
+      "fileName": "image9.png",
+      "contentType": "image/png",
+      "sizeBytes": 1234200,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image9.png"
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "checks": {
+      "slidesMatchInventory": true,
+      "layoutsMatchInventory": true,
+      "mastersMatchInventory": true,
+      "assetsMatchInventory": true,
+      "themeParsed": true
+    },
+    "counts": {
+      "slides": 10,
+      "layouts": 11,
+      "masters": 1,
+      "assets": 52
+    }
+  }
+}

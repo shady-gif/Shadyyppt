@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: prompt-on-ppt-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: HOST=0.0.0.0 python3 server.py
+    healthCheckPath: /health
+    envVars:
+      - key: DISABLE_OLLAMA_MAPPER
+        value: "1"
+      - key: CORS_ORIGIN
+        value: "*"

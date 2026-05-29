@@ -1,0 +1,6219 @@
+{
+  "inventory": {
+    "sourceFile": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/templates/elegant-editorial.pptx",
+    "counts": {
+      "slides": 10,
+      "layouts": 11,
+      "masters": 1,
+      "themes": 1,
+      "media": 33,
+      "fonts": 5,
+      "relationships": 24
+    },
+    "parts": {
+      "slides": [
+        "ppt/slides/slide1.xml",
+        "ppt/slides/slide2.xml",
+        "ppt/slides/slide3.xml",
+        "ppt/slides/slide4.xml",
+        "ppt/slides/slide5.xml",
+        "ppt/slides/slide6.xml",
+        "ppt/slides/slide7.xml",
+        "ppt/slides/slide8.xml",
+        "ppt/slides/slide9.xml",
+        "ppt/slides/slide10.xml"
+      ],
+      "layouts": [
+        "ppt/slideLayouts/slideLayout1.xml",
+        "ppt/slideLayouts/slideLayout2.xml",
+        "ppt/slideLayouts/slideLayout3.xml",
+        "ppt/slideLayouts/slideLayout4.xml",
+        "ppt/slideLayouts/slideLayout5.xml",
+        "ppt/slideLayouts/slideLayout6.xml",
+        "ppt/slideLayouts/slideLayout7.xml",
+        "ppt/slideLayouts/slideLayout8.xml",
+        "ppt/slideLayouts/slideLayout9.xml",
+        "ppt/slideLayouts/slideLayout10.xml",
+        "ppt/slideLayouts/slideLayout11.xml"
+      ],
+      "masters": [
+        "ppt/slideMasters/slideMaster1.xml"
+      ],
+      "themes": [
+        "ppt/theme/theme1.xml"
+      ],
+      "media": [
+        "ppt/media/image1.jpeg",
+        "ppt/media/image2.png",
+        "ppt/media/image3.jpeg",
+        "ppt/media/image4.jpeg",
+        "ppt/media/image5.jpeg",
+        "ppt/media/image6.jpeg",
+        "ppt/media/image7.jpeg",
+        "ppt/media/image8.jpeg",
+        "ppt/media/image9.jpeg",
+        "ppt/media/image10.jpeg",
+        "ppt/media/image11.jpeg",
+        "ppt/media/image12.jpeg",
+        "ppt/media/image13.png",
+        "ppt/media/image14.svg",
+        "ppt/media/image15.png",
+        "ppt/media/image16.svg",
+        "ppt/media/image17.png",
+        "ppt/media/image18.svg",
+        "ppt/media/image19.jpeg",
+        "ppt/media/image20.jpeg",
+        "ppt/media/image21.jpeg",
+        "ppt/media/image22.jpeg",
+        "ppt/media/image23.jpeg",
+        "ppt/media/image24.jpeg",
+        "ppt/media/image25.jpeg",
+        "ppt/media/image26.jpeg",
+        "ppt/media/image27.jpeg",
+        "ppt/media/image28.png",
+        "ppt/media/image29.svg",
+        "ppt/media/image30.png",
+        "ppt/media/image31.svg",
+        "ppt/media/image32.png",
+        "ppt/media/image33.svg"
+      ],
+      "fonts": [
+        "ppt/fonts/font16.fntdata",
+        "ppt/fonts/font17.fntdata",
+        "ppt/fonts/font18.fntdata",
+        "ppt/fonts/font19.fntdata",
+        "ppt/fonts/font20.fntdata"
+      ],
+      "relationships": [
+        "_rels/.rels",
+        "ppt/_rels/presentation.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout2.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout3.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout4.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout5.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout6.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout7.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout8.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout9.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout10.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout11.xml.rels",
+        "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+        "ppt/slides/_rels/slide1.xml.rels",
+        "ppt/slides/_rels/slide2.xml.rels",
+        "ppt/slides/_rels/slide3.xml.rels",
+        "ppt/slides/_rels/slide4.xml.rels",
+        "ppt/slides/_rels/slide5.xml.rels",
+        "ppt/slides/_rels/slide6.xml.rels",
+        "ppt/slides/_rels/slide7.xml.rels",
+        "ppt/slides/_rels/slide8.xml.rels",
+        "ppt/slides/_rels/slide9.xml.rels",
+        "ppt/slides/_rels/slide10.xml.rels"
+      ]
+    }
+  },
+  "presentation": {
+    "size": {
+      "widthEmu": 18288000,
+      "heightEmu": 10287000,
+      "widthInches": 20.0,
+      "heightInches": 11.25
+    },
+    "slides": [
+      {
+        "index": 1,
+        "slideId": "256",
+        "relationshipId": "rId6"
+      },
+      {
+        "index": 2,
+        "slideId": "257",
+        "relationshipId": "rId7"
+      },
+      {
+        "index": 3,
+        "slideId": "258",
+        "relationshipId": "rId8"
+      },
+      {
+        "index": 4,
+        "slideId": "259",
+        "relationshipId": "rId9"
+      },
+      {
+        "index": 5,
+        "slideId": "260",
+        "relationshipId": "rId10"
+      },
+      {
+        "index": 6,
+        "slideId": "261",
+        "relationshipId": "rId11"
+      },
+      {
+        "index": 7,
+        "slideId": "262",
+        "relationshipId": "rId12"
+      },
+      {
+        "index": 8,
+        "slideId": "263",
+        "relationshipId": "rId13"
+      },
+      {
+        "index": 9,
+        "slideId": "264",
+        "relationshipId": "rId14"
+      },
+      {
+        "index": 10,
+        "slideId": "265",
+        "relationshipId": "rId15"
+      }
+    ]
+  },
+  "relationships": {
+    "_rels/.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+        "target": "ppt/presentation.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/presentation.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail",
+        "target": "docProps/thumbnail.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "docProps/thumbnail.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+        "target": "docProps/core.xml",
+        "targetMode": null,
+        "resolvedTarget": "docProps/core.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+        "target": "docProps/app.xml",
+        "targetMode": null,
+        "resolvedTarget": "docProps/app.xml"
+      }
+    ],
+    "ppt/_rels/presentation.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide5.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide5.xml"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide6.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide6.xml"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide7.xml"
+      },
+      {
+        "id": "rId13",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide8.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide8.xml"
+      },
+      {
+        "id": "rId14",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide9.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide9.xml"
+      },
+      {
+        "id": "rId15",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide10.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide10.xml"
+      },
+      {
+        "id": "rId16",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font16.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font16.fntdata"
+      },
+      {
+        "id": "rId17",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font17.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font17.fntdata"
+      },
+      {
+        "id": "rId18",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font18.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font18.fntdata"
+      },
+      {
+        "id": "rId19",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font19.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font19.fntdata"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/presProps",
+        "target": "presProps.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/presProps.xml"
+      },
+      {
+        "id": "rId20",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font20.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font20.fntdata"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/viewProps",
+        "target": "viewProps.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/viewProps.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+        "target": "theme/theme1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/theme/theme1.xml"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tableStyles",
+        "target": "tableStyles.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/tableStyles.xml"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide1.xml"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide2.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide2.xml"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide3.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide3.xml"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide4.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide4.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout10.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout11.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout2.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout3.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout4.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout5.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout6.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout7.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout8.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout9.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideMasters/_rels/slideMaster1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout1.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout10.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout10.xml"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout11.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout11.xml"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+        "target": "../theme/theme1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/theme/theme1.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout2.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout2.xml"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout3.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout3.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout4.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout4.xml"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout5.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout5.xml"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout6.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout6.xml"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout8.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout8.xml"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout9.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout9.xml"
+      }
+    ],
+    "ppt/slides/_rels/slide1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image1.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image1.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image2.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image2.png"
+      }
+    ],
+    "ppt/slides/_rels/slide10.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image33.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image33.svg"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image25.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image25.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image26.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image26.jpeg"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image27.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image27.jpeg"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image28.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image28.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image29.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image29.svg"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image30.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image30.png"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image31.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image31.svg"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image32.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image32.png"
+      }
+    ],
+    "ppt/slides/_rels/slide2.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image3.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image3.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image4.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image4.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide3.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image5.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image5.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image6.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image6.jpeg"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image7.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image7.jpeg"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image8.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image8.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide4.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image9.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image9.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide5.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image10.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image10.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide6.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image11.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image11.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide7.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image13.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image13.png"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image14.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image14.svg"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image15.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image15.png"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image16.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image16.svg"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image17.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image17.png"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image18.svg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image18.svg"
+      }
+    ],
+    "ppt/slides/_rels/slide8.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image19.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image19.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image20.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image20.jpeg"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image21.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image21.jpeg"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image22.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image22.jpeg"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image23.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image23.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide9.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image24.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image24.jpeg"
+      }
+    ]
+  },
+  "theme": {
+    "name": "Office Theme",
+    "colors": {
+      "dk1": {
+        "type": "system",
+        "systemColor": "windowText",
+        "lastColor": "#000000"
+      },
+      "lt1": {
+        "type": "system",
+        "systemColor": "window",
+        "lastColor": "#FFFFFF"
+      },
+      "dk2": {
+        "type": "srgb",
+        "hex": "#1F497D"
+      },
+      "lt2": {
+        "type": "srgb",
+        "hex": "#EEECE1"
+      },
+      "accent1": {
+        "type": "srgb",
+        "hex": "#4F81BD"
+      },
+      "accent2": {
+        "type": "srgb",
+        "hex": "#C0504D"
+      },
+      "accent3": {
+        "type": "srgb",
+        "hex": "#9BBB59"
+      },
+      "accent4": {
+        "type": "srgb",
+        "hex": "#8064A2"
+      },
+      "accent5": {
+        "type": "srgb",
+        "hex": "#4BACC6"
+      },
+      "accent6": {
+        "type": "srgb",
+        "hex": "#F79646"
+      },
+      "hlink": {
+        "type": "srgb",
+        "hex": "#0000FF"
+      },
+      "folHlink": {
+        "type": "srgb",
+        "hex": "#800080"
+      }
+    },
+    "fonts": {
+      "schemeName": "Office",
+      "major": {
+        "latin": "Calibri",
+        "eastAsian": "",
+        "complexScript": ""
+      },
+      "minor": {
+        "latin": "Calibri",
+        "eastAsian": "",
+        "complexScript": ""
+      }
+    }
+  },
+  "masters": [
+    {
+      "path": "ppt/slideMasters/slideMaster1.xml",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title Placeholder 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "3",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "4",
+          "size": "quarter"
+        }
+      ],
+      "layoutReferences": [
+        {
+          "id": "2147483649",
+          "relationshipId": "rId1"
+        },
+        {
+          "id": "2147483650",
+          "relationshipId": "rId2"
+        },
+        {
+          "id": "2147483651",
+          "relationshipId": "rId3"
+        },
+        {
+          "id": "2147483652",
+          "relationshipId": "rId4"
+        },
+        {
+          "id": "2147483653",
+          "relationshipId": "rId5"
+        },
+        {
+          "id": "2147483654",
+          "relationshipId": "rId6"
+        },
+        {
+          "id": "2147483655",
+          "relationshipId": "rId7"
+        },
+        {
+          "id": "2147483656",
+          "relationshipId": "rId8"
+        },
+        {
+          "id": "2147483657",
+          "relationshipId": "rId9"
+        },
+        {
+          "id": "2147483658",
+          "relationshipId": "rId10"
+        },
+        {
+          "id": "2147483659",
+          "relationshipId": "rId11"
+        }
+      ],
+      "textStyles": {
+        "title": {
+          "lvl1pPr": {
+            "alignment": "ctr",
+            "fontSize": 44.0,
+            "bold": null,
+            "font": {
+              "latin": "+mj-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.major.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        },
+        "body": {
+          "lvl1pPr": {
+            "alignment": "l",
+            "fontSize": 32.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl2pPr": {
+            "alignment": "l",
+            "fontSize": 28.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl3pPr": {
+            "alignment": "l",
+            "fontSize": 24.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl4pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl5pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl6pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl7pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl8pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl9pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        },
+        "other": {
+          "lvl1pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl2pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl3pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl4pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl5pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl6pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl7pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl8pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl9pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "path": "ppt/slideLayouts/slideLayout1.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "ctrTitle",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Subtitle 2",
+          "type": "subTitle",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout10.xml",
+      "name": "Title and Vertical Text",
+      "type": "vertTx",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Vertical Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout11.xml",
+      "name": "Vertical Title and Text",
+      "type": "vertTitleAndTx",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Vertical Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Vertical Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title and Content",
+      "type": "obj",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout3.xml",
+      "name": "Section Header",
+      "type": "secHead",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout4.xml",
+      "name": "Two Content",
+      "type": "twoObj",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": "half"
+        },
+        {
+          "shapeId": "4",
+          "name": "Content Placeholder 3",
+          "type": null,
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout5.xml",
+      "name": "Comparison",
+      "type": "twoTxTwoObj",
+      "preserve": "1",
+      "shapeCount": 8,
+      "placeholderCount": 8,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Content Placeholder 3",
+          "type": null,
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Text Placeholder 4",
+          "type": "body",
+          "index": "3",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Content Placeholder 5",
+          "type": null,
+          "index": "4",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Date Placeholder 6",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "8",
+          "name": "Footer Placeholder 7",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "9",
+          "name": "Slide Number Placeholder 8",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout6.xml",
+      "name": "Title Only",
+      "type": "titleOnly",
+      "preserve": "1",
+      "shapeCount": 4,
+      "placeholderCount": 4,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Date Placeholder 2",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "4",
+          "name": "Footer Placeholder 3",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "5",
+          "name": "Slide Number Placeholder 4",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout7.xml",
+      "name": "Blank",
+      "type": "blank",
+      "preserve": "1",
+      "shapeCount": 3,
+      "placeholderCount": 3,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Date Placeholder 1",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "3",
+          "name": "Footer Placeholder 2",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "4",
+          "name": "Slide Number Placeholder 3",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout8.xml",
+      "name": "Content with Caption",
+      "type": "objTx",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Text Placeholder 3",
+          "type": "body",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout9.xml",
+      "name": "Picture with Caption",
+      "type": "picTx",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Picture Placeholder 2",
+          "type": "pic",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Text Placeholder 3",
+          "type": "body",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "path": "ppt/slides/slide1.xml",
+      "relationshipPath": "ppt/slides/_rels/slide1.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 3,
+        "pictures": 0,
+        "groups": 5,
+        "textBoxes": 2
+      },
+      "shapes": [
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 10755495,
+            "heightEmu": 7931210,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 11.7624,
+            "heightInches": 8.6737,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "17",
+          "name": "TextBox 17",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1326928,
+            "yEmu": 3572930,
+            "widthEmu": 9739139,
+            "heightEmu": 2195028,
+            "xInches": 1.4511,
+            "yInches": 3.9074,
+            "widthInches": 10.6509,
+            "heightInches": 2.4005,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Keynote",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "18",
+          "name": "TextBox 18",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5025654,
+            "yEmu": 5379938,
+            "widthEmu": 5356078,
+            "heightEmu": 1086481,
+            "xInches": 5.4961,
+            "yInches": 5.8836,
+            "widthInches": 5.8575,
+            "heightInches": 1.1882,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentation",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "17",
+          "name": "TextBox 17",
+          "placeholderType": null,
+          "text": "Keynote",
+          "paragraphs": [
+            {
+              "text": "Keynote",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Keynote",
+                  "font": {
+                    "latin": "Amsterdam Three",
+                    "eastAsian": "Amsterdam Three",
+                    "complexScript": "Amsterdam Three"
+                  },
+                  "fontSize": 127.78,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Amsterdam Three",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "18",
+          "name": "TextBox 18",
+          "placeholderType": null,
+          "text": "Presentation",
+          "paragraphs": [
+            {
+              "text": "Presentation",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentation",
+                  "font": {
+                    "latin": "Alegreya",
+                    "eastAsian": "Alegreya",
+                    "complexScript": "Alegreya"
+                  },
+                  "fontSize": 63.21,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Alegreya",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 2,
+      "path": "ppt/slides/slide2.xml",
+      "relationshipPath": "ppt/slides/_rels/slide2.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 6,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 4
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10368540,
+            "yEmu": 5312834,
+            "widthEmu": 5999669,
+            "heightEmu": 704013,
+            "xInches": 11.3392,
+            "yInches": 5.8102,
+            "widthInches": 6.5613,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Something about me",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1561356,
+            "yEmu": 4350859,
+            "widthEmu": 2538313,
+            "heightEmu": 530620,
+            "xInches": 1.7075,
+            "yInches": 4.7582,
+            "widthInches": 2.7759,
+            "heightInches": 0.5803,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Fall Collection",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10368540,
+            "yEmu": 6372541,
+            "widthEmu": 6443829,
+            "heightEmu": 2075558,
+            "xInches": 11.3392,
+            "yInches": 6.9691,
+            "widthInches": 7.0471,
+            "heightInches": 2.2699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "AutoShape 8",
+          "zOrder": 5,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 2256095,
+            "widthEmu": 1982561,
+            "heightEmu": 0,
+            "xInches": 1.125,
+            "yInches": 2.4673,
+            "widthInches": 2.1682,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1191157,
+            "yEmu": 1739763,
+            "widthEmu": 1269156,
+            "heightEmu": 530620,
+            "xInches": 1.3027,
+            "yInches": 1.9026,
+            "widthInches": 1.388,
+            "heightInches": 0.5803,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2030",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Something about me",
+          "paragraphs": [
+            {
+              "text": "Something about me",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Something about me",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "Fall Collection",
+          "paragraphs": [
+            {
+              "text": "Fall Collection",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Fall Collection",
+                  "font": {
+                    "latin": "Radley Italics",
+                    "eastAsian": "Radley Italics",
+                    "complexScript": "Radley Italics"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": true,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley Italics",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos. ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "placeholderType": null,
+          "text": "2030",
+          "paragraphs": [
+            {
+              "text": "2030",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2030",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 3,
+      "path": "ppt/slides/slide3.xml",
+      "relationshipPath": "ppt/slides/_rels/slide3.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 2,
+        "pictures": 0,
+        "groups": 2,
+        "textBoxes": 2
+      },
+      "shapes": [
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1350220,
+            "yEmu": 2935082,
+            "widthEmu": 5999669,
+            "heightEmu": 704013,
+            "xInches": 1.4766,
+            "yInches": 3.2098,
+            "widthInches": 6.5613,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "My Inspiration",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1350220,
+            "yEmu": 3994789,
+            "widthEmu": 5641894,
+            "heightEmu": 2075558,
+            "xInches": 1.4766,
+            "yInches": 4.3688,
+            "widthInches": 6.1701,
+            "heightInches": 2.2699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "placeholderType": null,
+          "text": "My Inspiration",
+          "paragraphs": [
+            {
+              "text": "My Inspiration",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "My Inspiration",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos. ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 4,
+      "path": "ppt/slides/slide4.xml",
+      "relationshipPath": "ppt/slides/_rels/slide4.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 11,
+        "pictures": 0,
+        "groups": 2,
+        "textBoxes": 9
+      },
+      "shapes": [
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10655986,
+            "yEmu": 1642143,
+            "widthEmu": 5999669,
+            "heightEmu": 704013,
+            "xInches": 11.6535,
+            "yInches": 1.7959,
+            "widthInches": 6.5613,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The Concepts",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9268964,
+            "yEmu": 2946702,
+            "widthEmu": 988572,
+            "heightEmu": 1196673,
+            "xInches": 10.1367,
+            "yInches": 3.2226,
+            "widthInches": 1.0811,
+            "heightInches": 1.3087,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "1.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9268964,
+            "yEmu": 5018400,
+            "widthEmu": 988572,
+            "heightEmu": 1196673,
+            "xInches": 10.1367,
+            "yInches": 5.4882,
+            "widthInches": 1.0811,
+            "heightInches": 1.3087,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9144000,
+            "yEmu": 7165004,
+            "widthEmu": 988572,
+            "heightEmu": 1196673,
+            "xInches": 10.0,
+            "yInches": 7.8357,
+            "widthInches": 1.0811,
+            "heightInches": 1.3087,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "3.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10655986,
+            "yEmu": 3250966,
+            "widthEmu": 6124633,
+            "heightEmu": 1656458,
+            "xInches": 11.6535,
+            "yInches": 3.5553,
+            "widthInches": 6.698,
+            "heightInches": 1.8115,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10655986,
+            "yEmu": 5397548,
+            "widthEmu": 6124633,
+            "heightEmu": 1656458,
+            "xInches": 11.6535,
+            "yInches": 5.9028,
+            "widthInches": 6.698,
+            "heightInches": 1.8115,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10531022,
+            "yEmu": 7544151,
+            "widthEmu": 6124633,
+            "heightEmu": 1656458,
+            "xInches": 11.5169,
+            "yInches": 8.2504,
+            "widthInches": 6.698,
+            "heightInches": 1.8115,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "14",
+          "name": "AutoShape 14",
+          "zOrder": 8,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 6279569,
+            "yEmu": 2784485,
+            "widthEmu": 2864431,
+            "heightEmu": 0,
+            "xInches": 6.8674,
+            "yInches": 3.0451,
+            "widthInches": 3.1326,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "15",
+          "name": "TextBox 15",
+          "zOrder": 9,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1757527,
+            "yEmu": 8441004,
+            "widthEmu": 2538313,
+            "heightEmu": 530620,
+            "xInches": 1.9221,
+            "yInches": 9.2312,
+            "widthInches": 2.7759,
+            "heightInches": 0.5803,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Fall Collection",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "zOrder": 10,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -134976,
+            "yEmu": 7667622,
+            "widthEmu": 1269156,
+            "heightEmu": 530620,
+            "xInches": -0.1476,
+            "yInches": 8.3854,
+            "widthInches": 1.388,
+            "heightInches": 0.5803,
+            "rotationDegrees": -90.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2030",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "17",
+          "name": "AutoShape 17",
+          "zOrder": 11,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -421206,
+            "yEmu": 8706314,
+            "widthEmu": 1982561,
+            "heightEmu": 0,
+            "xInches": -0.4606,
+            "yInches": 9.5213,
+            "widthInches": 2.1682,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "The Concepts",
+          "paragraphs": [
+            {
+              "text": "The Concepts",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The Concepts",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "1.",
+          "paragraphs": [
+            {
+              "text": "1.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "1.",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 70.42,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "placeholderType": null,
+          "text": "2.",
+          "paragraphs": [
+            {
+              "text": "2.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2.",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 70.42,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "placeholderType": null,
+          "text": "3.",
+          "paragraphs": [
+            {
+              "text": "3.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "3.",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 70.42,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "15",
+          "name": "TextBox 15",
+          "placeholderType": null,
+          "text": "Fall Collection",
+          "paragraphs": [
+            {
+              "text": "Fall Collection",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Fall Collection",
+                  "font": {
+                    "latin": "Radley Italics",
+                    "eastAsian": "Radley Italics",
+                    "complexScript": "Radley Italics"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": true,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley Italics",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "placeholderType": null,
+          "text": "2030",
+          "paragraphs": [
+            {
+              "text": "2030",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2030",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 5,
+      "path": "ppt/slides/slide5.xml",
+      "relationshipPath": "ppt/slides/_rels/slide5.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 7,
+        "pictures": 0,
+        "groups": 8,
+        "textBoxes": 6
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "27",
+          "name": "TextBox 27",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1785879,
+            "yEmu": 4634751,
+            "widthEmu": 1600299,
+            "heightEmu": 329181,
+            "xInches": 1.9531,
+            "yInches": 5.0686,
+            "widthInches": 1.7501,
+            "heightInches": 0.36,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "#C6A394",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "28",
+          "name": "TextBox 28",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 4725045,
+            "yEmu": 4634751,
+            "widthEmu": 1600299,
+            "heightEmu": 329181,
+            "xInches": 5.1674,
+            "yInches": 5.0686,
+            "widthInches": 1.7501,
+            "heightInches": 0.36,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "#73493A",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "29",
+          "name": "TextBox 29",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 7776515,
+            "yEmu": 4634751,
+            "widthEmu": 1600299,
+            "heightEmu": 329181,
+            "xInches": 8.5045,
+            "yInches": 5.0686,
+            "widthInches": 1.7501,
+            "heightInches": 0.36,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "#B6806C",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "30",
+          "name": "TextBox 30",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10936331,
+            "yEmu": 4634751,
+            "widthEmu": 1600299,
+            "heightEmu": 329181,
+            "xInches": 11.9601,
+            "yInches": 5.0686,
+            "widthInches": 1.7501,
+            "heightInches": 0.36,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "#FFFAF6",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "31",
+          "name": "TextBox 31",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 11844862,
+            "yEmu": 2847531,
+            "widthEmu": 5999669,
+            "heightEmu": 704013,
+            "xInches": 12.9537,
+            "yInches": 3.1141,
+            "widthInches": 6.5613,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Color Palettes",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "32",
+          "name": "TextBox 32",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1342838,
+            "yEmu": 6635960,
+            "widthEmu": 6100302,
+            "heightEmu": 1656458,
+            "xInches": 1.4685,
+            "yInches": 7.2572,
+            "widthInches": 6.6714,
+            "heightInches": 1.8115,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "27",
+          "name": "TextBox 27",
+          "placeholderType": null,
+          "text": "#C6A394",
+          "paragraphs": [
+            {
+              "text": "#C6A394",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "#C6A394",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 18.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "28",
+          "name": "TextBox 28",
+          "placeholderType": null,
+          "text": "#73493A",
+          "paragraphs": [
+            {
+              "text": "#73493A",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "#73493A",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 18.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "29",
+          "name": "TextBox 29",
+          "placeholderType": null,
+          "text": "#B6806C",
+          "paragraphs": [
+            {
+              "text": "#B6806C",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "#B6806C",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 18.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "30",
+          "name": "TextBox 30",
+          "placeholderType": null,
+          "text": "#FFFAF6",
+          "paragraphs": [
+            {
+              "text": "#FFFAF6",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "#FFFAF6",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 18.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "31",
+          "name": "TextBox 31",
+          "placeholderType": null,
+          "text": "Color Palettes",
+          "paragraphs": [
+            {
+              "text": "Color Palettes",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Color Palettes",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "32",
+          "name": "TextBox 32",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 6,
+      "path": "ppt/slides/slide6.xml",
+      "relationshipPath": "ppt/slides/_rels/slide6.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 6,
+        "pictures": 0,
+        "groups": 2,
+        "textBoxes": 4
+      },
+      "shapes": [
+        {
+          "shapeId": "11",
+          "name": "AutoShape 11",
+          "zOrder": 1,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 6279569,
+            "yEmu": 2784485,
+            "widthEmu": 2864431,
+            "heightEmu": 0,
+            "xInches": 6.8674,
+            "yInches": 3.0451,
+            "widthInches": 3.1326,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 2054746,
+            "yEmu": 1424458,
+            "widthEmu": 2538313,
+            "heightEmu": 530620,
+            "xInches": 2.2471,
+            "yInches": 1.5578,
+            "widthInches": 2.7759,
+            "heightInches": 0.5803,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Fall Collection",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 829064,
+            "yEmu": 725971,
+            "widthEmu": 1269156,
+            "heightEmu": 530620,
+            "xInches": 0.9067,
+            "yInches": 0.7939,
+            "widthInches": 1.388,
+            "heightInches": 0.5803,
+            "rotationDegrees": -90.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2030",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "14",
+          "name": "AutoShape 14",
+          "zOrder": 4,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1743240,
+            "yEmu": 0,
+            "widthEmu": 0,
+            "heightEmu": 1982561,
+            "xInches": 1.9064,
+            "yInches": 0.0,
+            "widthInches": 0.0,
+            "heightInches": 2.1682,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "15",
+          "name": "TextBox 15",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10358767,
+            "yEmu": 4637633,
+            "widthEmu": 6900533,
+            "heightEmu": 704013,
+            "xInches": 11.3285,
+            "yInches": 5.0718,
+            "widthInches": 7.5465,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "A Glimpse In The Collection",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10259409,
+            "yEmu": 6206644,
+            "widthEmu": 6089788,
+            "heightEmu": 1656458,
+            "xInches": 11.2198,
+            "yInches": 6.7877,
+            "widthInches": 6.6599,
+            "heightInches": 1.8115,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "placeholderType": null,
+          "text": "Fall Collection",
+          "paragraphs": [
+            {
+              "text": "Fall Collection",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Fall Collection",
+                  "font": {
+                    "latin": "Radley Italics",
+                    "eastAsian": "Radley Italics",
+                    "complexScript": "Radley Italics"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": true,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley Italics",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "placeholderType": null,
+          "text": "2030",
+          "paragraphs": [
+            {
+              "text": "2030",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2030",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "15",
+          "name": "TextBox 15",
+          "placeholderType": null,
+          "text": "A Glimpse In The Collection",
+          "paragraphs": [
+            {
+              "text": "A Glimpse In The Collection",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "A Glimpse In The Collection",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 7,
+      "path": "ppt/slides/slide7.xml",
+      "relationshipPath": "ppt/slides/_rels/slide7.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 11,
+        "pictures": 0,
+        "groups": 4,
+        "textBoxes": 8
+      },
+      "shapes": [
+        {
+          "shapeId": "13",
+          "name": "Freeform 13",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5249768,
+            "yEmu": 2250665,
+            "widthEmu": 911271,
+            "heightEmu": 516007,
+            "xInches": 5.7412,
+            "yInches": 2.4614,
+            "widthInches": 0.9966,
+            "heightInches": 0.5643,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "14",
+          "name": "Freeform 14",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9612962,
+            "yEmu": 2181658,
+            "widthEmu": 654020,
+            "heightEmu": 654020,
+            "xInches": 10.5129,
+            "yInches": 2.3859,
+            "widthInches": 0.7152,
+            "heightInches": 0.7152,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "15",
+          "name": "Freeform 15",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 14182725,
+            "yEmu": 2181658,
+            "widthEmu": 687908,
+            "heightEmu": 687908,
+            "xInches": 15.5104,
+            "yInches": 2.3859,
+            "widthInches": 0.7523,
+            "heightInches": 0.7523,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5249768,
+            "yEmu": 7806172,
+            "widthEmu": 5398098,
+            "heightEmu": 704013,
+            "xInches": 5.7412,
+            "yInches": 8.5369,
+            "widthInches": 5.9034,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "About the Collection",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "17",
+          "name": "TextBox 17",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5249768,
+            "yEmu": 2955291,
+            "widthEmu": 2350241,
+            "heightEmu": 465354,
+            "xInches": 5.7412,
+            "yInches": 3.2319,
+            "widthInches": 2.5703,
+            "heightInches": 0.5089,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Material",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "18",
+          "name": "TextBox 18",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9509907,
+            "yEmu": 2955291,
+            "widthEmu": 2350241,
+            "heightEmu": 465354,
+            "xInches": 10.4002,
+            "yInches": 3.2319,
+            "widthInches": 2.5703,
+            "heightInches": 0.5089,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Durability",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "19",
+          "name": "TextBox 19",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 14077950,
+            "yEmu": 2955291,
+            "widthEmu": 2350241,
+            "heightEmu": 465354,
+            "xInches": 15.3958,
+            "yInches": 3.2319,
+            "widthInches": 2.5703,
+            "heightInches": 0.5089,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Design",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "20",
+          "name": "TextBox 20",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5249768,
+            "yEmu": 8576694,
+            "widthEmu": 10429172,
+            "heightEmu": 818258,
+            "xInches": 5.7412,
+            "yInches": 9.3796,
+            "widthInches": 11.4055,
+            "heightInches": 0.8949,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "21",
+          "name": "TextBox 21",
+          "zOrder": 9,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 5249768,
+            "yEmu": 3776339,
+            "widthEmu": 3201980,
+            "heightEmu": 2913758,
+            "xInches": 5.7412,
+            "yInches": 4.1299,
+            "widthInches": 3.5017,
+            "heightInches": 3.1865,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "22",
+          "name": "TextBox 22",
+          "zOrder": 10,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9509907,
+            "yEmu": 3776339,
+            "widthEmu": 3201980,
+            "heightEmu": 2913758,
+            "xInches": 10.4002,
+            "yInches": 4.1299,
+            "widthInches": 3.5017,
+            "heightInches": 3.1865,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "23",
+          "name": "TextBox 23",
+          "zOrder": 11,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 14077950,
+            "yEmu": 3776339,
+            "widthEmu": 3201980,
+            "heightEmu": 2913758,
+            "xInches": 15.3958,
+            "yInches": 4.1299,
+            "widthInches": 3.5017,
+            "heightInches": 3.1865,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "16",
+          "name": "TextBox 16",
+          "placeholderType": null,
+          "text": "About the Collection",
+          "paragraphs": [
+            {
+              "text": "About the Collection",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "About the Collection",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "17",
+          "name": "TextBox 17",
+          "placeholderType": null,
+          "text": "Material",
+          "paragraphs": [
+            {
+              "text": "Material",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Material",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 27.66,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "18",
+          "name": "TextBox 18",
+          "placeholderType": null,
+          "text": "Durability",
+          "paragraphs": [
+            {
+              "text": "Durability",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Durability",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 27.66,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "19",
+          "name": "TextBox 19",
+          "placeholderType": null,
+          "text": "Design",
+          "paragraphs": [
+            {
+              "text": "Design",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Design",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 27.66,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "20",
+          "name": "TextBox 20",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "21",
+          "name": "TextBox 21",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "22",
+          "name": "TextBox 22",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "23",
+          "name": "TextBox 23",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 8,
+      "path": "ppt/slides/slide8.xml",
+      "relationshipPath": "ppt/slides/_rels/slide8.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 6,
+        "pictures": 0,
+        "groups": 4,
+        "textBoxes": 4
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 740740,
+            "yEmu": 2595393,
+            "widthEmu": 2538313,
+            "heightEmu": 530620,
+            "xInches": 0.8101,
+            "yInches": 2.8384,
+            "widthInches": 2.7759,
+            "heightInches": 0.5803,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Fall Collection",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 3436515,
+            "yEmu": 1532853,
+            "widthEmu": 1269156,
+            "heightEmu": 530620,
+            "xInches": 3.7582,
+            "yInches": 1.6763,
+            "widthInches": 1.388,
+            "heightInches": 0.5803,
+            "rotationDegrees": -90.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2030",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "13",
+          "name": "AutoShape 13",
+          "zOrder": 4,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -421206,
+            "yEmu": 2623968,
+            "widthEmu": 6457380,
+            "heightEmu": 0,
+            "xInches": -0.4606,
+            "yInches": 2.8696,
+            "widthInches": 7.0619,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "14",
+          "name": "TextBox 14",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 8288007,
+            "yEmu": 7647618,
+            "widthEmu": 5398098,
+            "heightEmu": 704013,
+            "xInches": 9.0639,
+            "yInches": 8.3635,
+            "widthInches": 5.9034,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "More Samples",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "15",
+          "name": "TextBox 15",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 8288007,
+            "yEmu": 8418141,
+            "widthEmu": 8520279,
+            "heightEmu": 1237358,
+            "xInches": 9.0639,
+            "yInches": 9.2062,
+            "widthInches": 9.3179,
+            "heightInches": 1.3532,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "placeholderType": null,
+          "text": "Fall Collection",
+          "paragraphs": [
+            {
+              "text": "Fall Collection",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Fall Collection",
+                  "font": {
+                    "latin": "Radley Italics",
+                    "eastAsian": "Radley Italics",
+                    "complexScript": "Radley Italics"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": true,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley Italics",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "placeholderType": null,
+          "text": "2030",
+          "paragraphs": [
+            {
+              "text": "2030",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2030",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "14",
+          "name": "TextBox 14",
+          "placeholderType": null,
+          "text": "More Samples",
+          "paragraphs": [
+            {
+              "text": "More Samples",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "More Samples",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "15",
+          "name": "TextBox 15",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic.  ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 9,
+      "path": "ppt/slides/slide9.xml",
+      "relationshipPath": "ppt/slides/_rels/slide9.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 7,
+        "pictures": 0,
+        "groups": 2,
+        "textBoxes": 6
+      },
+      "shapes": [
+        {
+          "shapeId": "5",
+          "name": "AutoShape 5",
+          "zOrder": 1,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12288331,
+            "yEmu": 2623968,
+            "widthEmu": 6457380,
+            "heightEmu": 0,
+            "xInches": 13.4387,
+            "yInches": 2.8696,
+            "widthInches": 7.0619,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1551043,
+            "yEmu": 6478044,
+            "widthEmu": 5999669,
+            "heightEmu": 704013,
+            "xInches": 1.6962,
+            "yInches": 7.0845,
+            "widthInches": 6.5613,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Additional Pieces",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1551043,
+            "yEmu": 7537751,
+            "widthEmu": 8440506,
+            "heightEmu": 1656458,
+            "xInches": 1.6962,
+            "yInches": 8.2434,
+            "widthInches": 9.2306,
+            "heightInches": 1.8115,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12288331,
+            "yEmu": 3277055,
+            "widthEmu": 4440392,
+            "heightEmu": 1237358,
+            "xInches": 13.4387,
+            "yInches": 3.5838,
+            "widthInches": 4.8561,
+            "heightInches": 1.3532,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12288331,
+            "yEmu": 5316308,
+            "widthEmu": 4440392,
+            "heightEmu": 1237358,
+            "xInches": 13.4387,
+            "yInches": 5.814,
+            "widthInches": 4.8561,
+            "heightInches": 1.3532,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12288331,
+            "yEmu": 7355560,
+            "widthEmu": 4440392,
+            "heightEmu": 1237358,
+            "xInches": 13.4387,
+            "yInches": 8.0441,
+            "widthInches": 4.8561,
+            "heightInches": 1.3532,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12288331,
+            "yEmu": 1767305,
+            "widthEmu": 4678696,
+            "heightEmu": 704013,
+            "xInches": 13.4387,
+            "yInches": 1.9327,
+            "widthInches": 5.1167,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Accessories",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "Additional Pieces",
+          "paragraphs": [
+            {
+              "text": "Additional Pieces",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Additional Pieces",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "9",
+          "name": "TextBox 9",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. Choose from over a thousand professionally-made templates to fit any objective or topic. Make it your own by customizing it with text and photos. ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "12",
+          "name": "TextBox 12",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "13",
+          "name": "TextBox 13",
+          "placeholderType": null,
+          "text": "Accessories",
+          "paragraphs": [
+            {
+              "text": "Accessories",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Accessories",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 10,
+      "path": "ppt/slides/slide10.xml",
+      "relationshipPath": "ppt/slides/_rels/slide10.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 11,
+        "pictures": 0,
+        "groups": 3,
+        "textBoxes": 6
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "28",
+          "name": "TextBox 28",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 13328967,
+            "yEmu": 2157439,
+            "widthEmu": 2775048,
+            "heightEmu": 530620,
+            "xInches": 14.5767,
+            "yInches": 2.3594,
+            "widthInches": 3.0348,
+            "heightInches": 0.5803,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Fall Collection",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "29",
+          "name": "AutoShape 29",
+          "zOrder": 3,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 11583140,
+            "yEmu": 2186014,
+            "widthEmu": 6457380,
+            "heightEmu": 0,
+            "xInches": 12.6675,
+            "yInches": 2.3907,
+            "widthInches": 7.0619,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 28575,
+            "widthPt": 2.25,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "30",
+          "name": "Freeform 30",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9875727,
+            "yEmu": 5308622,
+            "widthEmu": 287953,
+            "heightEmu": 287953,
+            "xInches": 10.8002,
+            "yInches": 5.8056,
+            "widthInches": 0.3149,
+            "heightInches": 0.3149,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "31",
+          "name": "Freeform 31",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9875727,
+            "yEmu": 5833869,
+            "widthEmu": 287953,
+            "heightEmu": 287953,
+            "xInches": 10.8002,
+            "yInches": 6.38,
+            "widthInches": 0.3149,
+            "heightInches": 0.3149,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "32",
+          "name": "Freeform 32",
+          "zOrder": 6,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9875727,
+            "yEmu": 6359116,
+            "widthEmu": 287953,
+            "heightEmu": 287953,
+            "xInches": 10.8002,
+            "yInches": 6.9544,
+            "widthInches": 0.3149,
+            "heightInches": 0.3149,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "33",
+          "name": "TextBox 33",
+          "zOrder": 7,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9810076,
+            "yEmu": 3200146,
+            "widthEmu": 3123740,
+            "heightEmu": 704013,
+            "xInches": 10.7284,
+            "yInches": 3.4997,
+            "widthInches": 3.4162,
+            "heightInches": 0.7699,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Get in touch",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "34",
+          "name": "TextBox 34",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9842717,
+            "yEmu": 4093616,
+            "widthEmu": 5365074,
+            "heightEmu": 818258,
+            "xInches": 10.7641,
+            "yInches": 4.4768,
+            "widthInches": 5.8673,
+            "heightInches": 0.8949,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "35",
+          "name": "TextBox 35",
+          "zOrder": 9,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 12798769,
+            "yEmu": 7577048,
+            "widthEmu": 3541981,
+            "heightEmu": 767664,
+            "xInches": 13.9969,
+            "yInches": 8.2864,
+            "widthInches": 3.8736,
+            "heightInches": 0.8395,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "-Charina",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "36",
+          "name": "TextBox 36",
+          "zOrder": 10,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10338082,
+            "yEmu": 5175272,
+            "widthEmu": 4869708,
+            "heightEmu": 1471797,
+            "xInches": 11.3059,
+            "yInches": 5.6597,
+            "widthInches": 5.3256,
+            "heightInches": 1.6096,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "123-456-7890hello@reallygreatsite.comwww.reallygreatsite.com",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "37",
+          "name": "TextBox 37",
+          "zOrder": 11,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 15440861,
+            "yEmu": 1094899,
+            "widthEmu": 1269156,
+            "heightEmu": 530620,
+            "xInches": 16.8863,
+            "yInches": 1.1974,
+            "widthInches": 1.388,
+            "heightInches": 0.5803,
+            "rotationDegrees": -90.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "2030",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "28",
+          "name": "TextBox 28",
+          "placeholderType": null,
+          "text": "Fall Collection",
+          "paragraphs": [
+            {
+              "text": "Fall Collection",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Fall Collection",
+                  "font": {
+                    "latin": "Radley Italics",
+                    "eastAsian": "Radley Italics",
+                    "complexScript": "Radley Italics"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": true,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley Italics",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "33",
+          "name": "TextBox 33",
+          "placeholderType": null,
+          "text": "Get in touch",
+          "paragraphs": [
+            {
+              "text": "Get in touch ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Get in touch ",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 41.57,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "34",
+          "name": "TextBox 34",
+          "placeholderType": null,
+          "text": "Present with ease and wow any audience with Canva Presentations.",
+          "paragraphs": [
+            {
+              "text": "Present with ease and wow any audience with Canva Presentations. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Present with ease and wow any audience with Canva Presentations. ",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "35",
+          "name": "TextBox 35",
+          "placeholderType": null,
+          "text": "-Charina",
+          "paragraphs": [
+            {
+              "text": "-Charina",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "-Charina",
+                  "font": {
+                    "latin": "Amsterdam Three",
+                    "eastAsian": "Amsterdam Three",
+                    "complexScript": "Amsterdam Three"
+                  },
+                  "fontSize": 44.74,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Amsterdam Three",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "36",
+          "name": "TextBox 36",
+          "placeholderType": null,
+          "text": "123-456-7890\nhello@reallygreatsite.com\nwww.reallygreatsite.com",
+          "paragraphs": [
+            {
+              "text": "123-456-7890",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "123-456-7890",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "hello@reallygreatsite.com",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "hello@reallygreatsite.com",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "www.reallygreatsite.com",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "www.reallygreatsite.com",
+                  "font": {
+                    "latin": "Aileron",
+                    "eastAsian": "Aileron",
+                    "complexScript": "Aileron"
+                  },
+                  "fontSize": 22.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Aileron",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "37",
+          "name": "TextBox 37",
+          "placeholderType": null,
+          "text": "2030",
+          "paragraphs": [
+            {
+              "text": "2030",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "2030",
+                  "font": {
+                    "latin": "Radley",
+                    "eastAsian": "Radley",
+                    "complexScript": "Radley"
+                  },
+                  "fontSize": 31.09,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Radley",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    }
+  ],
+  "assets": [
+    {
+      "pptxPath": "ppt/media/image1.jpeg",
+      "fileName": "image1.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1056434,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image1.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image10.jpeg",
+      "fileName": "image10.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1269595,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image10.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image11.jpeg",
+      "fileName": "image11.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 449370,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image11.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image12.jpeg",
+      "fileName": "image12.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 513820,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image12.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image13.png",
+      "fileName": "image13.png",
+      "contentType": "image/png",
+      "sizeBytes": 1264,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image13.png"
+    },
+    {
+      "pptxPath": "ppt/media/image14.svg",
+      "fileName": "image14.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 2702,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image14.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image15.png",
+      "fileName": "image15.png",
+      "contentType": "image/png",
+      "sizeBytes": 664,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image15.png"
+    },
+    {
+      "pptxPath": "ppt/media/image16.svg",
+      "fileName": "image16.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 754,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image16.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image17.png",
+      "fileName": "image17.png",
+      "contentType": "image/png",
+      "sizeBytes": 1724,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image17.png"
+    },
+    {
+      "pptxPath": "ppt/media/image18.svg",
+      "fileName": "image18.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 3539,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image18.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image19.jpeg",
+      "fileName": "image19.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 611358,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image19.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image2.png",
+      "fileName": "image2.png",
+      "contentType": "image/png",
+      "sizeBytes": 40353,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image2.png"
+    },
+    {
+      "pptxPath": "ppt/media/image20.jpeg",
+      "fileName": "image20.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 629721,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image20.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image21.jpeg",
+      "fileName": "image21.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 641865,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image21.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image22.jpeg",
+      "fileName": "image22.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 454977,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image22.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image23.jpeg",
+      "fileName": "image23.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 532898,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image23.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image24.jpeg",
+      "fileName": "image24.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 403097,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image24.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image25.jpeg",
+      "fileName": "image25.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 785592,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image25.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image26.jpeg",
+      "fileName": "image26.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 518111,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image26.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image27.jpeg",
+      "fileName": "image27.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 197505,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image27.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image28.png",
+      "fileName": "image28.png",
+      "contentType": "image/png",
+      "sizeBytes": 1323,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image28.png"
+    },
+    {
+      "pptxPath": "ppt/media/image29.svg",
+      "fileName": "image29.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 908,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image29.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image3.jpeg",
+      "fileName": "image3.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 663697,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image3.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image30.png",
+      "fileName": "image30.png",
+      "contentType": "image/png",
+      "sizeBytes": 81709,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image30.png"
+    },
+    {
+      "pptxPath": "ppt/media/image31.svg",
+      "fileName": "image31.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 1218,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image31.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image32.png",
+      "fileName": "image32.png",
+      "contentType": "image/png",
+      "sizeBytes": 35482,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image32.png"
+    },
+    {
+      "pptxPath": "ppt/media/image33.svg",
+      "fileName": "image33.svg",
+      "contentType": "image/svg+xml",
+      "sizeBytes": 1831,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image33.svg"
+    },
+    {
+      "pptxPath": "ppt/media/image4.jpeg",
+      "fileName": "image4.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1465338,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image4.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image5.jpeg",
+      "fileName": "image5.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 337569,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image5.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image6.jpeg",
+      "fileName": "image6.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1105907,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image6.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image7.jpeg",
+      "fileName": "image7.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 162228,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image7.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image8.jpeg",
+      "fileName": "image8.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 408964,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image8.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image9.jpeg",
+      "fileName": "image9.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 849028,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image9.jpeg"
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "checks": {
+      "slidesMatchInventory": true,
+      "layoutsMatchInventory": true,
+      "mastersMatchInventory": true,
+      "assetsMatchInventory": true,
+      "themeParsed": true
+    },
+    "counts": {
+      "slides": 10,
+      "layouts": 11,
+      "masters": 1,
+      "assets": 33
+    }
+  }
+}

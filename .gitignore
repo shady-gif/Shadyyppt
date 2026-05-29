@@ -1,0 +1,12 @@
+.DS_Store
+__pycache__/
+*.py[cod]
+
+# Local/generated deck outputs
+ppt-template-reader/outputs/generated/
+ppt-template-reader/web/generated-previews/
+ppt-template-reader/dist/generated-previews/
+
+# Dependency folders
+node_modules/
+.vercel/

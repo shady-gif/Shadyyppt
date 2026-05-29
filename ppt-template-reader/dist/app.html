@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Prompt on PPT - Studio</title>
+    <link rel="stylesheet" href="/app.css" />
+  </head>
+  <body>
+    <main class="app" aria-label="Prompt on PPT generator">
+      <section class="workspace" aria-label="Deck input">
+        <header class="topbar">
+          <a class="brand" href="/" aria-label="Back to Prompt on PPT landing page">
+            <span class="brandMark"></span>
+            <span>Prompt on PPT</span>
+          </a>
+          <button id="generateBtn" type="button">Generate</button>
+        </header>
+
+        <section class="intro" aria-labelledby="studioTitle">
+          <p class="eyebrow">AI presentation studio</p>
+          <h1 id="studioTitle">Turn source text into a finished deck.</h1>
+          <p id="templateMeta">Loading template...</p>
+        </section>
+
+        <form class="editor">
+          <label for="templateSelect">Template</label>
+          <select id="templateSelect" aria-label="Choose presentation template"></select>
+
+          <figure class="templatePreview" aria-label="Selected template preview">
+            <img id="templatePreviewImage" alt="Selected presentation template preview" />
+          </figure>
+
+          <label for="topic">Topic</label>
+          <input id="topic" type="text" placeholder="Optional, e.g. Elon Musk" autocomplete="off" />
+
+          <div class="labelRow">
+            <label for="sourceText">Source Text</label>
+            <span>500-2000 words</span>
+          </div>
+          <p class="inputHint">Paste the source once. The generator segments each sentence across the deck without repeating it.</p>
+          <textarea id="sourceText" placeholder="Paste your article, notes, research, or narrative here..."></textarea>
+        </form>
+      </section>
+
+      <section class="preview" aria-label="Generated deck preview">
+        <header class="previewHeader">
+          <div>
+            <p class="eyebrow">Output</p>
+            <h2>Generated Slides</h2>
+          </div>
+          <a id="downloadPptxLink" download hidden>Download PPTX</a>
+        </header>
+
+        <p id="status" class="status">Paste text and generate.</p>
+
+        <figure id="generatedPreview" class="generatedPreview" hidden>
+          <img id="generatedPreviewImage" alt="Generated PowerPoint preview" />
+        </figure>
+
+        <div id="slides" class="slides" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <script src="/config.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>

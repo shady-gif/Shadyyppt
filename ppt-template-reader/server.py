@@ -1,0 +1,431 @@
+from __future__ import annotations
+
+import json
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
+import os
+from pathlib import Path
+import subprocess
+import sys
+from urllib.parse import urlparse
+
+
+ROOT = Path(__file__).parent.resolve()
+WEB_DIR = ROOT / "web"
+GENERATED_DIR = ROOT / "outputs" / "generated"
+GENERATED_PREVIEW_DIR = WEB_DIR / "generated-previews"
+TEMPLATE_DIR = ROOT / "templates"
+TEMPLATE_PREVIEW_DIR = WEB_DIR / "template-previews"
+TEMPLATE_REGISTRY_PATH = ROOT / "outputs" / "template-registry.json"
+BUILTIN_TEMPLATES = {
+    "template-1-4": {
+        "name": "Template 1 (4)",
+        "jsonPath": ROOT / "outputs" / "template-1.json",
+        "pptxPath": ROOT / "templates" / "template-1-4.pptx",
+        "previewPath": "template-previews/template-1-4.pptx.png",
+    },
+    "diagram-infographics": {
+        "name": "Diagram Infographics",
+        "jsonPath": ROOT / "outputs" / "diagram-infographics.json",
+        "pptxPath": ROOT / "templates" / "diagram-infographics.pptx",
+        "previewPath": "template-previews/diagram-infographics.pptx.png",
+    },
+    "tell-tale": {
+        "name": "Tell Tale",
+        "jsonPath": ROOT / "outputs" / "tell-tale.json",
+        "pptxPath": ROOT / "templates" / "tell-tale.pptx",
+        "previewPath": "template-previews/tell-tale.pptx.png",
+    },
+}
+DEFAULT_TEMPLATE_ID = "template-1-4"
+
+sys.path.insert(0, str(ROOT / "src"))
+
+from content_generator import ContentGenerator  # noqa: E402
+from pptx_exporter import PptxExporter  # noqa: E402
+from template_converter import convert_pptx_to_json  # noqa: E402
+
+
+class AppHandler(SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(*args, directory=str(WEB_DIR), **kwargs)
+
+    def end_headers(self) -> None:
+        self.send_header("Access-Control-Allow-Origin", os.environ.get("CORS_ORIGIN", "*"))
+        self.send_header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+        self.send_header("Access-Control-Allow-Headers", "Content-Type, X-Filename")
+        super().end_headers()
+
+    def do_OPTIONS(self) -> None:
+        self.send_response(204)
+        self.end_headers()
+
+    def do_GET(self) -> None:
+        parsed = urlparse(self.path)
+        if parsed.path == "/health":
+            self._send_json({"ok": True})
+            return
+
+        if parsed.path == "/api/template-summary":
+            template_id = _template_id_from_query(parsed.query)
+            self._send_json(_template_summary(template_id))
+            return
+
+        if parsed.path == "/api/templates":
+            self._send_json(_templates_payload())
+            return
+
+        if parsed.path.startswith("/outputs/"):
+            file_path = ROOT / parsed.path.lstrip("/")
+            if file_path.exists() and file_path.is_file():
+                self.send_response(200)
+                self.send_header("Content-Type", _content_type(file_path))
+                self.send_header("Content-Disposition", f'attachment; filename="{file_path.name}"')
+                self.end_headers()
+                self.wfile.write(file_path.read_bytes())
+                return
+            self.send_error(404, "File not found")
+            return
+
+        super().do_GET()
+
+    def do_POST(self) -> None:
+        parsed = urlparse(self.path)
+        if parsed.path == "/api/upload-template":
+            self._handle_template_upload()
+            return
+
+        if parsed.path != "/api/generate":
+            self.send_error(404, "Not found")
+            return
+
+        try:
+            body = self._read_json_body()
+            raw_text = body.get("text", "")
+            topic = body.get("topic") or None
+            template_id = body.get("templateId") or DEFAULT_TEMPLATE_ID
+            template_config = _template_config(template_id)
+            template = json.loads(template_config["jsonPath"].read_text(encoding="utf-8"))
+            result = ContentGenerator(template, template_id=template_id).generate(raw_text, topic)
+
+            GENERATED_DIR.mkdir(parents=True, exist_ok=True)
+            output_stem = _safe_output_stem(result["topic"])
+            output_path = GENERATED_DIR / f"{output_stem}-filled-template.json"
+            output_path.write_text(
+                json.dumps(result["filledTemplateJson"], indent=2),
+                encoding="utf-8",
+            )
+            pptx_path = GENERATED_DIR / f"{output_stem}-filled-deck.pptx"
+            PptxExporter(template_config["pptxPath"]).export(result["filledTemplateJson"], pptx_path)
+            pptx_preview_path = _render_pptx_preview(pptx_path)
+
+            self._send_json(
+                {
+                    "topic": result["topic"],
+                    "templateId": template_id,
+                    "templateName": template_config["name"],
+                    "mapperSource": result["mapperSource"],
+                    "curatedContent": result["curatedContent"],
+                    "updates": result["updates"],
+                    "templateMap": result["filledTemplateJson"]["generation"]["templateMap"],
+                    "slidePreview": _slide_preview(result["filledTemplateJson"]),
+                    "downloadPath": f"outputs/generated/{output_path.name}",
+                    "pptxDownloadPath": f"outputs/generated/{pptx_path.name}",
+                    "pptxPreviewPath": pptx_preview_path,
+                }
+            )
+        except ValueError as exc:
+            self._send_json({"error": str(exc)}, status=400)
+        except Exception as exc:
+            self._send_json({"error": f"Generation failed: {exc}"}, status=500)
+
+    def _handle_template_upload(self) -> None:
+        try:
+            filename = self.headers.get("X-Filename", "uploaded-template.pptx")
+            if not filename.lower().endswith(".pptx"):
+                raise ValueError("Please upload a .pptx file.")
+
+            length = int(self.headers.get("Content-Length", "0"))
+            if length <= 0:
+                raise ValueError("Uploaded file is empty.")
+
+            template_name = Path(filename).stem
+            template_id = _unique_template_id(_safe_output_stem(template_name))
+            pptx_path = TEMPLATE_DIR / f"{template_id}.pptx"
+            json_path = ROOT / "outputs" / f"{template_id}.json"
+
+            TEMPLATE_DIR.mkdir(parents=True, exist_ok=True)
+            pptx_path.write_bytes(self.rfile.read(length))
+            converted = convert_pptx_to_json(pptx_path, json_path)
+            preview_path = _render_template_preview(pptx_path)
+
+            registry = _uploaded_templates()
+            registry[template_id] = {
+                "name": _display_name(template_name),
+                "jsonPath": str(json_path),
+                "pptxPath": str(pptx_path),
+                "previewPath": preview_path,
+            }
+            _save_uploaded_templates(registry)
+
+            self._send_json(
+                {
+                    "template": _template_payload(template_id, _template_config(template_id)),
+                    "summary": {
+                        "slides": len(converted.get("slides", [])),
+                        "layouts": len(converted.get("layouts", [])),
+                        "assets": len(converted.get("assets", [])),
+                        "validation": converted.get("validation", {}),
+                    },
+                }
+            )
+        except ValueError as exc:
+            self._send_json({"error": str(exc)}, status=400)
+        except Exception as exc:
+            self._send_json({"error": f"Upload failed: {exc}"}, status=500)
+
+    def _read_json_body(self) -> dict:
+        length = int(self.headers.get("Content-Length", "0"))
+        raw = self.rfile.read(length).decode("utf-8")
+        return json.loads(raw or "{}")
+
+    def _send_json(self, payload: dict, status: int = 200) -> None:
+        data = json.dumps(payload, indent=2).encode("utf-8")
+        self.send_response(status)
+        self.send_header("Content-Type", "application/json; charset=utf-8")
+        self.send_header("Content-Length", str(len(data)))
+        self.end_headers()
+        self.wfile.write(data)
+
+
+def _template_summary(template_id: str = DEFAULT_TEMPLATE_ID) -> dict:
+    template_config = _template_config(template_id)
+    template = json.loads(template_config["jsonPath"].read_text(encoding="utf-8"))
+    return {
+        "templateId": template_id,
+        "templateName": template_config["name"],
+        "templatePath": str(template_config["jsonPath"]),
+        "pptxPath": str(template_config["pptxPath"]),
+        "previewPath": template_config.get("previewPath"),
+        "slides": len(template.get("slides", [])),
+        "layouts": len(template.get("layouts", [])),
+        "assets": len(template.get("assets", [])),
+    }
+
+
+def _templates_payload() -> dict:
+    return {
+        "defaultTemplateId": DEFAULT_TEMPLATE_ID,
+        "templates": [
+            _template_payload(template_id, config)
+            for template_id, config in _visible_templates().items()
+        ],
+    }
+
+
+def _template_config(template_id: str) -> dict:
+    templates = _visible_templates()
+    if template_id not in templates:
+        raise ValueError(f"Unknown template: {template_id}")
+    return templates[template_id]
+
+
+def _all_templates() -> dict:
+    return {**BUILTIN_TEMPLATES, **_uploaded_templates()}
+
+
+def _visible_templates() -> dict:
+    return _all_templates()
+
+
+def _uploaded_templates() -> dict:
+    if not TEMPLATE_REGISTRY_PATH.exists():
+        return {}
+    raw_templates = json.loads(TEMPLATE_REGISTRY_PATH.read_text(encoding="utf-8"))
+    return {
+        template_id: {
+            "name": config["name"],
+            "jsonPath": Path(config["jsonPath"]),
+            "pptxPath": Path(config["pptxPath"]),
+            "previewPath": config.get("previewPath"),
+        }
+        for template_id, config in raw_templates.items()
+    }
+
+
+def _save_uploaded_templates(registry: dict) -> None:
+    TEMPLATE_REGISTRY_PATH.parent.mkdir(parents=True, exist_ok=True)
+    payload = {
+        template_id: {
+            "name": config["name"],
+            "jsonPath": str(config["jsonPath"]),
+            "pptxPath": str(config["pptxPath"]),
+            "previewPath": config.get("previewPath"),
+        }
+        for template_id, config in registry.items()
+    }
+    TEMPLATE_REGISTRY_PATH.write_text(json.dumps(payload, indent=2), encoding="utf-8")
+
+
+def _template_payload(template_id: str, config: dict) -> dict:
+    return {
+        "id": template_id,
+        "name": config["name"],
+        "jsonPath": str(config["jsonPath"]),
+        "pptxPath": str(config["pptxPath"]),
+        "previewPath": config.get("previewPath"),
+    }
+
+
+def _template_id_from_query(query: str) -> str:
+    for part in query.split("&"):
+        if not part:
+            continue
+        key, _, value = part.partition("=")
+        if key == "templateId" and value:
+            return value
+    return DEFAULT_TEMPLATE_ID
+
+
+def _slide_preview(filled_template: dict) -> list[dict]:
+    size = filled_template.get("presentation", {}).get("size", {})
+    width = size.get("widthInches") or 20
+    height = size.get("heightInches") or 11.25
+    field_lookup = _field_lookup(filled_template.get("generation", {}).get("templateMap", {}))
+
+    previews = []
+    for slide in filled_template.get("slides", []):
+        slide_index = slide.get("index")
+        elements = []
+        for shape in slide.get("shapes", []):
+            text = shape.get("text")
+            geometry = shape.get("geometry") or {}
+            if not text or not geometry:
+                continue
+
+            elements.append(
+                {
+                    "shapeId": shape.get("shapeId"),
+                    "field": field_lookup.get((str(slide_index), str(shape.get("shapeId")))),
+                    "text": text,
+                    "x": _percent(geometry.get("xInches"), width),
+                    "y": _percent(geometry.get("yInches"), height),
+                    "w": _percent(geometry.get("widthInches"), width),
+                    "h": _percent(geometry.get("heightInches"), height),
+                    "rotation": geometry.get("rotationDegrees") or 0,
+                }
+            )
+
+        previews.append(
+            {
+                "index": slide_index,
+                "purpose": filled_template.get("generation", {}).get("templateMap", {}).get(str(slide_index), {}).get("purpose"),
+                "elements": elements,
+            }
+        )
+
+    return previews
+
+
+def _field_lookup(template_map: dict) -> dict[tuple[str, str], str]:
+    lookup = {}
+    for slide_index, slide_map in template_map.items():
+        for field, shape_id in slide_map.get("fields", {}).items():
+            lookup[(str(slide_index), str(shape_id))] = field
+    return lookup
+
+
+def _percent(value: float | None, total: float) -> float:
+    if value is None:
+        return 0
+    return round((value / total) * 100, 4)
+
+
+def _render_pptx_preview(pptx_path: Path) -> str | None:
+    GENERATED_PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
+    expected_name = f"{pptx_path.name}.png"
+    expected_path = GENERATED_PREVIEW_DIR / expected_name
+
+    try:
+        subprocess.run(
+            ["qlmanage", "-t", "-s", "900", "-o", str(GENERATED_PREVIEW_DIR), str(pptx_path)],
+            check=False,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            timeout=12,
+        )
+    except Exception:
+        return None
+
+    if expected_path.exists():
+        return f"generated-previews/{expected_name}"
+    return None
+
+
+def _render_template_preview(pptx_path: Path) -> str | None:
+    TEMPLATE_PREVIEW_DIR.mkdir(parents=True, exist_ok=True)
+    expected_name = f"{pptx_path.name}.png"
+    expected_path = TEMPLATE_PREVIEW_DIR / expected_name
+
+    try:
+        subprocess.run(
+            ["qlmanage", "-t", "-s", "900", "-o", str(TEMPLATE_PREVIEW_DIR), str(pptx_path)],
+            check=False,
+            stdout=subprocess.DEVNULL,
+            stderr=subprocess.DEVNULL,
+            timeout=12,
+        )
+    except Exception:
+        return None
+
+    if expected_path.exists():
+        return f"template-previews/{expected_name}"
+    return None
+
+
+def _content_type(path: Path) -> str:
+    if path.suffix == ".pptx":
+        return "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    if path.suffix == ".json":
+        return "application/json"
+    return "application/octet-stream"
+
+
+def _safe_output_stem(topic: str) -> str:
+    stem = topic.strip().lower()
+    stem = "".join(char if char.isalnum() else "-" for char in stem)
+    stem = "-".join(part for part in stem.split("-") if part)
+    return stem or "generated"
+
+
+def _unique_template_id(stem: str) -> str:
+    base = stem or "uploaded-template"
+    existing = _all_templates()
+    if base not in existing:
+        return base
+
+    index = 2
+    while f"{base}-{index}" in existing:
+        index += 1
+    return f"{base}-{index}"
+
+
+def _display_name(value: str) -> str:
+    words = [word for word in re_split_slug(value) if word]
+    return " ".join(word.capitalize() for word in words) or "Uploaded Template"
+
+
+def re_split_slug(value: str) -> list[str]:
+    normalized = "".join(char if char.isalnum() else " " for char in value)
+    return normalized.split()
+
+
+def main() -> None:
+    host = os.environ.get("HOST", "127.0.0.1")
+    port = int(os.environ.get("PORT", "8000"))
+    server = ThreadingHTTPServer((host, port), AppHandler)
+    print(f"Open http://{host}:{port}")
+    server.serve_forever()
+
+
+if __name__ == "__main__":
+    main()
