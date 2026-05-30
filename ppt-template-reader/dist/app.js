@@ -2,6 +2,7 @@ const templateMeta = document.querySelector("#templateMeta");
 const templateSelect = document.querySelector("#templateSelect");
 const templatePreviewImage = document.querySelector("#templatePreviewImage");
 const sourceText = document.querySelector("#sourceText");
+const topic = document.querySelector("#topic");
 const generateBtn = document.querySelector("#generateBtn");
 const statusEl = document.querySelector("#status");
 const generatedPreview = document.querySelector("#generatedPreview");
@@ -100,11 +101,19 @@ generateBtn.addEventListener("click", async () => {
   generateBtn.dataset.busy = "true";
 
   try {
+    const topicValue = topic.value.trim();
+    const topicWordCount = topicValue ? topicValue.split(/\s+/).length : 0;
+    if (topicWordCount < 1 || topicWordCount > 10) {
+      setStatus("Topic must be between 1 and 10 words and match the pasted source text.", "error");
+      return;
+    }
+
     const response = await fetch(apiUrl("/api/generate"), {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         templateId: templateSelect.value,
+        topic: topicValue,
         text: sourceText.value,
       }),
     });
