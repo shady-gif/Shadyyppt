@@ -7,7 +7,7 @@ import re
 from template_map import TEMPLATE_MAP
 from semantic_mapper import build_template_map
 from ai_semantic_mapper import improve_template_map_with_ai
-from openai_content import generate_curated_content_with_openai
+from openai_content import generate_text_box_updates_with_openai
 from template_profiles import get_template_profile
 
 
@@ -34,16 +34,27 @@ class ContentGenerator:
         topic = _format_topic((topic or _guess_topic(cleaned) or "Generated Profile").strip())
 
         fallback_curated = self._curate_content(topic, paragraphs, sentences)
-        curated, openai_metadata = generate_curated_content_with_openai(
+        fallback_curated = _expand_curated_for_template(
+            fallback_curated,
+            self.template_map,
+            self.profile,
+        )
+        text_box_updates, openai_metadata = generate_text_box_updates_with_openai(
             topic=topic,
             source_text=cleaned,
             profile=self.profile,
             template_id=self.template_id,
-            template_map=self.template_map,
+            template_text_boxes=_template_text_box_inventory(self.template),
             fallback_curated=fallback_curated,
         )
-        curated = curated or fallback_curated
-        updates = self._build_updates(curated)
+
+        if text_box_updates:
+            curated = _curated_from_text_box_updates(topic, fallback_curated, text_box_updates)
+            updates = text_box_updates
+        else:
+            curated = fallback_curated
+            updates = self._build_updates(curated)
+
         filled = self._apply_updates(updates)
 
         return {
@@ -138,7 +149,7 @@ class ContentGenerator:
             for field_name, shape_id in slide_map["fields"].items():
                 field_value = content.get(field_name)
                 if field_value is None:
-                    field_value = _fallback_field_value(field_name, curated, int(slide_index))
+                    field_value = _fallback_field_value(field_name, curated, int(slide_index), self.profile)
                 if field_value is None:
                     continue
                 updates.append(
@@ -272,29 +283,169 @@ def _build_fact_pool(topic: str, paragraphs: list[str], sentences: list[str]) ->
     return facts[:40]
 
 
-def _fallback_field_value(field_name: str, curated: dict, slide_index: int) -> str | None:
-    facts = curated.get("unusedFacts") or _curated_fact_sequence(curated)
-    if not facts:
-        return None
+def _template_text_box_inventory(template: dict) -> list[dict]:
+    inventory = []
+    for slide in template.get("slides", []):
+        slide_index = int(slide.get("index", 0))
+        shapes = {
+            str(shape.get("shapeId")): shape
+            for shape in slide.get("shapes", [])
+            if shape.get("shapeId")
+        }
+        text_boxes = []
+        for text_box in slide.get("texts", []):
+            shape_id = str(text_box.get("shapeId") or "")
+            original_text = _clean_text(text_box.get("text") or "")
+            if not shape_id or not original_text:
+                continue
 
+            shape = shapes.get(shape_id, {})
+            geometry = shape.get("geometry") or {}
+            font_size = _font_size(text_box)
+            text_boxes.append(
+                {
+                    "shapeId": shape_id,
+                    "name": text_box.get("name") or f"TextBox {shape_id}",
+                    "originalText": _shorten(original_text, 180),
+                    "fontSize": font_size,
+                    "x": geometry.get("xInches"),
+                    "y": geometry.get("yInches"),
+                    "width": geometry.get("widthInches"),
+                    "height": geometry.get("heightInches"),
+                    "maxChars": _box_text_budget(original_text, font_size, geometry),
+                }
+            )
+        if text_boxes:
+            inventory.append({"index": slide_index, "textBoxes": text_boxes})
+    return inventory
+
+
+def _font_size(text_box: dict) -> float:
+    sizes = []
+    for paragraph in text_box.get("paragraphs", []):
+        for run in paragraph.get("runs", []):
+            size = run.get("fontSize")
+            if size:
+                sizes.append(float(size))
+    return max(sizes) if sizes else 0
+
+
+def _box_text_budget(text: str, font_size: float, geometry: dict) -> int:
+    if _is_page_marker(text):
+        return len(text)
+    height = float(geometry.get("heightInches") or 0)
+    if font_size >= 100:
+        return 28
+    if font_size >= 55:
+        return 48
+    if font_size >= 35:
+        return 70
+    if height and height <= 1.2:
+        return 110
+    return 190
+
+
+def _curated_from_text_box_updates(topic: str, fallback_curated: dict, updates: list[dict]) -> dict:
+    curated = {
+        "deckTitle": topic,
+        "subtitle": fallback_curated.get("subtitle", ""),
+        "byline": fallback_curated.get("byline", ""),
+        "year": fallback_curated.get("year", str(date.today().year)),
+        "unusedFacts": fallback_curated.get("unusedFacts", []),
+        "slides": {},
+    }
+    role_counts = {}
+    for update in updates:
+        slide_index = str(update["slideIndex"])
+        role = str(update.get("role") or update.get("field") or "text")
+        text = str(update.get("newText") or "").strip()
+        if not text:
+            continue
+        count_key = (slide_index, role)
+        role_counts[count_key] = role_counts.get(count_key, 0) + 1
+        field = role if role_counts[count_key] == 1 else f"{role}{role_counts[count_key]}"
+        curated["slides"].setdefault(slide_index, {})[field] = text
+    return curated
+
+
+def _expand_curated_for_template(curated: dict, template_map: dict, profile: dict) -> dict:
+    expanded = deepcopy(curated)
+    expanded.setdefault("slides", {})
+
+    for slide_index, slide_map in template_map.items():
+        slide_number = int(slide_index)
+        slide = expanded["slides"].setdefault(str(slide_index), {})
+        for field_name in (slide_map.get("fields") or {}).keys():
+            if slide.get(field_name):
+                continue
+            field_value = _fallback_field_value(field_name, expanded, slide_number, profile)
+            if field_value is not None:
+                slide[field_name] = field_value
+
+    return expanded
+
+
+def _fallback_field_value(
+    field_name: str,
+    curated: dict,
+    slide_index: int,
+    profile: dict | None = None,
+) -> str | None:
+    facts = curated.get("unusedFacts") or _curated_fact_sequence(curated)
+    profile = profile or {}
+
+    if field_name == "title":
+        return curated.get("deckTitle")
+    if field_name == "subtitle":
+        return curated.get("subtitle") or profile.get("subtitle")
+    if field_name == "byline":
+        return curated.get("byline", "")
+    if field_name == "year":
+        return curated.get("year", str(date.today().year))
+    if field_name == "section":
+        if slide_index <= 1:
+            return profile.get("name") or "Overview"
+        return _section(profile.get("sections") or [], slide_index - 2)
+    if field_name == "headline":
+        fact_index = max(slide_index - 2, 0)
+        fact = _fact_at(facts, fact_index)
+        if fact:
+            return _heading_from_fact(fact)
+        return _section(profile.get("sections") or [], slide_index - 2)
     if field_name.startswith("heading"):
         heading_index = _field_number(field_name)
         fact_index = slide_index + heading_index - 2
-        if fact_index < len(facts):
-            return _heading_from_fact(facts[fact_index])
+        fact = _fact_at(facts, fact_index)
+        if fact:
+            return _heading_from_fact(fact)
         return None
 
     if field_name.startswith("body"):
         body_index = _field_number(field_name)
         fact_index = slide_index + body_index - 2
-        if fact_index < len(facts):
-            return facts[fact_index]
+        fact = _fact_at(facts, fact_index)
+        if fact:
+            return fact
         return None
+
+    if field_name.startswith("line"):
+        line_index = _field_number(field_name)
+        fact_index = slide_index + line_index - 2
+        fact = _fact_at(facts, fact_index)
+        if fact:
+            return _shorten(fact, 90)
+        return curated.get("deckTitle")
 
     if field_name == "caption":
         return "Key detail"
 
     return None
+
+
+def _fact_at(facts: list[str], index: int) -> str | None:
+    if not facts:
+        return None
+    return facts[index % len(facts)]
 
 
 def _build_cleanup_updates(template: dict, curated: dict, updated_keys: set[tuple[int, str]]) -> list[dict]:
@@ -346,10 +497,14 @@ def _cleanup_replacement(
     lowered = normalized.lower()
     topic = curated.get("deckTitle", "Generated Topic")
 
+    if lowered == "our":
+        return ""
     if _is_clearable_template_filler(lowered):
         return ""
     if _is_date_filler(normalized):
         return curated.get("year", str(date.today().year))
+    if _is_fake_person_filler(lowered):
+        return _heading_from_fact(_fact_for_cleanup(facts, slide_index, cleanup_index))
     if _is_brand_or_person_filler(lowered):
         return topic
     if _is_body_template_filler(lowered):
@@ -392,11 +547,27 @@ def _is_clearable_template_filler(lowered: str) -> bool:
         "website",
         "read more",
         "get started",
+        "lets build something great together",
+        "let's build something great together",
         "source text",
         "generated from source text",
         "[project portfolio]",
     ]
-    return any(pattern in lowered for pattern in patterns) or bool(re.search(r"\b[\w.-]+@[\w.-]+\.\w+\b", lowered))
+    return (
+        any(pattern in lowered for pattern in patterns)
+        or bool(re.search(r"\b[\w.-]+@[\w.-]+\.\w+\b", lowered))
+        or bool(re.search(r"\b\d{3}[-.\s]\d{3}[-.\s]\d{4}\b", lowered))
+    )
+
+
+def _is_fake_person_filler(lowered: str) -> bool:
+    patterns = [
+        "adeline palmerston",
+        "avery davis",
+        "chad gibbons",
+        "cia rodriguez",
+    ]
+    return any(pattern in lowered for pattern in patterns)
 
 
 def _is_brand_or_person_filler(lowered: str) -> bool:
@@ -498,6 +669,9 @@ def _is_short_template_filler(lowered: str) -> bool:
         "bachelor",
         "master",
         "project -",
+        "team",
+        "our team",
+        "presence",
     ]
     return any(pattern in lowered for pattern in patterns)
 
