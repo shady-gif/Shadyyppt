@@ -24,10 +24,10 @@ class ContentGenerator:
         if not cleaned:
             raise ValueError("Please paste some text before generating.")
         word_count = _word_count(cleaned)
-        if word_count < 500:
-            raise ValueError(f"Please paste at least 500 words. Current source text has {word_count} words.")
-        if word_count > 2000:
-            raise ValueError(f"Please keep source text under 2000 words. Current source text has {word_count} words.")
+        if word_count < 150:
+            raise ValueError(f"Please paste at least 150 words. Current source text has {word_count} words.")
+        if word_count > 3000:
+            raise ValueError(f"Please keep source text under 3000 words. Current source text has {word_count} words.")
 
         paragraphs = _split_paragraphs(cleaned)
         sentences = _split_sentences(cleaned)

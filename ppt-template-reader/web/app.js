@@ -2,7 +2,6 @@ const templateMeta = document.querySelector("#templateMeta");
 const templateSelect = document.querySelector("#templateSelect");
 const templatePreviewImage = document.querySelector("#templatePreviewImage");
 const sourceText = document.querySelector("#sourceText");
-const topic = document.querySelector("#topic");
 const generateBtn = document.querySelector("#generateBtn");
 const statusEl = document.querySelector("#status");
 const generatedPreview = document.querySelector("#generatedPreview");
@@ -106,7 +105,6 @@ generateBtn.addEventListener("click", async () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         templateId: templateSelect.value,
-        topic: topic.value,
         text: sourceText.value,
       }),
     });
@@ -190,11 +188,8 @@ function formatContentSource(contentSource = {}) {
   return "the generator";
 }
 
-function generationStatus(slideCount, contentSource = {}) {
-  if (contentSource.userMessage) {
-    return `Generated ${slideCount} slides. ${contentSource.userMessage} Your PowerPoint is ready to download.`;
-  }
-  return `Generated ${slideCount} slides with ${formatContentSource(contentSource)}. Your PowerPoint is ready to download.`;
+function generationStatus() {
+  return "Generated using the most advanced LLM, your PPT is ready to download.";
 }
 
 function generationTone(contentSource = {}) {
