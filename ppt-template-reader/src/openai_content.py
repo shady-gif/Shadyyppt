@@ -9,6 +9,7 @@ from urllib import error, request
 OPENAI_RESPONSES_URL = "https://api.openai.com/v1/responses"
 DEFAULT_MODEL = "gpt-5-nano"
 DEFAULT_MAX_OUTPUT_TOKENS = 12000
+DEFAULT_TEXT_BOX_MAX_OUTPUT_TOKENS = 4500
 DEFAULT_RETRIES = 2
 DEFAULT_TIMEOUT = 60
 
@@ -51,6 +52,7 @@ def generate_text_box_updates_with_openai(
     model = _model()
     payload = {
         "model": model,
+        "reasoning": {"effort": _reasoning_effort()},
         "instructions": _text_box_instructions(),
         "input": _text_box_prompt(
             topic,
@@ -60,7 +62,12 @@ def generate_text_box_updates_with_openai(
             template_text_boxes,
             fallback_curated,
         ),
-        "max_output_tokens": _env_int("OPENAI_MAX_OUTPUT_TOKENS", DEFAULT_MAX_OUTPUT_TOKENS, min_value=256),
+        "max_output_tokens": _env_int(
+            "OPENAI_TEXT_BOX_MAX_OUTPUT_TOKENS",
+            DEFAULT_TEXT_BOX_MAX_OUTPUT_TOKENS,
+            min_value=512,
+            max_value=12000,
+        ),
         "text": {"format": _text_box_response_format()},
     }
 
@@ -121,6 +128,7 @@ def generate_curated_content_with_openai(
     model = _model()
     payload = {
         "model": model,
+        "reasoning": {"effort": _reasoning_effort()},
         "instructions": _instructions(),
         "input": _prompt(topic, source_text, profile, template_id, template_map, fallback_curated),
         "max_output_tokens": _env_int("OPENAI_MAX_OUTPUT_TOKENS", DEFAULT_MAX_OUTPUT_TOKENS, min_value=256),
@@ -168,6 +176,11 @@ def _model() -> str:
 
 def _disabled() -> bool:
     return os.environ.get("DISABLE_OPENAI_GENERATOR", "").lower() in {"1", "true", "yes"}
+
+
+def _reasoning_effort() -> str:
+    value = os.environ.get("OPENAI_REASONING_EFFORT", "minimal").strip().lower()
+    return value if value in {"minimal", "low", "medium", "high"} else "minimal"
 
 
 def _api_key() -> str:
