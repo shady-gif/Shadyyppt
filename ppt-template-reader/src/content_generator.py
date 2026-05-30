@@ -7,7 +7,7 @@ import re
 from template_map import TEMPLATE_MAP
 from semantic_mapper import build_template_map
 from ai_semantic_mapper import improve_template_map_with_ai
-from openai_content import generate_text_box_updates_with_openai
+from openai_content import generate_curated_content_with_openai
 from template_profiles import get_template_profile
 
 
@@ -39,22 +39,16 @@ class ContentGenerator:
             self.template_map,
             self.profile,
         )
-        text_box_updates, openai_metadata = generate_text_box_updates_with_openai(
+        curated, openai_metadata = generate_curated_content_with_openai(
             topic=topic,
             source_text=cleaned,
             profile=self.profile,
             template_id=self.template_id,
-            template_text_boxes=_template_text_box_inventory(self.template),
+            template_map=self.template_map,
             fallback_curated=fallback_curated,
         )
-
-        if text_box_updates:
-            curated = _curated_from_text_box_updates(topic, fallback_curated, text_box_updates)
-            updates = text_box_updates
-        else:
-            curated = fallback_curated
-            updates = self._build_updates(curated)
-
+        curated = curated or fallback_curated
+        updates = self._build_updates(curated)
         filled = self._apply_updates(updates)
 
         return {
