@@ -16,7 +16,7 @@ export function buildTextSlotReport(deck, options = {}) {
 export function detectTextSlots(deck, options = {}) {
   const slots = [];
   for (const slide of deck.slides || []) {
-    const textElements = (slide.elements || []).filter(isTextElement);
+    const textElements = collectTextElements(slide.elements || []);
     const largestFontSize = Math.max(...textElements.map((element) => element.style?.fontSize || 0), 0);
 
     for (const element of textElements) {
@@ -253,6 +253,19 @@ function isTextElement(element) {
   return element?.type === "text" && element.text && typeof element.text.raw === "string";
 }
 
+function collectTextElements(elements) {
+  const textElements = [];
+  for (const element of elements || []) {
+    if (isTextElement(element)) {
+      textElements.push(element);
+    }
+    if (element?.type === "group" && Array.isArray(element.elements)) {
+      textElements.push(...collectTextElements(element.elements));
+    }
+  }
+  return textElements;
+}
+
 function isEditableTextSlot(element, role, options) {
   if (options.includeProtected) {
     return true;
@@ -330,10 +343,10 @@ function fallbackFontSize(role) {
 
 function originalExpansionRatio(role) {
   const ratios = {
-    title: 1.3,
-    section: 1.25,
+    title: 1.08,
+    section: 1.06,
     subtitle: 1.08,
-    heading: 1.18,
+    heading: 1.1,
     byline: 1.05,
     metadata: 1,
     caption: 1,
@@ -345,10 +358,10 @@ function originalExpansionRatio(role) {
 
 function originalExpansionCeiling(role) {
   const ratios = {
-    title: 1.75,
-    section: 1.55,
+    title: 1.25,
+    section: 1.2,
     subtitle: 1.16,
-    heading: 1.38,
+    heading: 1.24,
     byline: 1.12,
     metadata: 1.05,
     caption: 1.08,
@@ -372,8 +385,8 @@ function averageCharsPerWord(role) {
 }
 
 function averageGlyphWidthRatio(role) {
-  if (["title", "section"].includes(role)) return 0.38;
-  if (role === "heading") return 0.42;
+  if (["title", "section"].includes(role)) return 0.5;
+  if (role === "heading") return 0.48;
   return 0.46;
 }
 
@@ -384,13 +397,13 @@ function lineHeightRatio(role) {
 
 function roleMinChars(role) {
   if (role === "metadata") return 4;
-  if (["title", "section", "heading"].includes(role)) return 8;
+  if (["title", "section", "heading"].includes(role)) return 3;
   return 16;
 }
 
 function roleMinWords(role) {
   if (role === "metadata") return 1;
-  if (["title", "section", "heading"].includes(role)) return 2;
+  if (["title", "section", "heading"].includes(role)) return 1;
   return 4;
 }
 

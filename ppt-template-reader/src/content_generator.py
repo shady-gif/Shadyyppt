@@ -48,19 +48,20 @@ class ContentGenerator:
         facts = _build_fact_pool(topic, paragraphs, sentences)
         outline = _build_outline(topic, facts)
         subtitle = _make_subtitle(topic, facts, self.profile)
+        byline = _make_byline(self.profile)
         sections = self.profile["sections"]
 
         return {
             "deckTitle": topic,
             "subtitle": subtitle,
-            "byline": "Generated from source text",
+            "byline": byline,
             "year": str(date.today().year),
             "unusedFacts": outline["unusedFacts"],
             "slides": {
                 "1": {
                     "title": topic,
                     "subtitle": subtitle,
-                    "byline": "Generated from source text",
+                    "byline": byline,
                     "year": str(date.today().year),
                 },
                 "2": {
@@ -119,6 +120,7 @@ class ContentGenerator:
     def _build_updates(self, curated: dict) -> list[dict]:
         updates = []
         slide_content = curated["slides"]
+        updated_keys = set()
 
         for slide_index, slide_map in self.template_map.items():
             content = slide_content.get(slide_index, {})
@@ -136,7 +138,9 @@ class ContentGenerator:
                         "newText": field_value,
                     }
                 )
+                updated_keys.add((int(slide_index), str(shape_id)))
 
+        updates.extend(_build_cleanup_updates(self.template, curated, updated_keys))
         return updates
 
     def _apply_updates(self, updates: list[dict]) -> dict:
@@ -235,18 +239,18 @@ def _build_fact_pool(topic: str, paragraphs: list[str], sentences: list[str]) ->
         facts.append(_shorten(candidate, 145))
 
     fallback_facts = [
-        f"{topic} is the central subject of this presentation.",
-        f"The source text gives enough context to introduce {topic}.",
-        "Add more source material to deepen the background and evidence.",
-        "Keep each slide focused on one clear idea.",
-        "Use verified details before sharing the final deck.",
-        "Pair concise claims with examples, dates, or outcomes.",
-        "Use the template structure to keep the story easy to scan.",
-        "Add stronger examples where the source text is thin.",
-        "Review the generated content before presenting.",
-        "Use visuals to support the strongest claims.",
-        "Close with the most important audience takeaways.",
-        "Export the PPTX after reviewing slide fit and accuracy.",
+        f"{topic} connects context, evidence, and practical implications.",
+        f"The strongest story about {topic} pairs concise claims with concrete proof.",
+        f"{topic} matters most when the audience can see what changed and why.",
+        f"Each section should turn one important idea about {topic} into a clear takeaway.",
+        "The narrative works best when examples, outcomes, and audience context stay linked.",
+        "A focused presentation keeps every slide tied to one message and one proof point.",
+        "Strong takeaways explain what the audience should remember and why it matters.",
+        "The closing should connect the main insight to the next decision or action.",
+        "A clean structure helps complex material stay easy to scan.",
+        "The most useful points combine evidence, consequence, and a specific implication.",
+        "Details should support the central argument without competing with it.",
+        "The final message should feel concise, specific, and audience-ready.",
     ]
 
     for fallback in fallback_facts:
@@ -277,9 +281,214 @@ def _fallback_field_value(field_name: str, curated: dict, slide_index: int) -> s
         return None
 
     if field_name == "caption":
-        return "Source highlight"
+        return "Key detail"
 
     return None
+
+
+def _build_cleanup_updates(template: dict, curated: dict, updated_keys: set[tuple[int, str]]) -> list[dict]:
+    updates = []
+    facts = curated.get("unusedFacts") or _curated_fact_sequence(curated)
+    cleanup_index = 0
+
+    for slide in template.get("slides", []):
+        slide_index = int(slide.get("index", 0))
+        for text_box in slide.get("texts", []):
+            shape_id = str(text_box.get("shapeId"))
+            if not shape_id or (slide_index, shape_id) in updated_keys:
+                continue
+
+            replacement = _cleanup_replacement(
+                text_box.get("text") or "",
+                curated,
+                facts,
+                slide_index,
+                cleanup_index,
+            )
+            if replacement is None:
+                continue
+
+            cleanup_index += 1
+            updates.append(
+                {
+                    "slideIndex": slide_index,
+                    "shapeId": shape_id,
+                    "field": "cleanup",
+                    "newText": replacement,
+                }
+            )
+
+    return updates
+
+
+def _cleanup_replacement(
+    text: str,
+    curated: dict,
+    facts: list[str],
+    slide_index: int,
+    cleanup_index: int,
+) -> str | None:
+    normalized = _clean_text(text)
+    if not normalized or _is_page_marker(normalized):
+        return None
+
+    lowered = normalized.lower()
+    topic = curated.get("deckTitle", "Generated Topic")
+
+    if _is_clearable_template_filler(lowered):
+        return ""
+    if _is_date_filler(normalized):
+        return curated.get("year", str(date.today().year))
+    if _is_brand_or_person_filler(lowered):
+        return topic
+    if _is_body_template_filler(lowered):
+        return _fact_for_cleanup(facts, slide_index, cleanup_index)
+    if _is_short_template_filler(lowered):
+        return _heading_from_fact(_fact_for_cleanup(facts, slide_index, cleanup_index))
+
+    return None
+
+
+def _fact_for_cleanup(facts: list[str], slide_index: int, cleanup_index: int) -> str:
+    if not facts:
+        return "Key point."
+    index = (slide_index * 2 + cleanup_index) % len(facts)
+    return _shorten(facts[index], 120)
+
+
+def _is_page_marker(text: str) -> bool:
+    normalized = text.strip().lower()
+    return bool(
+        re.fullmatch(r"(page\s*)?\d{1,2}", normalized)
+        or re.fullmatch(r"\d{1,2}\s*/\s*\d{1,2}", normalized)
+    )
+
+
+def _is_date_filler(text: str) -> bool:
+    return bool(
+        re.search(r"\b(19|20)\d{2}\b", text)
+        and re.search(r"\b(january|february|march|april|may|june|july|august|september|october|november|december)\b", text, re.I)
+    )
+
+
+def _is_clearable_template_filler(lowered: str) -> bool:
+    patterns = [
+        "reallygreatsite",
+        "123 anywhere",
+        "+123",
+        "phone number",
+        "email address",
+        "website",
+        "read more",
+        "get started",
+        "source text",
+        "generated from source text",
+        "[project portfolio]",
+    ]
+    return any(pattern in lowered for pattern in patterns) or bool(re.search(r"\b[\w.-]+@[\w.-]+\.\w+\b", lowered))
+
+
+def _is_brand_or_person_filler(lowered: str) -> bool:
+    patterns = [
+        "arowwai",
+        "alexander aronowitz",
+        "borcelle",
+        "cahaya dewi",
+        "giggling platypus",
+        "ingoude",
+        "jonathan patter",
+        "larana team",
+        "liceria",
+        "interor designer",
+        "interior designer",
+        "rimberio",
+        "studio shodwe",
+        "timmerman",
+        "tynk unlimited",
+        "wardiere",
+        "warner & spencer",
+        "fagatr apartment",
+        "final archiect concept",
+        "final architect concept",
+        "cum laude",
+        "indonesia",
+    ]
+    return any(pattern in lowered for pattern in patterns)
+
+
+def _is_body_template_filler(lowered: str) -> bool:
+    patterns = [
+        "lorem ipsum",
+        "presentation are communication",
+        "presentations are communication",
+        "thing that wraps around",
+        "the percentage of people who did a thing",
+        "make an impact with a big, bold statement",
+        "this insight is so big",
+        "explain why this number is important",
+        "review the generated",
+        "generated content",
+        "export the pptx",
+        "add stronger examples",
+        "add more source material",
+        "source text is thin",
+        "source is thin",
+        "before presenting",
+        "text thin",
+        "easy scan",
+        "keep each slide focused",
+        "use verified details",
+        "use visuals to support",
+        "template structure",
+        "audience takeaways",
+        "2025 marketing strategy",
+        "creating functional and inspiring spaces",
+        "designing harmony",
+        "featured project",
+        "technical planning",
+        "living area",
+        "workspace",
+        "design notes",
+        "concept development",
+        "mood exploration",
+        "iteration & refinement",
+        "final / concept",
+        "the challenges of iot",
+        "pros and cons of the iot",
+        "development of the iot",
+        "rise of the iot",
+        "what is the iot",
+        "future of iot",
+        "iot",
+        "internet of things",
+    ]
+    return any(pattern in lowered for pattern in patterns)
+
+
+def _is_short_template_filler(lowered: str) -> bool:
+    patterns = [
+        "project portfolio",
+        "source text",
+        "source highlight",
+        "before presenting",
+        "easy scan",
+        "text thin",
+        "so much",
+        "thank you",
+        "happy client",
+        "design context",
+        "boost brand visibility",
+        "accelerate lead generation",
+        "expand recognition",
+        "product demos",
+        "software",
+        "it consulting",
+        "data analytics",
+        "bachelor",
+        "master",
+        "project -",
+    ]
+    return any(pattern in lowered for pattern in patterns)
 
 
 def _curated_fact_sequence(curated: dict) -> list[str]:
@@ -354,11 +563,11 @@ def _build_outline(topic: str, facts: list[str]) -> dict:
         "detailCaption1": "Selected example",
         "detailSection2": _detail_section(categories["impact"], "Notable Influence"),
         "detailBody2": allocator.take([categories["impact"], categories["business"], facts]),
-        "detailCaption2": "Source highlight",
+        "detailCaption2": "Key detail",
         "highlight": _highlight_phrase(topic, categories, facts),
         "takeaway1": _shorten(allocator.take([facts]), 70),
         "takeaway2": _shorten(allocator.take([categories["impact"], facts]), 70),
-        "takeaway3": "Review facts and refine before presenting.",
+        "takeaway3": allocator.take([facts]) or f"{topic} connects context, evidence, and next steps.",
     }
     outline["backgroundHeading1"] = _heading_from_fact(outline["backgroundBody1"])
     outline["backgroundHeading2"] = _heading_from_fact(outline["backgroundBody2"])
@@ -502,14 +711,14 @@ def _detail_section(values: list[str], fallback: str) -> str:
 def _highlight_phrase(topic: str, categories: dict[str, list[str]], facts: list[str]) -> str:
     source = " ".join(categories["business"][:1] + categories["impact"][:1] + facts[:1]).lower()
     if "spacex" in source:
-        return "SpaceX and Innovation"
+        return "SpaceX"
     if "tesla" in source:
-        return "Tesla and Electric Mobility"
+        return "Tesla"
     if "technology" in source or "software" in source:
-        return "Technology and Influence"
+        return "Technology"
     if "business" in source or "company" in source:
-        return "Business and Influence"
-    return f"{topic}: Key Highlight"
+        return "Business Impact"
+    return "Key Highlight"
 
 
 def _complete_fragment(topic: str, value: str) -> str:
@@ -540,6 +749,10 @@ def _make_subtitle(topic: str, facts: list[str], profile: dict) -> str:
     if any(keyword in source for keyword in ["business", "company", "founder", "venture", "market"]):
         return "business profile"
     return profile.get("subtitle", "presentation profile")
+
+
+def _make_byline(profile: dict) -> str:
+    return ""
 
 
 def _polish_sentence(value: str) -> str:

@@ -1,7 +1,9 @@
 {
   "type": "module",
   "scripts": {
-    "build": "mkdir -p dist && cp -R web/. dist/ && node -e \"const fs=require('fs'); fs.writeFileSync('dist/config.js', 'window.PPT_API_BASE = ' + JSON.stringify(process.env.PPT_API_BASE_URL || '') + ';\\n');\"",
+    "build": "npm run build:editor && mkdir -p dist && cp -R web/. dist/ && node -e \"const fs=require('fs'); fs.writeFileSync('dist/config.js', 'window.PPT_API_BASE = ' + JSON.stringify(process.env.PPT_API_BASE_URL || '') + ';\\n');\"",
+    "build:editor": "vite build --config editor/vite.config.ts",
+    "typecheck:editor": "tsc --project editor/tsconfig.json --noEmit",
     "inspect:pptx": "node src-node/cli/inspect-pptx.js",
     "deck:ops": "node src-node/cli/apply-deck-operations.js",
     "patch:pptx": "node src-node/cli/patch-pptx.js",
@@ -9,10 +11,22 @@
     "text:fit": "node src-node/cli/fit-text-operations.js",
     "text:fit:rewrite": "node src-node/cli/fit-text-operations-rewrite.js",
     "text:fit-updates": "node src-node/cli/fit-template-updates.js",
+    "test:python": "python3 -m unittest discover -s tests-python",
     "test:node": "node --test tests-node/*.test.js"
   },
   "dependencies": {
     "fast-xml-parser": "^5.8.0",
-    "jszip": "^3.10.1"
+    "jszip": "^3.10.1",
+    "konva": "^10.3.0",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
+    "react-konva": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.15",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.2",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.14"
   }
 }

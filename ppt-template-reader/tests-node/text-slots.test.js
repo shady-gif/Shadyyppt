@@ -31,6 +31,26 @@ test("classifies protected placeholders", () => {
   assert.equal(report.slots[0].editable, false);
 });
 
+test("detects text slots inside grouped elements", () => {
+  const report = buildTextSlotReport({
+    slides: [
+      {
+        id: "s1",
+        index: 0,
+        elements: [
+          {
+            id: "g1",
+            type: "group",
+            elements: [element({ id: "nested", text: { raw: "Grouped text box" } })],
+          },
+        ],
+      },
+    ],
+  });
+  assert.equal(report.slots.length, 1);
+  assert.equal(report.slots[0].elementId, "nested");
+});
+
 test("classifies long text as body and huge short text as title", () => {
   assert.equal(classifyTextRole(element({ text: { raw: "This is a long body paragraph with enough words to clearly behave like a body text box in a presentation." } })), "body");
   assert.equal(classifyTextRole(element({
@@ -60,4 +80,3 @@ test("validates and trims overflowing text", () => {
   const trimmed = logicalTrimToFit(overflow, { role: "title", capacity });
   assert.equal(validateTextFit(trimmed, { role: "title", capacity }).status, "fit");
 });
-

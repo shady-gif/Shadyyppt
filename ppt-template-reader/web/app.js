@@ -80,14 +80,8 @@ generateBtn.addEventListener("click", async () => {
     return;
   }
 
-  statusEl.textContent = `Generated ${Object.keys(payload.curatedContent.slides).length} slides for ${payload.topic} using ${payload.mapperSource} mapping.`;
-  downloadPptxLink.href = assetUrl(payload.pptxDownloadPath);
-  downloadPptxLink.hidden = false;
-  if (payload.pptxPreviewPath) {
-    generatedPreviewImage.src = assetUrl(payload.pptxPreviewPath);
-    generatedPreview.hidden = false;
-  }
-  renderSlides(payload.curatedContent.slides, payload.templateMap, payload.slidePreview);
+  statusEl.textContent = `Generated ${Object.keys(payload.curatedContent.slides).length} slides. Opening editor...`;
+  window.location.href = editorUrl(payload.editorPath || `/editor?templateId=${encodeURIComponent(payload.templateId)}&generatedDeck=${encodeURIComponent(payload.downloadPath)}`);
 });
 
 function renderSlides(slides, templateMap = {}, slidePreview = []) {
@@ -134,6 +128,13 @@ function assetUrl(path) {
     return path;
   }
   return `${apiBase}/${String(path).replace(/^\//, "")}`;
+}
+
+function editorUrl(path) {
+  if (/^https?:\/\//.test(path)) {
+    return path;
+  }
+  return `${apiBase}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
 function escapeHtml(value) {

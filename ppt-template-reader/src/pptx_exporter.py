@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from collections import defaultdict
 from copy import deepcopy
+import json
 from pathlib import Path
 from zipfile import ZIP_DEFLATED, ZipFile
 import xml.etree.ElementTree as ET
@@ -16,17 +17,36 @@ NS = {
 for prefix, uri in NS.items():
     ET.register_namespace(prefix, uri)
 
+PATCHABLE_EDITOR_OPERATION_TYPES = {
+    "updateText",
+    "moveObject",
+    "resizeObject",
+    "changeFont",
+    "changeTextColor",
+    "changeBackgroundColor",
+}
+
 
 class PptxExporter:
     def __init__(self, source_pptx: str | Path) -> None:
         self.source_pptx = Path(source_pptx).expanduser().resolve()
 
-    def export(self, filled_template: dict, output_path: str | Path) -> Path:
+    def export(
+        self,
+        filled_template: dict,
+        output_path: str | Path,
+        editor_operations: list[dict] | None = None,
+        editor_operations_path: str | Path | None = None,
+    ) -> Path:
         if not self.source_pptx.exists():
             raise FileNotFoundError(f"Source PPTX not found: {self.source_pptx}")
 
         output_path = Path(output_path).expanduser().resolve()
         output_path.parent.mkdir(parents=True, exist_ok=True)
+        resolved_editor_operations = _resolve_editor_operations(
+            editor_operations,
+            editor_operations_path,
+        )
 
         shape_metadata = _extract_shape_metadata(filled_template)
         updates_by_slide = _group_updates_by_slide(filled_template, shape_metadata)
@@ -40,15 +60,40 @@ class PptxExporter:
             for slide_index, updates in updates_by_slide.items()
             if slide_index in slide_paths
         }
+        editor_operations_by_path = _group_editor_operations_by_path(
+            resolved_editor_operations,
+            slide_paths,
+        )
 
         with ZipFile(self.source_pptx, "r") as source, ZipFile(output_path, "w", ZIP_DEFLATED) as target:
             for item in source.infolist():
                 data = source.read(item.filename)
                 if item.filename in replacements:
                     data = _replace_slide_text(data, replacements[item.filename])
+                if item.filename in editor_operations_by_path:
+                    data = _apply_editor_operations_to_slide(
+                        data,
+                        editor_operations_by_path[item.filename],
+                    )
                 target.writestr(item, data)
 
         return output_path
+
+
+def _resolve_editor_operations(
+    editor_operations: list[dict] | None,
+    editor_operations_path: str | Path | None,
+) -> list[dict]:
+    if editor_operations_path is None:
+        return editor_operations or []
+
+    operations_path = Path(editor_operations_path).expanduser().resolve()
+    payload = json.loads(operations_path.read_text(encoding="utf-8"))
+    if isinstance(payload, list):
+        return payload
+    if isinstance(payload, dict) and isinstance(payload.get("operations"), list):
+        return payload["operations"]
+    raise ValueError("Editor operations file must be an array or contain an operations array.")
 
 
 def _extract_shape_metadata(filled_template: dict) -> dict[int, dict[str, dict]]:
@@ -82,7 +127,7 @@ def _group_updates_by_slide(filled_template: dict, shape_metadata: dict[int, dic
 def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict]) -> bytes:
     root = ET.fromstring(xml_bytes)
 
-    for shape in root.findall(".//p:cSld/p:spTree/p:sp", NS):
+    for shape in root.findall(".//p:sp", NS):
         non_visual_props = shape.find("p:nvSpPr/p:cNvPr", NS)
         if non_visual_props is None:
             continue
@@ -100,6 +145,199 @@ def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict]) -> bytes:
         )
 
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
+
+
+def _group_editor_operations_by_path(
+    operations: list[dict],
+    slide_paths: dict[int, str],
+) -> dict[str, list[dict]]:
+    grouped = defaultdict(list)
+    for operation in operations:
+        if operation.get("type") not in PATCHABLE_EDITOR_OPERATION_TYPES:
+            continue
+
+        slide_index = _slide_index_from_id(operation.get("slideId"))
+        if slide_index is None or slide_index not in slide_paths:
+            continue
+        grouped[slide_paths[slide_index]].append(operation)
+    return grouped
+
+
+def _slide_index_from_id(slide_id: object) -> int | None:
+    if slide_id is None:
+        return None
+
+    raw = str(slide_id)
+    if raw.startswith("slide_"):
+        raw = raw.split("_", 1)[1]
+    try:
+        return int(raw)
+    except ValueError:
+        return None
+
+
+def _apply_editor_operations_to_slide(xml_bytes: bytes, operations: list[dict]) -> bytes:
+    root = ET.fromstring(xml_bytes)
+
+    for operation in operations:
+        operation_type = operation.get("type")
+        if operation_type == "changeBackgroundColor":
+            _set_slide_background(root, str(operation.get("color") or "#ffffff"))
+            continue
+
+        shape_id = _shape_id_from_object_id(operation.get("objectId"))
+        if not shape_id:
+            continue
+
+        visual = _find_visual_by_id(root, shape_id)
+        if visual is None:
+            continue
+
+        if operation_type == "updateText":
+            _replace_shape_text(visual, str(operation.get("text") or ""), {}, "")
+        elif operation_type == "moveObject":
+            _set_visual_position(visual, operation.get("x"), operation.get("y"))
+        elif operation_type == "resizeObject":
+            _set_visual_size(visual, operation.get("width"), operation.get("height"))
+        elif operation_type == "changeFont":
+            _set_visual_font(visual, str(operation.get("font") or "Inter"))
+        elif operation_type == "changeTextColor":
+            _set_visual_text_color(visual, str(operation.get("color") or "#111111"))
+
+    return ET.tostring(root, encoding="utf-8", xml_declaration=True)
+
+
+def _shape_id_from_object_id(object_id: object) -> str | None:
+    if object_id is None:
+        return None
+
+    raw = str(object_id)
+    if "_" in raw:
+        return raw.rsplit("_", 1)[-1]
+    return raw
+
+
+def _find_visual_by_id(root: ET.Element, shape_id: str) -> ET.Element | None:
+    for visual in root.findall(".//p:sp", NS) + root.findall(".//p:pic", NS):
+        non_visual_props = visual.find(".//p:cNvPr", NS)
+        if non_visual_props is not None and non_visual_props.attrib.get("id") == shape_id:
+            return visual
+    return None
+
+
+def _set_visual_position(visual: ET.Element, x_inches: object, y_inches: object) -> None:
+    transform = _ensure_transform(visual)
+    offset = transform.find("a:off", NS)
+    if offset is None:
+        offset = ET.SubElement(transform, _qn("a", "off"))
+
+    x = _coerce_float(x_inches)
+    y = _coerce_float(y_inches)
+    if x is not None:
+        offset.set("x", str(_inches_to_emu(x)))
+    if y is not None:
+        offset.set("y", str(_inches_to_emu(y)))
+
+
+def _set_visual_size(visual: ET.Element, width_inches: object, height_inches: object) -> None:
+    transform = _ensure_transform(visual)
+    extent = transform.find("a:ext", NS)
+    if extent is None:
+        extent = ET.SubElement(transform, _qn("a", "ext"))
+
+    width = _coerce_float(width_inches)
+    height = _coerce_float(height_inches)
+    if width is not None:
+        extent.set("cx", str(_inches_to_emu(max(width, 0.01))))
+    if height is not None:
+        extent.set("cy", str(_inches_to_emu(max(height, 0.01))))
+
+
+def _ensure_transform(visual: ET.Element) -> ET.Element:
+    shape_props = visual.find("p:spPr", NS)
+    if shape_props is None:
+        shape_props = visual.find("p:picPr", NS)
+    if shape_props is None:
+        shape_props = ET.SubElement(visual, _qn("p", "spPr"))
+
+    transform = shape_props.find("a:xfrm", NS)
+    if transform is None:
+        transform = ET.SubElement(shape_props, _qn("a", "xfrm"))
+    return transform
+
+
+def _set_visual_font(visual: ET.Element, font: str) -> None:
+    for run_props in _text_run_properties(visual):
+        for tag in ("latin", "ea", "cs"):
+            font_node = run_props.find(f"a:{tag}", NS)
+            if font_node is None:
+                font_node = ET.SubElement(run_props, _qn("a", tag))
+            font_node.set("typeface", font)
+
+
+def _set_visual_text_color(visual: ET.Element, color: str) -> None:
+    hex_color = _normalize_hex_color(color, "111111")
+    for run_props in _text_run_properties(visual):
+        solid_fill = run_props.find("a:solidFill", NS)
+        if solid_fill is None:
+            solid_fill = ET.SubElement(run_props, _qn("a", "solidFill"))
+        for child in list(solid_fill):
+            solid_fill.remove(child)
+        ET.SubElement(solid_fill, _qn("a", "srgbClr"), {"val": hex_color})
+
+
+def _text_run_properties(visual: ET.Element) -> list[ET.Element]:
+    run_props = list(visual.findall(".//a:rPr", NS))
+    for run in visual.findall(".//a:r", NS):
+        if run.find("a:rPr", NS) is None:
+            run_props_node = ET.Element(_qn("a", "rPr"))
+            run.insert(0, run_props_node)
+            run_props.append(run_props_node)
+
+    run_props.extend(visual.findall(".//a:endParaRPr", NS))
+    return run_props
+
+
+def _set_slide_background(root: ET.Element, color: str) -> None:
+    c_sld = root.find("p:cSld", NS)
+    if c_sld is None:
+        return
+
+    background = c_sld.find("p:bg", NS)
+    if background is None:
+        background = ET.Element(_qn("p", "bg"))
+        c_sld.insert(0, background)
+
+    for child in list(background):
+        background.remove(child)
+
+    background_props = ET.SubElement(background, _qn("p", "bgPr"))
+    solid_fill = ET.SubElement(background_props, _qn("a", "solidFill"))
+    ET.SubElement(solid_fill, _qn("a", "srgbClr"), {"val": _normalize_hex_color(color, "ffffff")})
+
+
+def _coerce_float(value: object) -> float | None:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def _inches_to_emu(value: float) -> int:
+    return int(round(value * 914400))
+
+
+def _normalize_hex_color(value: str, fallback: str) -> str:
+    stripped = value.strip().lstrip("#")
+    if len(stripped) == 3 and all(char in "0123456789abcdefABCDEF" for char in stripped):
+        stripped = "".join(char * 2 for char in stripped)
+    if len(stripped) != 6 or not all(char in "0123456789abcdefABCDEF" for char in stripped):
+        return fallback
+    return stripped.upper()
+
+
+def _qn(prefix: str, tag: str) -> str:
+    return f"{{{NS[prefix]}}}{tag}"
 
 
 def _replace_shape_text(shape: ET.Element, new_text: str, geometry: dict, original_text: str) -> None:

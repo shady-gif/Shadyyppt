@@ -40,9 +40,9 @@ class SlideParser:
         root = ET.fromstring(package.read(slide_path))
         rels = self._parse_slide_relationships(package, slide_path)
 
-        shapes = root.findall(".//p:cSld/p:spTree/p:sp", NS)
-        pictures = root.findall(".//p:cSld/p:spTree/p:pic", NS)
-        groups = root.findall(".//p:cSld/p:spTree/p:grpSp", NS)
+        shapes = root.findall(".//p:sp", NS)
+        pictures = root.findall(".//p:pic", NS)
+        groups = root.findall(".//p:grpSp", NS)
 
         return {
             "index": index,

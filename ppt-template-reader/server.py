@@ -7,7 +7,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
-from urllib.parse import urlparse
+from urllib.parse import parse_qs, urlparse
 
 
 ROOT = Path(__file__).parent.resolve()
@@ -72,12 +72,62 @@ BUILTIN_TEMPLATES = {
         "pptxPath": ROOT / "templates" / "time.pptx",
         "previewPath": "template-previews/time.pptx.png",
     },
+    "iot": {
+        "name": "IoT",
+        "jsonPath": ROOT / "outputs" / "iot.json",
+        "pptxPath": ROOT / "templates" / "iot.pptx",
+        "previewPath": "template-previews/iot.pptx.png",
+    },
+    "roadmap": {
+        "name": "Roadmap",
+        "jsonPath": ROOT / "outputs" / "roadmap.json",
+        "pptxPath": ROOT / "templates" / "roadmap.pptx",
+        "previewPath": "template-previews/roadmap.pptx.png",
+    },
+    "startup": {
+        "name": "Startup",
+        "jsonPath": ROOT / "outputs" / "startup.json",
+        "pptxPath": ROOT / "templates" / "startup.pptx",
+        "previewPath": "template-previews/startup.pptx.png",
+    },
+    "interior": {
+        "name": "Interior",
+        "jsonPath": ROOT / "outputs" / "interior.json",
+        "pptxPath": ROOT / "templates" / "interior.pptx",
+        "previewPath": "template-previews/interior.pptx.png",
+    },
+    "architecture": {
+        "name": "Architecture",
+        "jsonPath": ROOT / "outputs" / "architecture.json",
+        "pptxPath": ROOT / "templates" / "architecture.pptx",
+        "previewPath": "template-previews/architecture.pptx.png",
+    },
+    "product": {
+        "name": "Product",
+        "jsonPath": ROOT / "outputs" / "product.json",
+        "pptxPath": ROOT / "templates" / "product.pptx",
+        "previewPath": "template-previews/product.pptx.png",
+    },
 }
 DEFAULT_TEMPLATE_ID = "profile"
+EDITOR_FONTS = {"Inter", "Poppins", "Montserrat", "Roboto", "Playfair Display"}
+EDITOR_ANIMATIONS = {"none", "fade", "zoom", "wipe", "fly"}
+EDITOR_OPERATION_TYPES = {
+    "updateText",
+    "moveObject",
+    "resizeObject",
+    "changeFont",
+    "changeTextColor",
+    "changeBackgroundColor",
+    "replaceImage",
+    "setEnterAnimation",
+    "setExitAnimation",
+}
 
 sys.path.insert(0, str(ROOT / "src"))
 
 from content_generator import ContentGenerator  # noqa: E402
+from editor_template import build_editor_deck, read_template_asset  # noqa: E402
 from pptx_exporter import PptxExporter  # noqa: E402
 from template_converter import convert_pptx_to_json  # noqa: E402
 
@@ -98,8 +148,36 @@ class AppHandler(SimpleHTTPRequestHandler):
 
     def do_GET(self) -> None:
         parsed = urlparse(self.path)
+        if parsed.path in {"/app", "/app/"}:
+            self.path = "/app.html"
+            super().do_GET()
+            return
+
+        if parsed.path in {"/editor", "/editor/"}:
+            self.path = "/editor.html"
+            super().do_GET()
+            return
+
         if parsed.path == "/health":
             self._send_json({"ok": True})
+            return
+
+        if parsed.path == "/api/editor-template":
+            template_id = _query_value(parsed.query, "templateId", DEFAULT_TEMPLATE_ID)
+            template_config = _template_config(template_id)
+            generated_deck_path = _query_value(parsed.query, "generatedDeck", "")
+            if generated_deck_path:
+                template_path = _resolve_generated_deck_path(generated_deck_path)
+                template = json.loads(template_path.read_text(encoding="utf-8"))
+                source_json_path = f"outputs/generated/{template_path.name}"
+            else:
+                template = json.loads(template_config["jsonPath"].read_text(encoding="utf-8"))
+                source_json_path = None
+            self._send_json(build_editor_deck(template_id, template_config, template, source_json_path))
+            return
+
+        if parsed.path == "/api/template-asset":
+            self._handle_template_asset(parsed.query)
             return
 
         if parsed.path == "/api/template-summary":
@@ -129,6 +207,10 @@ class AppHandler(SimpleHTTPRequestHandler):
         parsed = urlparse(self.path)
         if parsed.path == "/api/upload-template":
             self._handle_template_upload()
+            return
+
+        if parsed.path == "/api/editor/export":
+            self._handle_editor_export()
             return
 
         if parsed.path != "/api/generate":
@@ -170,6 +252,7 @@ class AppHandler(SimpleHTTPRequestHandler):
                     "downloadPath": f"outputs/generated/{output_path.name}",
                     "pptxDownloadPath": f"outputs/generated/{pptx_path.name}",
                     "pptxPreviewPath": pptx_preview_path,
+                    "editorPath": f"/editor?templateId={template_id}&generatedDeck=outputs/generated/{output_path.name}",
                 }
             )
         except ValueError as exc:
@@ -221,6 +304,108 @@ class AppHandler(SimpleHTTPRequestHandler):
             self._send_json({"error": str(exc)}, status=400)
         except Exception as exc:
             self._send_json({"error": f"Upload failed: {exc}"}, status=500)
+
+    def _handle_template_asset(self, query: str) -> None:
+        try:
+            template_id = _query_value(query, "templateId", DEFAULT_TEMPLATE_ID)
+            asset_path = _query_value(query, "assetPath", "")
+            if not asset_path:
+                raise ValueError("assetPath is required.")
+
+            template_config = _template_config(template_id)
+            data, content_type = read_template_asset(template_config["pptxPath"], asset_path)
+            self.send_response(200)
+            self.send_header("Content-Type", content_type)
+            self.send_header("Content-Length", str(len(data)))
+            self.end_headers()
+            self.wfile.write(data)
+        except FileNotFoundError:
+            self.send_error(404, "Asset not found")
+        except ValueError as exc:
+            self._send_json({"error": str(exc)}, status=400)
+        except Exception as exc:
+            self._send_json({"error": f"Asset failed: {exc}"}, status=500)
+
+    def _handle_editor_export(self) -> None:
+        try:
+            body = self._read_json_body()
+            template_id = body.get("templateId") or DEFAULT_TEMPLATE_ID
+            operations = _validate_editor_operations(body.get("operations") or [])
+            user_content = body.get("userContent") or {}
+            raw_text = user_content.get("text") or body.get("text") or ""
+            topic = user_content.get("topic") or body.get("topic") or None
+            generated_deck_path = body.get("generatedDeckPath") or ""
+
+            template_config = _template_config(template_id)
+            template = json.loads(template_config["jsonPath"].read_text(encoding="utf-8"))
+
+            result = None
+            filled_template = template
+            output_stem = _safe_output_stem(topic or f"{template_id}-edited")
+            if generated_deck_path:
+                generated_path = _resolve_generated_deck_path(str(generated_deck_path))
+                filled_template = json.loads(generated_path.read_text(encoding="utf-8"))
+                output_stem = _safe_output_stem(generated_path.stem.replace("-filled-template", "-edited"))
+            elif str(raw_text).strip():
+                result = ContentGenerator(template, template_id=template_id).generate(str(raw_text), topic)
+                result = _fit_generation_text(template_config, result)
+                filled_template = result["filledTemplateJson"]
+                output_stem = _safe_output_stem(f"{result['topic']}-edited")
+
+            GENERATED_DIR.mkdir(parents=True, exist_ok=True)
+            operations_path = GENERATED_DIR / f"{output_stem}-operations.json"
+            animation_metadata = _editor_animation_metadata(operations)
+            operations_path.write_text(
+                json.dumps(
+                    {
+                        "templateId": template_id,
+                        "operations": operations,
+                        "animationMetadata": animation_metadata,
+                        "capabilities": {
+                            "pptAnimationExport": False,
+                        },
+                        "sourceJsonPath": generated_deck_path or None,
+                        "userContent": {
+                            "topic": topic,
+                            "hasText": bool(str(raw_text).strip()),
+                        },
+                    },
+                    indent=2,
+                ),
+                encoding="utf-8",
+            )
+
+            filled_template = _attach_editor_metadata(filled_template, operations, animation_metadata)
+            output_json_path = GENERATED_DIR / f"{output_stem}-template.json"
+            output_json_path.write_text(json.dumps(filled_template, indent=2), encoding="utf-8")
+
+            pptx_path = GENERATED_DIR / f"{output_stem}-deck.pptx"
+            PptxExporter(template_config["pptxPath"]).export(
+                filled_template,
+                pptx_path,
+                editor_operations_path=operations_path,
+            )
+            pptx_preview_path = _render_pptx_preview(pptx_path)
+
+            warnings = _editor_operation_warnings(operations)
+            self._send_json(
+                {
+                    "templateId": template_id,
+                    "templateName": template_config["name"],
+                    "operationsPath": f"outputs/generated/{operations_path.name}",
+                    "downloadPath": f"outputs/generated/{output_json_path.name}",
+                    "pptxDownloadPath": f"outputs/generated/{pptx_path.name}",
+                    "pptxPreviewPath": pptx_preview_path,
+                    "animationMetadata": animation_metadata,
+                    "warnings": warnings,
+                    "updates": result.get("updates") if result else [],
+                    "textFit": result.get("textFit") if result else None,
+                }
+            )
+        except ValueError as exc:
+            self._send_json({"error": str(exc)}, status=400)
+        except Exception as exc:
+            self._send_json({"error": f"Editor export failed: {exc}"}, status=500)
 
     def _read_json_body(self) -> dict:
         length = int(self.headers.get("Content-Length", "0"))
@@ -428,6 +613,143 @@ def _template_id_from_query(query: str) -> str:
         if key == "templateId" and value:
             return value
     return DEFAULT_TEMPLATE_ID
+
+
+def _query_value(query: str, key: str, default: str = "") -> str:
+    values = parse_qs(query).get(key)
+    if not values:
+        return default
+    return values[0]
+
+
+def _resolve_generated_deck_path(value: str) -> Path:
+    if not value:
+        raise ValueError("generatedDeck is required.")
+
+    filename = Path(value).name
+    if not filename.endswith(".json"):
+        raise ValueError("generatedDeck must point to a generated JSON deck.")
+
+    path = GENERATED_DIR / filename
+    if not path.exists() or not path.is_file():
+        raise ValueError(f"Generated deck not found: {filename}")
+    return path
+
+
+def _validate_editor_operations(operations: list[dict]) -> list[dict]:
+    if not isinstance(operations, list):
+        raise ValueError("operations must be an array.")
+
+    return [_validate_editor_operation(operation, index) for index, operation in enumerate(operations)]
+
+
+def _validate_editor_operation(operation: dict, index: int) -> dict:
+    if not isinstance(operation, dict):
+        raise ValueError(f"Operation {index + 1} must be an object.")
+
+    operation_type = operation.get("type")
+    if operation_type not in EDITOR_OPERATION_TYPES:
+        raise ValueError(f"Unsupported editor operation: {operation_type}")
+
+    slide_id = operation.get("slideId")
+    if not isinstance(slide_id, str) or not slide_id.startswith("slide_"):
+        raise ValueError(f"{operation_type} requires a slideId like slide_1.")
+
+    if operation_type == "changeBackgroundColor":
+        _require_hex_color(operation, "color", operation_type)
+        return operation
+
+    object_id = operation.get("objectId")
+    if not isinstance(object_id, str) or "_" not in object_id:
+        raise ValueError(f"{operation_type} requires an objectId like text_3.")
+
+    if operation_type == "updateText":
+        if not isinstance(operation.get("text"), str):
+            raise ValueError("updateText requires text.")
+    elif operation_type == "moveObject":
+        _require_number(operation, "x", operation_type)
+        _require_number(operation, "y", operation_type)
+    elif operation_type == "resizeObject":
+        _require_number(operation, "width", operation_type)
+        _require_number(operation, "height", operation_type)
+    elif operation_type == "changeFont":
+        if operation.get("font") not in EDITOR_FONTS:
+            raise ValueError("changeFont font is not allowed.")
+    elif operation_type == "changeTextColor":
+        _require_hex_color(operation, "color", operation_type)
+    elif operation_type == "replaceImage":
+        if not isinstance(operation.get("assetPath"), str):
+            raise ValueError("replaceImage requires assetPath.")
+    elif operation_type in {"setEnterAnimation", "setExitAnimation"}:
+        if operation.get("animation") not in EDITOR_ANIMATIONS:
+            raise ValueError(f"{operation_type} animation is not allowed.")
+
+    return operation
+
+
+def _require_number(operation: dict, key: str, operation_type: str) -> None:
+    value = operation.get(key)
+    if not isinstance(value, (int, float)):
+        raise ValueError(f"{operation_type} requires numeric {key}.")
+
+
+def _require_hex_color(operation: dict, key: str, operation_type: str) -> None:
+    value = operation.get(key)
+    if not isinstance(value, str):
+        raise ValueError(f"{operation_type} requires {key}.")
+    raw = value.lstrip("#")
+    if len(raw) != 6 or any(char not in "0123456789abcdefABCDEF" for char in raw):
+        raise ValueError(f"{operation_type} requires a 6-digit hex {key}.")
+
+
+def _editor_operation_warnings(operations: list[dict]) -> list[str]:
+    warnings = []
+    if any(operation.get("type") in {"setEnterAnimation", "setExitAnimation"} for operation in operations):
+        warnings.append("Animation settings were saved in JSON for preview; PPT animation export is not enabled yet.")
+    if any(operation.get("type") == "replaceImage" for operation in operations):
+        warnings.append("Image replacement operations were saved; binary image replacement is not enabled yet.")
+    return warnings
+
+
+def _editor_animation_metadata(operations: list[dict]) -> dict:
+    objects = {}
+    for operation in operations:
+        operation_type = operation.get("type")
+        if operation_type not in {"setEnterAnimation", "setExitAnimation"}:
+            continue
+
+        key = (str(operation.get("slideId")), str(operation.get("objectId")))
+        objects.setdefault(
+            key,
+            {
+                "slideId": key[0],
+                "objectId": key[1],
+                "enterAnimation": "none",
+                "exitAnimation": "none",
+            },
+        )
+        if operation_type == "setEnterAnimation":
+            objects[key]["enterAnimation"] = operation.get("animation") or "none"
+        else:
+            objects[key]["exitAnimation"] = operation.get("animation") or "none"
+
+    return {
+        "schemaVersion": 1,
+        "pptAnimationExport": False,
+        "objects": list(objects.values()),
+    }
+
+
+def _attach_editor_metadata(filled_template: dict, operations: list[dict], animation_metadata: dict) -> dict:
+    filled_template["editor"] = {
+        "operationSchemaVersion": 1,
+        "operations": operations,
+        "animationMetadata": animation_metadata,
+        "capabilities": {
+            "pptAnimationExport": False,
+        },
+    }
+    return filled_template
 
 
 def _slide_preview(filled_template: dict) -> list[dict]:

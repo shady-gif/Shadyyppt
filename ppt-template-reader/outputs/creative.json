@@ -2369,10 +2369,10 @@
       "relationshipPath": "ppt/slides/_rels/slide1.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 11,
+        "shapes": 13,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 4
+        "textBoxes": 5
       },
       "shapes": [
         {
@@ -2542,9 +2542,81 @@
           }
         },
         {
+          "shapeId": "9",
+          "name": "Freeform 9",
+          "zOrder": 7,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 1456153,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 1.5925,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 85725,
+            "widthPt": 6.75,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "TextBox 10",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 1456153,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 1.5925,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "11",
           "name": "Freeform 11",
-          "zOrder": 7,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -2572,7 +2644,7 @@
         {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 8,
+          "zOrder": 10,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -2600,7 +2672,7 @@
         {
           "shapeId": "13",
           "name": "TextBox 13",
-          "zOrder": 9,
+          "zOrder": 11,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -2626,7 +2698,7 @@
         {
           "shapeId": "14",
           "name": "TextBox 14",
-          "zOrder": 10,
+          "zOrder": 12,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -2652,7 +2724,7 @@
         {
           "shapeId": "15",
           "name": "TextBox 15",
-          "zOrder": 11,
+          "zOrder": 13,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -2830,10 +2902,10 @@
       "relationshipPath": "ppt/slides/_rels/slide2.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 10,
+        "shapes": 12,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 3
+        "textBoxes": 4
       },
       "shapes": [
         {
@@ -2919,9 +2991,81 @@
           }
         },
         {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 2415031,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 2.6411,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 85725,
+            "widthPt": 6.75,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 2415031,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 2.6411,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "8",
           "name": "Freeform 8",
-          "zOrder": 4,
+          "zOrder": 6,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -2949,7 +3093,7 @@
         {
           "shapeId": "9",
           "name": "Freeform 9",
-          "zOrder": 5,
+          "zOrder": 7,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -2977,7 +3121,7 @@
         {
           "shapeId": "10",
           "name": "Freeform 10",
-          "zOrder": 6,
+          "zOrder": 8,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3005,7 +3149,7 @@
         {
           "shapeId": "11",
           "name": "Freeform 11",
-          "zOrder": 7,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3033,7 +3177,7 @@
         {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 8,
+          "zOrder": 10,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3061,7 +3205,7 @@
         {
           "shapeId": "13",
           "name": "TextBox 13",
-          "zOrder": 9,
+          "zOrder": 11,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3087,7 +3231,7 @@
         {
           "shapeId": "14",
           "name": "TextBox 14",
-          "zOrder": 10,
+          "zOrder": 12,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3229,10 +3373,10 @@
       "relationshipPath": "ppt/slides/_rels/slide3.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 13,
+        "shapes": 17,
         "pictures": 0,
         "groups": 2,
-        "textBoxes": 5
+        "textBoxes": 7
       },
       "shapes": [
         {
@@ -3346,9 +3490,153 @@
           }
         },
         {
+          "shapeId": "7",
+          "name": "Freeform 7",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 3879868,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 4.2431,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 76200,
+            "widthPt": 6.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 3879868,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 4.2431,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "Freeform 10",
+          "zOrder": 7,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 3879868,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 4.2431,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 76200,
+            "widthPt": 6.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 3879868,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 4.2431,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 5,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3376,7 +3664,7 @@
         {
           "shapeId": "13",
           "name": "Freeform 13",
-          "zOrder": 6,
+          "zOrder": 10,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3404,7 +3692,7 @@
         {
           "shapeId": "14",
           "name": "Freeform 14",
-          "zOrder": 7,
+          "zOrder": 11,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3432,7 +3720,7 @@
         {
           "shapeId": "15",
           "name": "Freeform 15",
-          "zOrder": 8,
+          "zOrder": 12,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3460,7 +3748,7 @@
         {
           "shapeId": "16",
           "name": "Freeform 16",
-          "zOrder": 9,
+          "zOrder": 13,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3488,7 +3776,7 @@
         {
           "shapeId": "17",
           "name": "TextBox 17",
-          "zOrder": 10,
+          "zOrder": 14,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3514,7 +3802,7 @@
         {
           "shapeId": "18",
           "name": "TextBox 18",
-          "zOrder": 11,
+          "zOrder": 15,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3540,7 +3828,7 @@
         {
           "shapeId": "19",
           "name": "TextBox 19",
-          "zOrder": 12,
+          "zOrder": 16,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3566,7 +3854,7 @@
         {
           "shapeId": "20",
           "name": "TextBox 20",
-          "zOrder": 13,
+          "zOrder": 17,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3780,10 +4068,10 @@
       "relationshipPath": "ppt/slides/_rels/slide4.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 14,
+        "shapes": 18,
         "pictures": 0,
         "groups": 2,
-        "textBoxes": 5
+        "textBoxes": 7
       },
       "shapes": [
         {
@@ -3897,9 +4185,153 @@
           }
         },
         {
+          "shapeId": "7",
+          "name": "Freeform 7",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 2302988,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 2.5186,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 76200,
+            "widthPt": 6.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 2302988,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 2.5186,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "Freeform 10",
+          "zOrder": 7,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 2302988,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 2.5186,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 76200,
+            "widthPt": 6.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 2302988,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 2.5186,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 5,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3927,7 +4359,7 @@
         {
           "shapeId": "13",
           "name": "TextBox 13",
-          "zOrder": 6,
+          "zOrder": 10,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3953,7 +4385,7 @@
         {
           "shapeId": "14",
           "name": "TextBox 14",
-          "zOrder": 7,
+          "zOrder": 11,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3979,7 +4411,7 @@
         {
           "shapeId": "15",
           "name": "TextBox 15",
-          "zOrder": 8,
+          "zOrder": 12,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -4005,7 +4437,7 @@
         {
           "shapeId": "16",
           "name": "TextBox 16",
-          "zOrder": 9,
+          "zOrder": 13,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -4031,7 +4463,7 @@
         {
           "shapeId": "17",
           "name": "Freeform 17",
-          "zOrder": 10,
+          "zOrder": 14,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4059,7 +4491,7 @@
         {
           "shapeId": "18",
           "name": "Freeform 18",
-          "zOrder": 11,
+          "zOrder": 15,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4087,7 +4519,7 @@
         {
           "shapeId": "19",
           "name": "Freeform 19",
-          "zOrder": 12,
+          "zOrder": 16,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4115,7 +4547,7 @@
         {
           "shapeId": "20",
           "name": "Freeform 20",
-          "zOrder": 13,
+          "zOrder": 17,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4143,7 +4575,7 @@
         {
           "shapeId": "21",
           "name": "Freeform 21",
-          "zOrder": 14,
+          "zOrder": 18,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4359,10 +4791,10 @@
       "relationshipPath": "ppt/slides/_rels/slide5.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 11,
+        "shapes": 15,
         "pictures": 0,
         "groups": 2,
-        "textBoxes": 5
+        "textBoxes": 7
       },
       "shapes": [
         {
@@ -4476,9 +4908,153 @@
           }
         },
         {
+          "shapeId": "7",
+          "name": "Freeform 7",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 2151332,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 2.3527,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 76200,
+            "widthPt": 6.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 2151332,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 2.3527,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "Freeform 10",
+          "zOrder": 7,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 3294674,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 3.6031,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 76200,
+            "widthPt": 6.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "11",
+          "name": "TextBox 11",
+          "zOrder": 8,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 3294674,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 3.6031,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 5,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4506,7 +5082,7 @@
         {
           "shapeId": "13",
           "name": "Freeform 13",
-          "zOrder": 6,
+          "zOrder": 10,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4534,7 +5110,7 @@
         {
           "shapeId": "14",
           "name": "TextBox 14",
-          "zOrder": 7,
+          "zOrder": 11,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -4560,7 +5136,7 @@
         {
           "shapeId": "15",
           "name": "TextBox 15",
-          "zOrder": 8,
+          "zOrder": 12,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -4586,7 +5162,7 @@
         {
           "shapeId": "16",
           "name": "TextBox 16",
-          "zOrder": 9,
+          "zOrder": 13,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -4612,7 +5188,7 @@
         {
           "shapeId": "17",
           "name": "TextBox 17",
-          "zOrder": 10,
+          "zOrder": 14,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -4638,7 +5214,7 @@
         {
           "shapeId": "18",
           "name": "Freeform 18",
-          "zOrder": 11,
+          "zOrder": 15,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4855,7 +5431,7 @@
       "layoutRelationshipId": "rId1",
       "counts": {
         "shapes": 10,
-        "pictures": 0,
+        "pictures": 3,
         "groups": 1,
         "textBoxes": 2
       },
@@ -5211,7 +5787,23 @@
           ]
         }
       ],
-      "pictures": []
+      "pictures": [
+        {
+          "shapeId": "5",
+          "name": "Picture 5",
+          "relationshipId": "rId5"
+        },
+        {
+          "shapeId": "6",
+          "name": "Picture 6",
+          "relationshipId": "rId6"
+        },
+        {
+          "shapeId": "7",
+          "name": "Picture 7",
+          "relationshipId": "rId7"
+        }
+      ]
     },
     {
       "index": 7,
@@ -5219,10 +5811,10 @@
       "relationshipPath": "ppt/slides/_rels/slide7.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 9,
+        "shapes": 11,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 3
+        "textBoxes": 4
       },
       "shapes": [
         {
@@ -5336,9 +5928,81 @@
           }
         },
         {
+          "shapeId": "7",
+          "name": "Freeform 7",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 2415031,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 2.6411,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 85725,
+            "widthPt": 6.75,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 2415031,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 2.6411,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "9",
           "name": "TextBox 9",
-          "zOrder": 5,
+          "zOrder": 7,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -5364,7 +6028,7 @@
         {
           "shapeId": "10",
           "name": "TextBox 10",
-          "zOrder": 6,
+          "zOrder": 8,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -5390,7 +6054,7 @@
         {
           "shapeId": "11",
           "name": "Freeform 11",
-          "zOrder": 7,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -5418,7 +6082,7 @@
         {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 8,
+          "zOrder": 10,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -5446,7 +6110,7 @@
         {
           "shapeId": "13",
           "name": "Freeform 13",
-          "zOrder": 9,
+          "zOrder": 11,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -5590,10 +6254,10 @@
       "relationshipPath": "ppt/slides/_rels/slide8.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 9,
+        "shapes": 11,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 3
+        "textBoxes": 4
       },
       "shapes": [
         {
@@ -5679,9 +6343,81 @@
           }
         },
         {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 2415031,
+            "heightEmu": 372047,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 2.6411,
+            "heightInches": 0.4069,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "solid",
+            "color": {
+              "type": "srgb",
+              "hex": "#FFA123"
+            }
+          },
+          "line": {
+            "widthEmu": 85725,
+            "widthPt": 6.75,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#FFFFFF"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {
+              "hex": "#FFA123",
+              "source": "direct"
+            },
+            "lineColor": {
+              "hex": "#FFFFFF",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 2415031,
+            "heightEmu": 419672,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 2.6411,
+            "heightInches": 0.459,
+            "rotationDegrees": 0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "8",
           "name": "Freeform 8",
-          "zOrder": 4,
+          "zOrder": 6,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -5709,7 +6445,7 @@
         {
           "shapeId": "9",
           "name": "TextBox 9",
-          "zOrder": 5,
+          "zOrder": 7,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -5735,7 +6471,7 @@
         {
           "shapeId": "10",
           "name": "TextBox 10",
-          "zOrder": 6,
+          "zOrder": 8,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -5761,7 +6497,7 @@
         {
           "shapeId": "11",
           "name": "Freeform 11",
-          "zOrder": 7,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -5789,7 +6525,7 @@
         {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 8,
+          "zOrder": 10,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -5817,7 +6553,7 @@
         {
           "shapeId": "13",
           "name": "Freeform 13",
-          "zOrder": 9,
+          "zOrder": 11,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -5962,7 +6698,7 @@
       "layoutRelationshipId": "rId1",
       "counts": {
         "shapes": 7,
-        "pictures": 0,
+        "pictures": 6,
         "groups": 2,
         "textBoxes": 1
       },
@@ -6200,7 +6936,38 @@
           ]
         }
       ],
-      "pictures": []
+      "pictures": [
+        {
+          "shapeId": "5",
+          "name": "Picture 5",
+          "relationshipId": "rId5"
+        },
+        {
+          "shapeId": "6",
+          "name": "Picture 6",
+          "relationshipId": "rId6"
+        },
+        {
+          "shapeId": "7",
+          "name": "Picture 7",
+          "relationshipId": "rId7"
+        },
+        {
+          "shapeId": "9",
+          "name": "Picture 9",
+          "relationshipId": "rId8"
+        },
+        {
+          "shapeId": "10",
+          "name": "Picture 10",
+          "relationshipId": "rId9"
+        },
+        {
+          "shapeId": "11",
+          "name": "Picture 11",
+          "relationshipId": "rId10"
+        }
+      ]
     },
     {
       "index": 10,

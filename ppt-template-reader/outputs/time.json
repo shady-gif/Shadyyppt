@@ -2232,16 +2232,105 @@
       "relationshipPath": "ppt/slides/_rels/slide1.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 1,
+        "shapes": 4,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 1
+        "textBoxes": 3
       },
       "shapes": [
         {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -409575,
+            "widthEmu": 15773256,
+            "heightEmu": 4684479,
+            "xInches": 0.0,
+            "yInches": -0.4479,
+            "widthInches": 17.2498,
+            "heightInches": 5.123,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "TIME OUT!",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 5311685,
+            "widthEmu": 15773256,
+            "heightEmu": 820499,
+            "xInches": 0.0,
+            "yInches": 5.8089,
+            "widthInches": 17.2498,
+            "heightInches": 0.8973,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "How to Manage Your Time for Success",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "AutoShape 5",
+          "zOrder": 3,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4705695,
+            "widthEmu": 17874739,
+            "heightEmu": 0,
+            "xInches": 0.0,
+            "yInches": 5.1462,
+            "widthInches": 19.5481,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
           "shapeId": "6",
           "name": "TextBox 6",
-          "zOrder": 1,
+          "zOrder": 4,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -2266,6 +2355,78 @@
         }
       ],
       "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "TIME OUT!",
+          "paragraphs": [
+            {
+              "text": "TIME OUT!",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "TIME OUT!",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 210.37,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "How to Manage Your Time for Success",
+          "paragraphs": [
+            {
+              "text": "How to Manage Your Time for Success",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "How to Manage Your Time for Success",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 36.62,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "shapeId": "6",
           "name": "TextBox 6",
@@ -2517,10 +2678,10 @@
       "relationshipPath": "ppt/slides/_rels/slide3.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 1,
+        "shapes": 8,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 0
+        "textBoxes": 4
       },
       "shapes": [
         {
@@ -2550,9 +2711,465 @@
             "fillColor": {},
             "lineColor": {}
           }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -76200,
+            "widthEmu": 10304063,
+            "heightEmu": 3992871,
+            "xInches": 0.0,
+            "yInches": -0.0833,
+            "widthInches": 11.2687,
+            "heightInches": 4.3667,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "I'M HENRIETTA MITCHELL!",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4835643,
+            "widthEmu": 10301032,
+            "heightEmu": 630555,
+            "xInches": 0.0,
+            "yInches": 5.2883,
+            "widthInches": 11.2653,
+            "heightInches": 0.6896,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "A productivity expert",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 3031,
+            "yEmu": 6317920,
+            "widthEmu": 10301032,
+            "heightEmu": 1387475,
+            "xInches": 0.0033,
+            "yInches": 6.9094,
+            "widthInches": 11.2653,
+            "heightInches": 1.5174,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The author of Get It Done:Live Your Best Productive Life",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 3031,
+            "yEmu": 8595218,
+            "widthEmu": 10301032,
+            "heightEmu": 1278255,
+            "xInches": 0.0033,
+            "yInches": 9.3998,
+            "widthInches": 11.2653,
+            "heightInches": 1.3979,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The host of the Power Hourwith Henrietta Podcast",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "AutoShape 8",
+          "zOrder": 6,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 3031,
+            "yEmu": 5912696,
+            "widthEmu": 10301032,
+            "heightEmu": 0,
+            "xInches": 0.0033,
+            "yInches": 6.4662,
+            "widthInches": 11.2653,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "9",
+          "name": "AutoShape 9",
+          "zOrder": 7,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 6061,
+            "yEmu": 8151894,
+            "widthEmu": 10301032,
+            "heightEmu": 0,
+            "xInches": 0.0066,
+            "yInches": 8.915,
+            "widthInches": 11.2653,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "10",
+          "name": "AutoShape 10",
+          "zOrder": 8,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 6061,
+            "yEmu": 10319971,
+            "widthEmu": 10301032,
+            "heightEmu": 0,
+            "xInches": 0.0066,
+            "yInches": 11.2861,
+            "widthInches": 11.2653,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
         }
       ],
-      "texts": [],
+      "texts": [
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "I'M HENRIETTA MITCHELL!",
+          "paragraphs": [
+            {
+              "text": "I'M HENRIETTA MITCHELL!",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "I'M ",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 93.5,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                },
+                {
+                  "text": "HENRIETTA",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 93.5,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                },
+                {
+                  "text": " MITCHELL!",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 93.5,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "A productivity expert",
+          "paragraphs": [
+            {
+              "text": "A productivity expert",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "A productivity expert",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 30.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "The author of Get It Done:\nLive Your Best Productive Life",
+          "paragraphs": [
+            {
+              "text": "The author of Get It Done:",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The author of Get It Done:",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 30.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "Live Your Best Productive Life",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Live Your Best Productive Life",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 30.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "The host of the Power Hour\nwith Henrietta Podcast",
+          "paragraphs": [
+            {
+              "text": "The host of the Power Hour",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The host of the Power Hour",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 30.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "with Henrietta Podcast",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "with Henrietta Podcast",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 30.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "pictures": []
     },
     {
@@ -2561,13 +3178,142 @@
       "relationshipPath": "ppt/slides/_rels/slide4.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 0,
+        "shapes": 2,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 0
+        "textBoxes": 1
       },
-      "shapes": [],
-      "texts": [],
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -95250,
+            "widthEmu": 16274537,
+            "heightEmu": 4286250,
+            "xInches": 0.0,
+            "yInches": -0.1042,
+            "widthInches": 17.7981,
+            "heightInches": 4.6875,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "TIP #1:DO A TIME AUDIT.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "AutoShape 4",
+          "zOrder": 2,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4682642,
+            "widthEmu": 22452706,
+            "heightEmu": 0,
+            "xInches": 0.0,
+            "yInches": 5.121,
+            "widthInches": 24.5546,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "TIP #1:\nDO A TIME AUDIT.",
+          "paragraphs": [
+            {
+              "text": "TIP #1:",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "TIP #1:",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 100.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "DO A TIME AUDIT.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "DO A TIME AUDIT.",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 100.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "pictures": []
     },
     {
@@ -2836,16 +3582,68 @@
       "relationshipPath": "ppt/slides/_rels/slide6.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 1,
+        "shapes": 3,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 1
+        "textBoxes": 3
       },
       "shapes": [
         {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -66675,
+            "widthEmu": 14949212,
+            "heightEmu": 1684655,
+            "xInches": 0.0,
+            "yInches": -0.0729,
+            "widthInches": 16.3487,
+            "heightInches": 1.8424,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "HOW TO DO A TIME AUDIT",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 2081939,
+            "widthEmu": 14949212,
+            "heightEmu": 2228850,
+            "xInches": 0.0,
+            "yInches": 2.2768,
+            "widthInches": 16.3487,
+            "heightInches": 2.4375,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Find out how much time you spend on tasks. Compare your ideal and actual time allotment for tasks, then adjust your schedule accordingly.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "5",
           "name": "TextBox 5",
-          "zOrder": 1,
+          "zOrder": 3,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -2870,6 +3668,98 @@
         }
       ],
       "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "HOW TO DO A TIME AUDIT",
+          "paragraphs": [
+            {
+              "text": "HOW TO DO A TIME AUDIT",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "HOW",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 80.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                },
+                {
+                  "text": " TO DO A TIME AUDIT",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 80.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Find out how much time you spend on tasks. Compare your ideal and actual time allotment for tasks, then adjust your schedule accordingly.",
+          "paragraphs": [
+            {
+              "text": "Find out how much time you spend on tasks. Compare your ideal and actual time allotment for tasks, then adjust your schedule accordingly.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Find out how much time you spend on tasks. Compare your ideal and actual time allotment for tasks, then adjust your schedule accordingly.",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 30.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "shapeId": "5",
           "name": "TextBox 5",
@@ -2915,10 +3805,10 @@
       "relationshipPath": "ppt/slides/_rels/slide7.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 1,
+        "shapes": 3,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 0
+        "textBoxes": 1
       },
       "shapes": [
         {
@@ -2948,9 +3838,137 @@
             "fillColor": {},
             "lineColor": {}
           }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -85725,
+            "widthEmu": 15753952,
+            "heightEmu": 4276725,
+            "xInches": 0.0,
+            "yInches": -0.0938,
+            "widthInches": 17.2287,
+            "heightInches": 4.6771,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "TIP #2:CREATE A TO-DO LIST.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "AutoShape 5",
+          "zOrder": 3,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 446455,
+            "yEmu": 4627844,
+            "widthEmu": 14861043,
+            "heightEmu": 0,
+            "xInches": 0.4882,
+            "yInches": 5.0611,
+            "widthInches": 16.2522,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
         }
       ],
-      "texts": [],
+      "texts": [
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "TIP #2:\nCREATE A TO-DO LIST.",
+          "paragraphs": [
+            {
+              "text": "TIP #2:",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "TIP #2:",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 99.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "CREATE A TO-DO LIST.",
+              "alignment": "ctr",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "CREATE A TO-DO LIST.",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 100.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "pictures": []
     },
     {
@@ -2959,16 +3977,79 @@
       "relationshipPath": "ppt/slides/_rels/slide8.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 2,
+        "shapes": 4,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 1
+        "textBoxes": 2
       },
       "shapes": [
         {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -95250,
+            "widthEmu": 10260664,
+            "heightEmu": 2584450,
+            "xInches": 0.0,
+            "yInches": -0.1042,
+            "widthInches": 11.2212,
+            "heightInches": 2.8264,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Have only three to five tasks daily. Frequently revisit your list to assess if tasks are doable.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "AutoShape 4",
+          "zOrder": 2,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 2985449,
+            "widthEmu": 24682111,
+            "heightEmu": 0,
+            "xInches": 0.0,
+            "yInches": 3.2649,
+            "widthInches": 26.9927,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
           "shapeId": "5",
           "name": "Freeform 5",
-          "zOrder": 1,
+          "zOrder": 3,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -2996,7 +4077,7 @@
         {
           "shapeId": "6",
           "name": "TextBox 6",
-          "zOrder": 2,
+          "zOrder": 4,
           "type": "rect",
           "placeholder": null,
           "geometry": {
@@ -3021,6 +4102,82 @@
         }
       ],
       "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "Have only three to five tasks daily. Frequently revisit your list to assess if tasks are doable.",
+          "paragraphs": [
+            {
+              "text": "Have only three to five tasks daily. Frequently revisit your list to assess if tasks are doable.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Have only ",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 35.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                },
+                {
+                  "text": "three to five tasks daily.",
+                  "font": {
+                    "latin": "Open Sauce Medium",
+                    "eastAsian": "Open Sauce Medium",
+                    "complexScript": "Open Sauce Medium"
+                  },
+                  "fontSize": 35.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                },
+                {
+                  "text": " Frequently revisit your list to assess if tasks are doable.",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 35.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
         {
           "shapeId": "6",
           "name": "TextBox 6",
@@ -3398,10 +4555,10 @@
       "relationshipPath": "ppt/slides/_rels/slide11.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 2,
+        "shapes": 6,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 1
+        "textBoxes": 3
       },
       "shapes": [
         {
@@ -3431,9 +4588,135 @@
           }
         },
         {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 3229829,
+            "widthEmu": 10197149,
+            "heightEmu": 2038985,
+            "xInches": 0.0,
+            "yInches": 3.5322,
+            "widthInches": 11.1517,
+            "heightInches": 2.2299,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Switching between challenging tasks literally drains your brain. It also makes you more likely to commit mistakes.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 316184,
+            "widthEmu": 10197149,
+            "heightEmu": 1340485,
+            "xInches": 0.0,
+            "yInches": 0.3458,
+            "widthInches": 11.1517,
+            "heightInches": 1.466,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Studies show that multitasking negatively affects short-term memory.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "AutoShape 6",
+          "zOrder": 4,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 14660127,
+            "heightEmu": 0,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 16.0325,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "AutoShape 7",
+          "zOrder": 5,
+          "type": "line",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 2994084,
+            "widthEmu": 14660127,
+            "heightEmu": 0,
+            "xInches": 0.0,
+            "yInches": 3.2744,
+            "widthInches": 16.0325,
+            "heightInches": 0.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {
+            "widthEmu": 25400,
+            "widthPt": 2.0,
+            "fill": null,
+            "color": {
+              "type": "srgb",
+              "hex": "#000000"
+            }
+          },
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {
+              "hex": "#000000",
+              "source": "direct"
+            }
+          }
+        },
+        {
           "shapeId": "8",
           "name": "Freeform 8",
-          "zOrder": 2,
+          "zOrder": 6,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -3507,6 +4790,78 @@
                   "resolved": {
                     "font": {
                       "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Switching between challenging tasks literally drains your brain. It also makes you more likely to commit mistakes.",
+          "paragraphs": [
+            {
+              "text": "Switching between challenging tasks literally drains your brain. It also makes you more likely to commit mistakes.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Switching between challenging tasks literally drains your brain. It also makes you more likely to commit mistakes.",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 28.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Studies show that multitasking negatively affects short-term memory.",
+          "paragraphs": [
+            {
+              "text": "Studies show that multitasking negatively affects short-term memory.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Studies show that multitasking negatively affects short-term memory.",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 28.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
                       "source": "direct"
                     },
                     "color": {}
@@ -4121,16 +5476,68 @@
       "relationshipPath": "ppt/slides/_rels/slide14.xml.rels",
       "layoutRelationshipId": "rId1",
       "counts": {
-        "shapes": 25,
+        "shapes": 27,
         "pictures": 0,
         "groups": 1,
-        "textBoxes": 0
+        "textBoxes": 2
       },
       "shapes": [
         {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -47625,
+            "widthEmu": 7440518,
+            "heightEmu": 1163250,
+            "xInches": 0.0,
+            "yInches": -0.0521,
+            "widthInches": 8.137,
+            "heightInches": 1.2721,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "FREE RESOURCES",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 1696777,
+            "widthEmu": 7440518,
+            "heightEmu": 1925955,
+            "xInches": 0.0,
+            "yInches": 1.8556,
+            "widthInches": 8.137,
+            "heightInches": 2.1063,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Use these free, recolorable icons, and illustrations in your Canva presentation.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
           "shapeId": "5",
           "name": "Freeform 5",
-          "zOrder": 1,
+          "zOrder": 3,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4158,7 +5565,7 @@
         {
           "shapeId": "6",
           "name": "Freeform 6",
-          "zOrder": 2,
+          "zOrder": 4,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4186,7 +5593,7 @@
         {
           "shapeId": "7",
           "name": "Freeform 7",
-          "zOrder": 3,
+          "zOrder": 5,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4214,7 +5621,7 @@
         {
           "shapeId": "8",
           "name": "Freeform 8",
-          "zOrder": 4,
+          "zOrder": 6,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4242,7 +5649,7 @@
         {
           "shapeId": "9",
           "name": "Freeform 9",
-          "zOrder": 5,
+          "zOrder": 7,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4270,7 +5677,7 @@
         {
           "shapeId": "10",
           "name": "Freeform 10",
-          "zOrder": 6,
+          "zOrder": 8,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4298,7 +5705,7 @@
         {
           "shapeId": "11",
           "name": "Freeform 11",
-          "zOrder": 7,
+          "zOrder": 9,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4326,7 +5733,7 @@
         {
           "shapeId": "12",
           "name": "Freeform 12",
-          "zOrder": 8,
+          "zOrder": 10,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4354,7 +5761,7 @@
         {
           "shapeId": "13",
           "name": "Freeform 13",
-          "zOrder": 9,
+          "zOrder": 11,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4382,7 +5789,7 @@
         {
           "shapeId": "14",
           "name": "Freeform 14",
-          "zOrder": 10,
+          "zOrder": 12,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4410,7 +5817,7 @@
         {
           "shapeId": "15",
           "name": "Freeform 15",
-          "zOrder": 11,
+          "zOrder": 13,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4438,7 +5845,7 @@
         {
           "shapeId": "16",
           "name": "Freeform 16",
-          "zOrder": 12,
+          "zOrder": 14,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4466,7 +5873,7 @@
         {
           "shapeId": "17",
           "name": "Freeform 17",
-          "zOrder": 13,
+          "zOrder": 15,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4494,7 +5901,7 @@
         {
           "shapeId": "18",
           "name": "Freeform 18",
-          "zOrder": 14,
+          "zOrder": 16,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4522,7 +5929,7 @@
         {
           "shapeId": "19",
           "name": "Freeform 19",
-          "zOrder": 15,
+          "zOrder": 17,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4550,7 +5957,7 @@
         {
           "shapeId": "20",
           "name": "Freeform 20",
-          "zOrder": 16,
+          "zOrder": 18,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4578,7 +5985,7 @@
         {
           "shapeId": "21",
           "name": "Freeform 21",
-          "zOrder": 17,
+          "zOrder": 19,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4606,7 +6013,7 @@
         {
           "shapeId": "22",
           "name": "Freeform 22",
-          "zOrder": 18,
+          "zOrder": 20,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4634,7 +6041,7 @@
         {
           "shapeId": "23",
           "name": "Freeform 23",
-          "zOrder": 19,
+          "zOrder": 21,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4662,7 +6069,7 @@
         {
           "shapeId": "24",
           "name": "Freeform 24",
-          "zOrder": 20,
+          "zOrder": 22,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4690,7 +6097,7 @@
         {
           "shapeId": "25",
           "name": "Freeform 25",
-          "zOrder": 21,
+          "zOrder": 23,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4718,7 +6125,7 @@
         {
           "shapeId": "26",
           "name": "Freeform 26",
-          "zOrder": 22,
+          "zOrder": 24,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4746,7 +6153,7 @@
         {
           "shapeId": "27",
           "name": "Freeform 27",
-          "zOrder": 23,
+          "zOrder": 25,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4774,7 +6181,7 @@
         {
           "shapeId": "28",
           "name": "Freeform 28",
-          "zOrder": 24,
+          "zOrder": 26,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4802,7 +6209,7 @@
         {
           "shapeId": "29",
           "name": "Freeform 29",
-          "zOrder": 25,
+          "zOrder": 27,
           "type": null,
           "placeholder": null,
           "geometry": {
@@ -4828,7 +6235,100 @@
           }
         }
       ],
-      "texts": [],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "FREE RESOURCES",
+          "paragraphs": [
+            {
+              "text": "FREE RESOURCES",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "FREE",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 55.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                },
+                {
+                  "text": " RESOURCES",
+                  "font": {
+                    "latin": "Oswald Bold",
+                    "eastAsian": "Oswald Bold",
+                    "complexScript": "Oswald Bold"
+                  },
+                  "fontSize": 55.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Oswald Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Use these free, recolorable icons, and illustrations in your Canva presentation.",
+          "paragraphs": [
+            {
+              "text": "Use these free, recolorable icons, and illustrations in your Canva presentation.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Use these free, recolorable icons, and illustrations in your Canva presentation.",
+                  "font": {
+                    "latin": "Open Sauce Light",
+                    "eastAsian": "Open Sauce Light",
+                    "complexScript": "Open Sauce Light"
+                  },
+                  "fontSize": 30.0,
+                  "bold": null,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "Open Sauce Light",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
       "pictures": []
     }
   ],

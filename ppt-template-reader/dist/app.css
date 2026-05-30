@@ -113,6 +113,12 @@ body::before {
   gap: 16px;
 }
 
+.topbarActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .topbar {
   margin-bottom: 34px;
 }
@@ -158,6 +164,21 @@ a[download] {
   cursor: pointer;
   text-decoration: none;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+}
+
+.secondaryAction {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 760;
+  padding: 0 16px;
+  text-decoration: none;
 }
 
 button:hover,

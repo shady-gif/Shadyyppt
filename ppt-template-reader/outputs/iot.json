@@ -1,0 +1,5814 @@
+{
+  "inventory": {
+    "sourceFile": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/templates/iot.pptx",
+    "counts": {
+      "slides": 15,
+      "layouts": 11,
+      "masters": 1,
+      "themes": 1,
+      "media": 18,
+      "fonts": 3,
+      "relationships": 29
+    },
+    "parts": {
+      "slides": [
+        "ppt/slides/slide1.xml",
+        "ppt/slides/slide2.xml",
+        "ppt/slides/slide3.xml",
+        "ppt/slides/slide4.xml",
+        "ppt/slides/slide5.xml",
+        "ppt/slides/slide6.xml",
+        "ppt/slides/slide7.xml",
+        "ppt/slides/slide8.xml",
+        "ppt/slides/slide9.xml",
+        "ppt/slides/slide10.xml",
+        "ppt/slides/slide11.xml",
+        "ppt/slides/slide12.xml",
+        "ppt/slides/slide13.xml",
+        "ppt/slides/slide14.xml",
+        "ppt/slides/slide15.xml"
+      ],
+      "layouts": [
+        "ppt/slideLayouts/slideLayout1.xml",
+        "ppt/slideLayouts/slideLayout2.xml",
+        "ppt/slideLayouts/slideLayout3.xml",
+        "ppt/slideLayouts/slideLayout4.xml",
+        "ppt/slideLayouts/slideLayout5.xml",
+        "ppt/slideLayouts/slideLayout6.xml",
+        "ppt/slideLayouts/slideLayout7.xml",
+        "ppt/slideLayouts/slideLayout8.xml",
+        "ppt/slideLayouts/slideLayout9.xml",
+        "ppt/slideLayouts/slideLayout10.xml",
+        "ppt/slideLayouts/slideLayout11.xml"
+      ],
+      "masters": [
+        "ppt/slideMasters/slideMaster1.xml"
+      ],
+      "themes": [
+        "ppt/theme/theme1.xml"
+      ],
+      "media": [
+        "ppt/media/image1.jpeg",
+        "ppt/media/image2.png",
+        "ppt/media/image3.jpeg",
+        "ppt/media/image4.png",
+        "ppt/media/image5.jpeg",
+        "ppt/media/image6.jpeg",
+        "ppt/media/image7.jpeg",
+        "ppt/media/image8.jpeg",
+        "ppt/media/image9.jpeg",
+        "ppt/media/image10.jpeg",
+        "ppt/media/image11.jpeg",
+        "ppt/media/image12.jpeg",
+        "ppt/media/image13.jpeg",
+        "ppt/media/image14.jpeg",
+        "ppt/media/image15.jpeg",
+        "ppt/media/image16.jpeg",
+        "ppt/media/image17.jpeg",
+        "ppt/media/image18.jpeg"
+      ],
+      "fonts": [
+        "ppt/fonts/font21.fntdata",
+        "ppt/fonts/font22.fntdata",
+        "ppt/fonts/font23.fntdata"
+      ],
+      "relationships": [
+        "_rels/.rels",
+        "ppt/_rels/presentation.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout1.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout2.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout3.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout4.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout5.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout6.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout7.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout8.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout9.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout10.xml.rels",
+        "ppt/slideLayouts/_rels/slideLayout11.xml.rels",
+        "ppt/slideMasters/_rels/slideMaster1.xml.rels",
+        "ppt/slides/_rels/slide1.xml.rels",
+        "ppt/slides/_rels/slide2.xml.rels",
+        "ppt/slides/_rels/slide3.xml.rels",
+        "ppt/slides/_rels/slide4.xml.rels",
+        "ppt/slides/_rels/slide5.xml.rels",
+        "ppt/slides/_rels/slide6.xml.rels",
+        "ppt/slides/_rels/slide7.xml.rels",
+        "ppt/slides/_rels/slide8.xml.rels",
+        "ppt/slides/_rels/slide9.xml.rels",
+        "ppt/slides/_rels/slide10.xml.rels",
+        "ppt/slides/_rels/slide11.xml.rels",
+        "ppt/slides/_rels/slide12.xml.rels",
+        "ppt/slides/_rels/slide13.xml.rels",
+        "ppt/slides/_rels/slide14.xml.rels",
+        "ppt/slides/_rels/slide15.xml.rels"
+      ]
+    }
+  },
+  "presentation": {
+    "size": {
+      "widthEmu": 18288000,
+      "heightEmu": 10287000,
+      "widthInches": 20.0,
+      "heightInches": 11.25
+    },
+    "slides": [
+      {
+        "index": 1,
+        "slideId": "256",
+        "relationshipId": "rId6"
+      },
+      {
+        "index": 2,
+        "slideId": "257",
+        "relationshipId": "rId7"
+      },
+      {
+        "index": 3,
+        "slideId": "258",
+        "relationshipId": "rId8"
+      },
+      {
+        "index": 4,
+        "slideId": "259",
+        "relationshipId": "rId9"
+      },
+      {
+        "index": 5,
+        "slideId": "260",
+        "relationshipId": "rId10"
+      },
+      {
+        "index": 6,
+        "slideId": "261",
+        "relationshipId": "rId11"
+      },
+      {
+        "index": 7,
+        "slideId": "262",
+        "relationshipId": "rId12"
+      },
+      {
+        "index": 8,
+        "slideId": "263",
+        "relationshipId": "rId13"
+      },
+      {
+        "index": 9,
+        "slideId": "264",
+        "relationshipId": "rId14"
+      },
+      {
+        "index": 10,
+        "slideId": "265",
+        "relationshipId": "rId15"
+      },
+      {
+        "index": 11,
+        "slideId": "266",
+        "relationshipId": "rId16"
+      },
+      {
+        "index": 12,
+        "slideId": "267",
+        "relationshipId": "rId17"
+      },
+      {
+        "index": 13,
+        "slideId": "268",
+        "relationshipId": "rId18"
+      },
+      {
+        "index": 14,
+        "slideId": "269",
+        "relationshipId": "rId19"
+      },
+      {
+        "index": 15,
+        "slideId": "270",
+        "relationshipId": "rId20"
+      }
+    ]
+  },
+  "relationships": {
+    "_rels/.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument",
+        "target": "ppt/presentation.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/presentation.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/thumbnail",
+        "target": "docProps/thumbnail.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "docProps/thumbnail.jpeg"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/package/2006/relationships/metadata/core-properties",
+        "target": "docProps/core.xml",
+        "targetMode": null,
+        "resolvedTarget": "docProps/core.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/extended-properties",
+        "target": "docProps/app.xml",
+        "targetMode": null,
+        "resolvedTarget": "docProps/app.xml"
+      }
+    ],
+    "ppt/_rels/presentation.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide5.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide5.xml"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide6.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide6.xml"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide7.xml"
+      },
+      {
+        "id": "rId13",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide8.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide8.xml"
+      },
+      {
+        "id": "rId14",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide9.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide9.xml"
+      },
+      {
+        "id": "rId15",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide10.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide10.xml"
+      },
+      {
+        "id": "rId16",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide11.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide11.xml"
+      },
+      {
+        "id": "rId17",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide12.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide12.xml"
+      },
+      {
+        "id": "rId18",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide13.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide13.xml"
+      },
+      {
+        "id": "rId19",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide14.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide14.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/presProps",
+        "target": "presProps.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/presProps.xml"
+      },
+      {
+        "id": "rId20",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide15.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide15.xml"
+      },
+      {
+        "id": "rId21",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font21.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font21.fntdata"
+      },
+      {
+        "id": "rId22",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font22.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font22.fntdata"
+      },
+      {
+        "id": "rId23",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/font",
+        "target": "fonts/font23.fntdata",
+        "targetMode": null,
+        "resolvedTarget": "ppt/fonts/font23.fntdata"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/viewProps",
+        "target": "viewProps.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/viewProps.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+        "target": "theme/theme1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/theme/theme1.xml"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/tableStyles",
+        "target": "tableStyles.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/tableStyles.xml"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide1.xml"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide2.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide2.xml"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide3.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide3.xml"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slide",
+        "target": "slides/slide4.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slides/slide4.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout10.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout11.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout2.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout3.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout4.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout5.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout6.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout7.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout8.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideLayouts/_rels/slideLayout9.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideMaster",
+        "target": "../slideMasters/slideMaster1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideMasters/slideMaster1.xml"
+      }
+    ],
+    "ppt/slideMasters/_rels/slideMaster1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout1.xml"
+      },
+      {
+        "id": "rId10",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout10.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout10.xml"
+      },
+      {
+        "id": "rId11",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout11.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout11.xml"
+      },
+      {
+        "id": "rId12",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/theme",
+        "target": "../theme/theme1.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/theme/theme1.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout2.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout2.xml"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout3.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout3.xml"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout4.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout4.xml"
+      },
+      {
+        "id": "rId5",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout5.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout5.xml"
+      },
+      {
+        "id": "rId6",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout6.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout6.xml"
+      },
+      {
+        "id": "rId7",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId8",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout8.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout8.xml"
+      },
+      {
+        "id": "rId9",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout9.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout9.xml"
+      }
+    ],
+    "ppt/slides/_rels/slide1.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image1.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image1.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide10.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image13.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image13.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide11.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image14.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image14.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide12.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image15.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image15.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide13.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image16.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image16.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide14.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image17.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image17.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide15.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image18.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image18.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide2.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image2.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image2.png"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image3.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image3.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide3.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image4.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image4.png"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image5.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image5.jpeg"
+      },
+      {
+        "id": "rId4",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image6.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image6.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide4.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image7.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image7.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide5.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image8.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image8.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide6.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image9.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image9.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide7.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image10.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image10.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide8.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image11.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image11.jpeg"
+      }
+    ],
+    "ppt/slides/_rels/slide9.xml.rels": [
+      {
+        "id": "rId1",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout",
+        "target": "../slideLayouts/slideLayout7.xml",
+        "targetMode": null,
+        "resolvedTarget": "ppt/slideLayouts/slideLayout7.xml"
+      },
+      {
+        "id": "rId2",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image2.png",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image2.png"
+      },
+      {
+        "id": "rId3",
+        "type": "http://schemas.openxmlformats.org/officeDocument/2006/relationships/image",
+        "target": "../media/image12.jpeg",
+        "targetMode": null,
+        "resolvedTarget": "ppt/media/image12.jpeg"
+      }
+    ]
+  },
+  "theme": {
+    "name": "Office Theme",
+    "colors": {
+      "dk1": {
+        "type": "system",
+        "systemColor": "windowText",
+        "lastColor": "#000000"
+      },
+      "lt1": {
+        "type": "system",
+        "systemColor": "window",
+        "lastColor": "#FFFFFF"
+      },
+      "dk2": {
+        "type": "srgb",
+        "hex": "#1F497D"
+      },
+      "lt2": {
+        "type": "srgb",
+        "hex": "#EEECE1"
+      },
+      "accent1": {
+        "type": "srgb",
+        "hex": "#4F81BD"
+      },
+      "accent2": {
+        "type": "srgb",
+        "hex": "#C0504D"
+      },
+      "accent3": {
+        "type": "srgb",
+        "hex": "#9BBB59"
+      },
+      "accent4": {
+        "type": "srgb",
+        "hex": "#8064A2"
+      },
+      "accent5": {
+        "type": "srgb",
+        "hex": "#4BACC6"
+      },
+      "accent6": {
+        "type": "srgb",
+        "hex": "#F79646"
+      },
+      "hlink": {
+        "type": "srgb",
+        "hex": "#0000FF"
+      },
+      "folHlink": {
+        "type": "srgb",
+        "hex": "#800080"
+      }
+    },
+    "fonts": {
+      "schemeName": "Office",
+      "major": {
+        "latin": "Calibri",
+        "eastAsian": "",
+        "complexScript": ""
+      },
+      "minor": {
+        "latin": "Calibri",
+        "eastAsian": "",
+        "complexScript": ""
+      }
+    }
+  },
+  "masters": [
+    {
+      "path": "ppt/slideMasters/slideMaster1.xml",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title Placeholder 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "3",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "4",
+          "size": "quarter"
+        }
+      ],
+      "layoutReferences": [
+        {
+          "id": "2147483649",
+          "relationshipId": "rId1"
+        },
+        {
+          "id": "2147483650",
+          "relationshipId": "rId2"
+        },
+        {
+          "id": "2147483651",
+          "relationshipId": "rId3"
+        },
+        {
+          "id": "2147483652",
+          "relationshipId": "rId4"
+        },
+        {
+          "id": "2147483653",
+          "relationshipId": "rId5"
+        },
+        {
+          "id": "2147483654",
+          "relationshipId": "rId6"
+        },
+        {
+          "id": "2147483655",
+          "relationshipId": "rId7"
+        },
+        {
+          "id": "2147483656",
+          "relationshipId": "rId8"
+        },
+        {
+          "id": "2147483657",
+          "relationshipId": "rId9"
+        },
+        {
+          "id": "2147483658",
+          "relationshipId": "rId10"
+        },
+        {
+          "id": "2147483659",
+          "relationshipId": "rId11"
+        }
+      ],
+      "textStyles": {
+        "title": {
+          "lvl1pPr": {
+            "alignment": "ctr",
+            "fontSize": 44.0,
+            "bold": null,
+            "font": {
+              "latin": "+mj-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.major.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        },
+        "body": {
+          "lvl1pPr": {
+            "alignment": "l",
+            "fontSize": 32.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl2pPr": {
+            "alignment": "l",
+            "fontSize": 28.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl3pPr": {
+            "alignment": "l",
+            "fontSize": 24.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl4pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl5pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl6pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl7pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl8pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl9pPr": {
+            "alignment": "l",
+            "fontSize": 20.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        },
+        "other": {
+          "lvl1pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl2pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl3pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl4pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl5pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl6pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl7pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl8pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          },
+          "lvl9pPr": {
+            "alignment": "l",
+            "fontSize": 18.0,
+            "bold": null,
+            "font": {
+              "latin": "+mn-lt"
+            },
+            "color": {
+              "type": "scheme",
+              "value": "tx1"
+            },
+            "resolved": {
+              "font": {
+                "latin": "Calibri",
+                "source": "theme.minor.latin"
+              },
+              "color": {
+                "hex": "#000000",
+                "source": "theme.colors.dk1",
+                "schemeValue": "tx1"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "layouts": [
+    {
+      "path": "ppt/slideLayouts/slideLayout1.xml",
+      "name": "Title Slide",
+      "type": "title",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "ctrTitle",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Subtitle 2",
+          "type": "subTitle",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout10.xml",
+      "name": "Title and Vertical Text",
+      "type": "vertTx",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Vertical Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout11.xml",
+      "name": "Vertical Title and Text",
+      "type": "vertTitleAndTx",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Vertical Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Vertical Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout2.xml",
+      "name": "Title and Content",
+      "type": "obj",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout3.xml",
+      "name": "Section Header",
+      "type": "secHead",
+      "preserve": "1",
+      "shapeCount": 5,
+      "placeholderCount": 5,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Date Placeholder 3",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Footer Placeholder 4",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Slide Number Placeholder 5",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout4.xml",
+      "name": "Two Content",
+      "type": "twoObj",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": "half"
+        },
+        {
+          "shapeId": "4",
+          "name": "Content Placeholder 3",
+          "type": null,
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout5.xml",
+      "name": "Comparison",
+      "type": "twoTxTwoObj",
+      "preserve": "1",
+      "shapeCount": 8,
+      "placeholderCount": 8,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Text Placeholder 2",
+          "type": "body",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Content Placeholder 3",
+          "type": null,
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Text Placeholder 4",
+          "type": "body",
+          "index": "3",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "6",
+          "name": "Content Placeholder 5",
+          "type": null,
+          "index": "4",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Date Placeholder 6",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "8",
+          "name": "Footer Placeholder 7",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "9",
+          "name": "Slide Number Placeholder 8",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout6.xml",
+      "name": "Title Only",
+      "type": "titleOnly",
+      "preserve": "1",
+      "shapeCount": 4,
+      "placeholderCount": 4,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Date Placeholder 2",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "4",
+          "name": "Footer Placeholder 3",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "5",
+          "name": "Slide Number Placeholder 4",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout7.xml",
+      "name": "Blank",
+      "type": "blank",
+      "preserve": "1",
+      "shapeCount": 3,
+      "placeholderCount": 3,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Date Placeholder 1",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "3",
+          "name": "Footer Placeholder 2",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "4",
+          "name": "Slide Number Placeholder 3",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout8.xml",
+      "name": "Content with Caption",
+      "type": "objTx",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Content Placeholder 2",
+          "type": null,
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Text Placeholder 3",
+          "type": "body",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    },
+    {
+      "path": "ppt/slideLayouts/slideLayout9.xml",
+      "name": "Picture with Caption",
+      "type": "picTx",
+      "preserve": "1",
+      "shapeCount": 6,
+      "placeholderCount": 6,
+      "placeholders": [
+        {
+          "shapeId": "2",
+          "name": "Title 1",
+          "type": "title",
+          "index": null,
+          "size": null
+        },
+        {
+          "shapeId": "3",
+          "name": "Picture Placeholder 2",
+          "type": "pic",
+          "index": "1",
+          "size": null
+        },
+        {
+          "shapeId": "4",
+          "name": "Text Placeholder 3",
+          "type": "body",
+          "index": "2",
+          "size": "half"
+        },
+        {
+          "shapeId": "5",
+          "name": "Date Placeholder 4",
+          "type": "dt",
+          "index": "10",
+          "size": "half"
+        },
+        {
+          "shapeId": "6",
+          "name": "Footer Placeholder 5",
+          "type": "ftr",
+          "index": "11",
+          "size": "quarter"
+        },
+        {
+          "shapeId": "7",
+          "name": "Slide Number Placeholder 6",
+          "type": "sldNum",
+          "index": "12",
+          "size": "quarter"
+        }
+      ]
+    }
+  ],
+  "slides": [
+    {
+      "index": 1,
+      "path": "ppt/slides/slide1.xml",
+      "relationshipPath": "ppt/slides/_rels/slide1.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 3,
+        "pictures": 0,
+        "groups": 0,
+        "textBoxes": 2
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 18288000,
+            "heightEmu": 10287000,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 20.0,
+            "heightInches": 11.25,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 3782665,
+            "widthEmu": 12103716,
+            "heightEmu": 5475635,
+            "xInches": 1.125,
+            "yInches": 4.1368,
+            "widthInches": 13.2368,
+            "heightInches": 5.9882,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Demystifying the Internetof Things",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 11126051,
+            "yEmu": 1009650,
+            "widthEmu": 6133249,
+            "heightEmu": 466869,
+            "xInches": 12.1676,
+            "yInches": 1.1042,
+            "widthInches": 6.7074,
+            "heightInches": 0.5106,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "A complex technology simplified",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "Demystifying the Internet\nof Things",
+          "paragraphs": [
+            {
+              "text": "Demystifying the Internet",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Demystifying the Internet",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 129.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "of Things",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "of Things",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 130.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "A complex technology simplified",
+          "paragraphs": [
+            {
+              "text": "A complex technology simplified",
+              "alignment": "r",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "A complex technology simplified",
+                  "font": {
+                    "latin": "HK Grotesk Semi-Bold",
+                    "eastAsian": "HK Grotesk Semi-Bold",
+                    "complexScript": "HK Grotesk Semi-Bold"
+                  },
+                  "fontSize": 30.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Semi-Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 2,
+      "path": "ppt/slides/slide2.xml",
+      "relationshipPath": "ppt/slides/_rels/slide2.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 5,
+        "pictures": 0,
+        "groups": 2,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 5000993,
+            "heightEmu": 10163632,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 5.4692,
+            "heightInches": 11.1151,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 338760,
+            "yEmu": 288798,
+            "widthEmu": 4330776,
+            "heightEmu": 9398000,
+            "xInches": 0.3705,
+            "yInches": 0.3158,
+            "widthInches": 4.7362,
+            "heightInches": 10.2778,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 76200,
+            "widthEmu": 10185561,
+            "heightEmu": 3412760,
+            "xInches": 0.0,
+            "yInches": 0.0833,
+            "widthInches": 11.1391,
+            "heightInches": 3.7322,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "What isthe IoT?",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4104427,
+            "widthEmu": 10185561,
+            "heightEmu": 2602404,
+            "xInches": 0.0,
+            "yInches": 4.4887,
+            "widthInches": 11.1391,
+            "heightInches": 2.846,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 1076325,
+            "widthEmu": 7639170,
+            "heightEmu": 789161,
+            "xInches": 1.125,
+            "yInches": 1.1771,
+            "widthInches": 8.3543,
+            "heightInches": 0.863,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "02",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "What is\nthe IoT?",
+          "paragraphs": [
+            {
+              "text": "What is",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "What is",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "the IoT?",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "the IoT?",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "02",
+          "paragraphs": [
+            {
+              "text": "02",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "02",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 3,
+      "path": "ppt/slides/slide3.xml",
+      "relationshipPath": "ppt/slides/_rels/slide3.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 5,
+        "pictures": 0,
+        "groups": 2,
+        "textBoxes": 2
+      },
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 1976281,
+            "widthEmu": 9647118,
+            "heightEmu": 5378778,
+            "xInches": 0.0,
+            "yInches": 2.1613,
+            "widthInches": 10.5502,
+            "heightInches": 5.8823,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The Development of the IoT",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 47625,
+            "widthEmu": 9647118,
+            "heightEmu": 1068089,
+            "xInches": 0.0,
+            "yInches": 0.0521,
+            "widthInches": 10.5502,
+            "heightInches": 1.1681,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "03",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 10143351,
+            "heightEmu": 10163632,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 11.0929,
+            "heightInches": 11.1151,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "Freeform 7",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 3149600,
+            "yEmu": 2368550,
+            "widthEmu": 5156200,
+            "heightEmu": 6858000,
+            "xInches": 3.4444,
+            "yInches": 2.5903,
+            "widthInches": 5.6389,
+            "heightInches": 7.5,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "Freeform 8",
+          "zOrder": 5,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 374650,
+            "yEmu": 673100,
+            "widthEmu": 6318250,
+            "heightEmu": 8427288,
+            "xInches": 0.4097,
+            "yInches": 0.7361,
+            "widthInches": 6.9097,
+            "heightInches": 9.2162,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "The Development of the IoT",
+          "paragraphs": [
+            {
+              "text": "The Development of the IoT",
+              "alignment": "just",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The Development of the IoT",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 94.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "03",
+          "paragraphs": [
+            {
+              "text": "03",
+              "alignment": "just",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "03",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 55.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 4,
+      "path": "ppt/slides/slide4.xml",
+      "relationshipPath": "ppt/slides/_rels/slide4.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 3,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 2
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9591387,
+            "yEmu": 1028700,
+            "widthEmu": 7667913,
+            "heightEmu": 8229600,
+            "xInches": 10.4893,
+            "yInches": 1.125,
+            "widthInches": 8.3857,
+            "heightInches": 9.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 2340554,
+            "widthEmu": 8513555,
+            "heightEmu": 4693978,
+            "xInches": 0.0,
+            "yInches": 2.5597,
+            "widthInches": 9.3105,
+            "heightInches": 5.1334,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.To create a stunning presentation, it's best to simplify your thoughts.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 47625,
+            "widthEmu": 8513555,
+            "heightEmu": 1068089,
+            "xInches": 0.0,
+            "yInches": 0.0521,
+            "widthInches": 9.3105,
+            "heightInches": 1.1681,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "04",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Presentations are tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.\nTo create a stunning presentation, it's best to simplify your thoughts.",
+          "paragraphs": [
+            {
+              "text": "Presentations are tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+              "alignment": "l",
+              "level": 0,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": "none",
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "",
+              "alignment": "l",
+              "level": 0,
+              "bullet": {},
+              "runs": []
+            },
+            {
+              "text": "To create a stunning presentation, it's best to simplify your thoughts. ",
+              "alignment": "l",
+              "level": 0,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "To create a stunning presentation, it's best to simplify your thoughts. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": "none",
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "04",
+          "paragraphs": [
+            {
+              "text": "04",
+              "alignment": "l",
+              "level": 0,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "04",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": "none",
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 5,
+      "path": "ppt/slides/slide5.xml",
+      "relationshipPath": "ppt/slides/_rels/slide5.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 4,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 114300,
+            "widthEmu": 9903692,
+            "heightEmu": 4936375,
+            "xInches": 0.0,
+            "yInches": 0.125,
+            "widthInches": 10.8308,
+            "heightInches": 5.3985,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The Rise of the IoT",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 5711263,
+            "widthEmu": 9903692,
+            "heightEmu": 542444,
+            "xInches": 0.0,
+            "yInches": 6.2459,
+            "widthInches": 10.8308,
+            "heightInches": 0.5932,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Technologies that made IoT possible",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 6917470,
+            "widthEmu": 9903692,
+            "heightEmu": 1556616,
+            "xInches": 0.0,
+            "yInches": 7.565,
+            "widthInches": 10.8308,
+            "heightInches": 1.7023,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that canbe used as lectures, speeches, reports, and more.It is mostly presented before an audience.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -132625,
+            "yEmu": -159296,
+            "widthEmu": 8697310,
+            "heightEmu": 10617746,
+            "xInches": -0.145,
+            "yInches": -0.1742,
+            "widthInches": 9.5115,
+            "heightInches": 11.6117,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "The Rise of the IoT",
+          "paragraphs": [
+            {
+              "text": "The Rise of the IoT",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The Rise of the IoT",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 130.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Technologies that made IoT possible",
+          "paragraphs": [
+            {
+              "text": "Technologies that made IoT possible",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Technologies that made IoT possible",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 29.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can\nbe used as lectures, speeches, reports, and more.\nIt is mostly presented before an audience.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "be used as lectures, speeches, reports, and more.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "be used as lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "It is mostly presented before an audience. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "It is mostly presented before an audience. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 6,
+      "path": "ppt/slides/slide6.xml",
+      "relationshipPath": "ppt/slides/_rels/slide6.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 4,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 76200,
+            "widthEmu": 10185561,
+            "heightEmu": 3412760,
+            "xInches": 0.0,
+            "yInches": 0.0833,
+            "widthInches": 11.1391,
+            "heightInches": 3.7322,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Top IoT applications",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4053050,
+            "widthEmu": 10185561,
+            "heightEmu": 2602404,
+            "xInches": 0.0,
+            "yInches": 4.4325,
+            "widthInches": 11.1391,
+            "heightInches": 2.846,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 1076325,
+            "widthEmu": 7639170,
+            "heightEmu": 789161,
+            "xInches": 1.125,
+            "yInches": 1.1771,
+            "widthInches": 8.3543,
+            "heightInches": 0.863,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "06",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10148401,
+            "yEmu": -177150,
+            "widthEmu": 8279769,
+            "heightEmu": 10673700,
+            "xInches": 11.0984,
+            "yInches": -0.1937,
+            "widthInches": 9.0549,
+            "heightInches": 11.6729,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "Top IoT applications",
+          "paragraphs": [
+            {
+              "text": "Top IoT applications",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Top IoT applications",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "06",
+          "paragraphs": [
+            {
+              "text": "06",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "06",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 7,
+      "path": "ppt/slides/slide7.xml",
+      "relationshipPath": "ppt/slides/_rels/slide7.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 5,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 4
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "TextBox 2",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 8939992,
+            "yEmu": 1104900,
+            "widthEmu": 8319308,
+            "heightEmu": 2540520,
+            "xInches": 9.7769,
+            "yInches": 1.2083,
+            "widthInches": 9.0981,
+            "heightInches": 2.7783,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The Pros and Cons of the IoT",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 1028700,
+            "widthEmu": 6860250,
+            "heightEmu": 8229600,
+            "xInches": 1.125,
+            "yInches": 1.125,
+            "widthInches": 7.5025,
+            "heightInches": 9.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": -28575,
+            "widthEmu": 11092411,
+            "heightEmu": 1033722,
+            "xInches": 0.0,
+            "yInches": -0.0312,
+            "widthInches": 12.1308,
+            "heightInches": 1.1305,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 1911004,
+            "widthEmu": 11092411,
+            "heightEmu": 1033722,
+            "xInches": 0.0,
+            "yInches": 2.0899,
+            "widthInches": 12.1308,
+            "heightInches": 1.1305,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 3850582,
+            "widthEmu": 11092411,
+            "heightEmu": 1033722,
+            "xInches": 0.0,
+            "yInches": 4.211,
+            "widthInches": 12.1308,
+            "heightInches": 1.1305,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "2",
+          "name": "TextBox 2",
+          "placeholderType": null,
+          "text": "The Pros and Cons of the IoT",
+          "paragraphs": [
+            {
+              "text": "The Pros and Cons of the IoT",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The Pros and Cons of the IoT",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 8,
+      "path": "ppt/slides/slide8.xml",
+      "relationshipPath": "ppt/slides/_rels/slide8.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 4,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 76200,
+            "widthEmu": 10185561,
+            "heightEmu": 1744480,
+            "xInches": 0.0,
+            "yInches": 0.0833,
+            "widthInches": 11.1391,
+            "heightInches": 1.9078,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "IoT standards",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 2384770,
+            "widthEmu": 10185561,
+            "heightEmu": 2602404,
+            "xInches": 0.0,
+            "yInches": 2.608,
+            "widthInches": 11.1391,
+            "heightInches": 2.846,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 1076325,
+            "widthEmu": 7639170,
+            "heightEmu": 789161,
+            "xInches": 1.125,
+            "yInches": 1.1771,
+            "widthInches": 8.3543,
+            "heightInches": 0.863,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "08",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 9723315,
+            "yEmu": -164947,
+            "widthEmu": 8702015,
+            "heightEmu": 10604347,
+            "xInches": 10.6335,
+            "yInches": -0.1804,
+            "widthInches": 9.5166,
+            "heightInches": 11.5971,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "IoT standards",
+          "paragraphs": [
+            {
+              "text": "IoT standards",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "IoT standards",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "08",
+          "paragraphs": [
+            {
+              "text": "08",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "08",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 9,
+      "path": "ppt/slides/slide9.xml",
+      "relationshipPath": "ppt/slides/_rels/slide9.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 5,
+        "pictures": 0,
+        "groups": 2,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 0,
+            "widthEmu": 5000993,
+            "heightEmu": 10163632,
+            "xInches": 0.0,
+            "yInches": 0.0,
+            "widthInches": 5.4692,
+            "heightInches": 11.1151,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 338760,
+            "yEmu": 288798,
+            "widthEmu": 4330776,
+            "heightEmu": 9398000,
+            "xInches": 0.3705,
+            "yInches": 0.3158,
+            "widthInches": 4.7362,
+            "heightInches": 10.2778,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 1930885,
+            "widthEmu": 10185561,
+            "heightEmu": 3412760,
+            "xInches": 0.0,
+            "yInches": 2.1116,
+            "widthInches": 11.1391,
+            "heightInches": 3.7322,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "IoT Frameworks",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 6054040,
+            "widthEmu": 10185561,
+            "heightEmu": 2602404,
+            "xInches": 0.0,
+            "yInches": 6.6208,
+            "widthInches": 11.1391,
+            "heightInches": 2.846,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 47625,
+            "widthEmu": 10185561,
+            "heightEmu": 1068089,
+            "xInches": 0.0,
+            "yInches": 0.0521,
+            "widthInches": 11.1391,
+            "heightInches": 1.1681,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "09",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "IoT Frameworks",
+          "paragraphs": [
+            {
+              "text": "IoT Frameworks",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "IoT Frameworks",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "09",
+          "paragraphs": [
+            {
+              "text": "09",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "09",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 10,
+      "path": "ppt/slides/slide10.xml",
+      "relationshipPath": "ppt/slides/_rels/slide10.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 3,
+        "pictures": 0,
+        "groups": 0,
+        "textBoxes": 2
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "TextBox 2",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 5466570,
+            "widthEmu": 7639170,
+            "heightEmu": 3791730,
+            "xInches": 1.125,
+            "yInches": 5.9783,
+            "widthInches": 8.3543,
+            "heightInches": 4.1467,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The Challengesof IoT",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 1076325,
+            "widthEmu": 7639170,
+            "heightEmu": 789161,
+            "xInches": 1.125,
+            "yInches": 1.1771,
+            "widthInches": 8.3543,
+            "heightInches": 0.863,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "10",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "Freeform 4",
+          "zOrder": 3,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10148401,
+            "yEmu": -205472,
+            "widthEmu": 8302179,
+            "heightEmu": 10663922,
+            "xInches": 11.0984,
+            "yInches": -0.2247,
+            "widthInches": 9.0794,
+            "heightInches": 11.6622,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "2",
+          "name": "TextBox 2",
+          "placeholderType": null,
+          "text": "The Challenges\nof IoT",
+          "paragraphs": [
+            {
+              "text": "The Challenges",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The Challenges",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "of IoT",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "of IoT",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "10",
+          "paragraphs": [
+            {
+              "text": "10",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "10",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 11,
+      "path": "ppt/slides/slide11.xml",
+      "relationshipPath": "ppt/slides/_rels/slide11.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 6,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 5
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -126914,
+            "yEmu": -167163,
+            "widthEmu": 7937072,
+            "heightEmu": 10606563,
+            "xInches": -0.1388,
+            "yInches": -0.1828,
+            "widthInches": 8.6801,
+            "heightInches": 11.5995,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 76200,
+            "widthEmu": 11092411,
+            "heightEmu": 1744480,
+            "xInches": 0.0,
+            "yInches": 0.0833,
+            "widthInches": 12.1308,
+            "heightInches": 1.9078,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Privacy",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 2734359,
+            "widthEmu": 11092411,
+            "heightEmu": 1033722,
+            "xInches": 0.0,
+            "yInches": 2.9903,
+            "widthInches": 12.1308,
+            "heightInches": 1.1305,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4546140,
+            "widthEmu": 11092411,
+            "heightEmu": 1033722,
+            "xInches": 0.0,
+            "yInches": 4.9717,
+            "widthInches": 12.1308,
+            "heightInches": 1.1305,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "zOrder": 5,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 6357920,
+            "widthEmu": 11092411,
+            "heightEmu": 1033722,
+            "xInches": 0.0,
+            "yInches": 6.9531,
+            "widthInches": 12.1308,
+            "heightInches": 1.1305,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "zOrder": 6,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 8939992,
+            "yEmu": 1076325,
+            "widthEmu": 8319308,
+            "heightEmu": 789161,
+            "xInches": 9.7769,
+            "yInches": 1.1771,
+            "widthInches": 9.0981,
+            "heightInches": 0.863,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "11",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Privacy",
+          "paragraphs": [
+            {
+              "text": "Privacy",
+              "alignment": "r",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Privacy",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+              "alignment": "r",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+              "alignment": "r",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "7",
+          "name": "TextBox 7",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+              "alignment": "r",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "8",
+          "name": "TextBox 8",
+          "placeholderType": null,
+          "text": "11",
+          "paragraphs": [
+            {
+              "text": "11",
+              "alignment": "r",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "11",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 12,
+      "path": "ppt/slides/slide12.xml",
+      "relationshipPath": "ppt/slides/_rels/slide12.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 4,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10399050,
+            "yEmu": 1028700,
+            "widthEmu": 6860250,
+            "heightEmu": 8229600,
+            "xInches": 11.3725,
+            "yInches": 1.125,
+            "widthInches": 7.5025,
+            "heightInches": 9.0,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 76200,
+            "widthEmu": 10185561,
+            "heightEmu": 3412760,
+            "xInches": 0.0,
+            "yInches": 0.0833,
+            "widthInches": 11.1391,
+            "heightInches": 3.7322,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Data storage and analysis",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4053050,
+            "widthEmu": 10185561,
+            "heightEmu": 2602404,
+            "xInches": 0.0,
+            "yInches": 4.4325,
+            "widthInches": 11.1391,
+            "heightInches": 2.846,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 1028700,
+            "yEmu": 1076325,
+            "widthEmu": 7639170,
+            "heightEmu": 789161,
+            "xInches": 1.125,
+            "yInches": 1.1771,
+            "widthInches": 8.3543,
+            "heightInches": 0.863,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "12",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "Data storage and analysis",
+          "paragraphs": [
+            {
+              "text": "Data storage and analysis",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Data storage and analysis",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 90.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more. It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "12",
+          "paragraphs": [
+            {
+              "text": "12",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "12",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 56.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 13,
+      "path": "ppt/slides/slide13.xml",
+      "relationshipPath": "ppt/slides/_rels/slide13.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 4,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "Freeform 2",
+          "zOrder": 1,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -119949,
+            "yEmu": -157988,
+            "widthEmu": 7930106,
+            "heightEmu": 10616438,
+            "xInches": -0.1312,
+            "yInches": -0.1728,
+            "widthInches": 8.6725,
+            "heightInches": 11.6103,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 114300,
+            "widthEmu": 11037255,
+            "heightEmu": 4936375,
+            "xInches": 0.0,
+            "yInches": 0.125,
+            "widthInches": 12.0705,
+            "heightInches": 5.3985,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "The Future of IoT",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 5800163,
+            "widthEmu": 11037255,
+            "heightEmu": 542444,
+            "xInches": 0.0,
+            "yInches": 6.3431,
+            "widthInches": 12.0705,
+            "heightInches": 0.5932,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Where to next?",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "zOrder": 4,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 7006370,
+            "widthEmu": 11037255,
+            "heightEmu": 1556616,
+            "xInches": 0.0,
+            "yInches": 7.6623,
+            "widthInches": 12.0705,
+            "heightInches": 1.7023,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that canbe used as lectures, speeches, reports, and more.It is mostly presented before an audience.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "The Future of IoT",
+          "paragraphs": [
+            {
+              "text": "The Future of IoT",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "The Future of IoT",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 130.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Where to next?",
+          "paragraphs": [
+            {
+              "text": "Where to next?",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Where to next?",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 29.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "6",
+          "name": "TextBox 6",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can\nbe used as lectures, speeches, reports, and more.\nIt is mostly presented before an audience.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "be used as lectures, speeches, reports, and more.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "be used as lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "It is mostly presented before an audience. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "It is mostly presented before an audience. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 14,
+      "path": "ppt/slides/slide14.xml",
+      "relationshipPath": "ppt/slides/_rels/slide14.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 4,
+        "pictures": 0,
+        "groups": 1,
+        "textBoxes": 3
+      },
+      "shapes": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 1926286,
+            "widthEmu": 9647118,
+            "heightEmu": 1843020,
+            "xInches": 0.0,
+            "yInches": 2.1066,
+            "widthInches": 10.5502,
+            "heightInches": 2.0156,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "$1.1 trillion",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "zOrder": 2,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 47625,
+            "widthEmu": 9647118,
+            "heightEmu": 1068089,
+            "xInches": 0.0,
+            "yInches": 0.0521,
+            "widthInches": 10.5502,
+            "heightInches": 1.1681,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "14",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "zOrder": 3,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 0,
+            "yEmu": 4465577,
+            "widthEmu": 9647118,
+            "heightEmu": 1556616,
+            "xInches": 0.0,
+            "yInches": 4.8836,
+            "widthInches": 10.5502,
+            "heightInches": 1.7023,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that canbe used as lectures, speeches, reports, and more.It is mostly presented before an audience.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "6",
+          "name": "Freeform 6",
+          "zOrder": 4,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 10148401,
+            "yEmu": -198135,
+            "widthEmu": 8296374,
+            "heightEmu": 10694685,
+            "xInches": 11.0984,
+            "yInches": -0.2167,
+            "widthInches": 9.073,
+            "heightInches": 11.6958,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "3",
+          "name": "TextBox 3",
+          "placeholderType": null,
+          "text": "$1.1 trillion",
+          "paragraphs": [
+            {
+              "text": "$1.1 trillion",
+              "alignment": "just",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "$1.1 trillion",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 94.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "4",
+          "name": "TextBox 4",
+          "placeholderType": null,
+          "text": "14",
+          "paragraphs": [
+            {
+              "text": "14",
+              "alignment": "just",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "14",
+                  "font": {
+                    "latin": "HK Grotesk Bold",
+                    "eastAsian": "HK Grotesk Bold",
+                    "complexScript": "HK Grotesk Bold"
+                  },
+                  "fontSize": 55.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Bold",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "shapeId": "5",
+          "name": "TextBox 5",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can\nbe used as lectures, speeches, reports, and more.\nIt is mostly presented before an audience.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "be used as lectures, speeches, reports, and more.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "be used as lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "It is mostly presented before an audience. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "It is mostly presented before an audience. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 23.99,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    },
+    {
+      "index": 15,
+      "path": "ppt/slides/slide15.xml",
+      "relationshipPath": "ppt/slides/_rels/slide15.xml.rels",
+      "layoutRelationshipId": "rId1",
+      "counts": {
+        "shapes": 2,
+        "pictures": 0,
+        "groups": 0,
+        "textBoxes": 1
+      },
+      "shapes": [
+        {
+          "shapeId": "2",
+          "name": "TextBox 2",
+          "zOrder": 1,
+          "type": "rect",
+          "placeholder": null,
+          "geometry": {
+            "xEmu": 11256711,
+            "yEmu": 3757569,
+            "widthEmu": 6002589,
+            "heightEmu": 2743287,
+            "xInches": 12.3105,
+            "yInches": 4.1093,
+            "widthInches": 6.5645,
+            "heightInches": 3.0001,
+            "rotationDegrees": 0.0
+          },
+          "fill": {},
+          "line": {},
+          "hasText": true,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        },
+        {
+          "shapeId": "3",
+          "name": "Freeform 3",
+          "zOrder": 2,
+          "type": null,
+          "placeholder": null,
+          "geometry": {
+            "xEmu": -179267,
+            "yEmu": -182485,
+            "widthEmu": 10284889,
+            "heightEmu": 10698085,
+            "xInches": -0.196,
+            "yInches": -0.1996,
+            "widthInches": 11.2477,
+            "heightInches": 11.6996,
+            "rotationDegrees": 0.0
+          },
+          "fill": {
+            "type": "image"
+          },
+          "line": {},
+          "hasText": false,
+          "text": null,
+          "resolved": {
+            "fillColor": {},
+            "lineColor": {}
+          }
+        }
+      ],
+      "texts": [
+        {
+          "shapeId": "2",
+          "name": "TextBox 2",
+          "placeholderType": null,
+          "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.\nIt is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching.",
+          "paragraphs": [
+            {
+              "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "Presentations are communication tools that can be used as demonstrations, lectures, speeches, reports, and more.",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            },
+            {
+              "text": "It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+              "alignment": "l",
+              "level": null,
+              "bullet": {},
+              "runs": [
+                {
+                  "text": "It is mostly presented before an audience. It serves a variety of purposes, making presentations powerful tools for convincing and teaching. ",
+                  "font": {
+                    "latin": "HK Grotesk Medium",
+                    "eastAsian": "HK Grotesk Medium",
+                    "complexScript": "HK Grotesk Medium"
+                  },
+                  "fontSize": 24.0,
+                  "bold": true,
+                  "italic": null,
+                  "underline": null,
+                  "color": {},
+                  "resolved": {
+                    "font": {
+                      "latin": "HK Grotesk Medium",
+                      "source": "direct"
+                    },
+                    "color": {}
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "pictures": []
+    }
+  ],
+  "assets": [
+    {
+      "pptxPath": "ppt/media/image1.jpeg",
+      "fileName": "image1.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 934715,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image1.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image10.jpeg",
+      "fileName": "image10.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 781017,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image10.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image11.jpeg",
+      "fileName": "image11.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1393847,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image11.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image12.jpeg",
+      "fileName": "image12.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1432388,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image12.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image13.jpeg",
+      "fileName": "image13.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 825079,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image13.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image14.jpeg",
+      "fileName": "image14.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 765412,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image14.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image15.jpeg",
+      "fileName": "image15.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1038317,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image15.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image16.jpeg",
+      "fileName": "image16.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 643594,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image16.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image17.jpeg",
+      "fileName": "image17.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 349005,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image17.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image18.jpeg",
+      "fileName": "image18.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 670393,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image18.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image2.png",
+      "fileName": "image2.png",
+      "contentType": "image/png",
+      "sizeBytes": 47785,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image2.png"
+    },
+    {
+      "pptxPath": "ppt/media/image3.jpeg",
+      "fileName": "image3.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1147411,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image3.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image4.png",
+      "fileName": "image4.png",
+      "contentType": "image/png",
+      "sizeBytes": 51474,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image4.png"
+    },
+    {
+      "pptxPath": "ppt/media/image5.jpeg",
+      "fileName": "image5.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 760834,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image5.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image6.jpeg",
+      "fileName": "image6.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 963744,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image6.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image7.jpeg",
+      "fileName": "image7.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 578570,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image7.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image8.jpeg",
+      "fileName": "image8.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 1069729,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image8.jpeg"
+    },
+    {
+      "pptxPath": "ppt/media/image9.jpeg",
+      "fileName": "image9.jpeg",
+      "contentType": "image/jpeg",
+      "sizeBytes": 484356,
+      "outputPath": "/Users/sarrthakchauhan/Documents/Shadyyppt/ppt-template-reader/outputs/assets/image9.jpeg"
+    }
+  ],
+  "validation": {
+    "passed": true,
+    "checks": {
+      "slidesMatchInventory": true,
+      "layoutsMatchInventory": true,
+      "mastersMatchInventory": true,
+      "assetsMatchInventory": true,
+      "themeParsed": true
+    },
+    "counts": {
+      "slides": 15,
+      "layouts": 11,
+      "masters": 1,
+      "assets": 18
+    }
+  }
+}
