@@ -90,7 +90,7 @@ a[download]:hover {
   background: var(--accent-dark);
 }
 
-.editor {
+.promptForm {
   display: grid;
   gap: 10px;
 }

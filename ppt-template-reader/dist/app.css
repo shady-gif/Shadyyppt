@@ -96,7 +96,7 @@ body::before {
 
 .topbar,
 .intro,
-.editor,
+.promptForm,
 .previewHeader,
 .status,
 .generatedPreview,
@@ -193,6 +193,12 @@ a[download]:active {
   transform: translateY(0);
 }
 
+button:disabled {
+  cursor: wait;
+  opacity: 0.62;
+  transform: none;
+}
+
 h1,
 h2,
 p,
@@ -235,7 +241,7 @@ h2 {
   line-height: 1.45;
 }
 
-.editor {
+.promptForm {
   display: grid;
   gap: 12px;
   margin-top: 28px;

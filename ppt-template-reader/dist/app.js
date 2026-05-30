@@ -63,25 +63,44 @@ generateBtn.addEventListener("click", async () => {
   downloadPptxLink.hidden = true;
   generatedPreview.hidden = true;
   generatedPreviewImage.removeAttribute("src");
+  generateBtn.disabled = true;
 
-  const response = await fetch(apiUrl("/api/generate"), {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({
-      templateId: templateSelect.value,
-      topic: topic.value,
-      text: sourceText.value,
-    }),
-  });
+  try {
+    const response = await fetch(apiUrl("/api/generate"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        templateId: templateSelect.value,
+        topic: topic.value,
+        text: sourceText.value,
+      }),
+    });
 
-  const payload = await response.json();
-  if (!response.ok) {
-    statusEl.textContent = payload.error || "Generation failed.";
-    return;
+    const payload = await response.json();
+    if (!response.ok) {
+      statusEl.textContent = payload.error || "Generation failed.";
+      return;
+    }
+
+    const slideCount = Object.keys(payload.curatedContent.slides).length;
+    statusEl.textContent = `Generated ${slideCount} slides. Your PowerPoint is ready to download.`;
+    renderSlides(payload.curatedContent.slides, payload.templateMap, payload.slidePreview);
+
+    if (payload.pptxPreviewPath) {
+      generatedPreviewImage.src = assetUrl(payload.pptxPreviewPath);
+      generatedPreview.hidden = false;
+    }
+
+    if (payload.pptxDownloadPath) {
+      downloadPptxLink.href = assetUrl(payload.pptxDownloadPath);
+      downloadPptxLink.textContent = "Download PPTX";
+      downloadPptxLink.hidden = false;
+    }
+  } catch (error) {
+    statusEl.textContent = "Generation failed. Please try again.";
+  } finally {
+    generateBtn.disabled = false;
   }
-
-  statusEl.textContent = `Generated ${Object.keys(payload.curatedContent.slides).length} slides. Opening editor...`;
-  window.location.href = editorUrl(payload.editorPath || `/editor?templateId=${encodeURIComponent(payload.templateId)}&generatedDeck=${encodeURIComponent(payload.downloadPath)}`);
 });
 
 function renderSlides(slides, templateMap = {}, slidePreview = []) {
@@ -128,13 +147,6 @@ function assetUrl(path) {
     return path;
   }
   return `${apiBase}/${String(path).replace(/^\//, "")}`;
-}
-
-function editorUrl(path) {
-  if (/^https?:\/\//.test(path)) {
-    return path;
-  }
-  return `${apiBase}${path.startsWith("/") ? path : `/${path}`}`;
 }
 
 function escapeHtml(value) {
