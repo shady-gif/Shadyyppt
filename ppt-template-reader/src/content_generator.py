@@ -7,6 +7,7 @@ import re
 from template_map import TEMPLATE_MAP
 from semantic_mapper import build_template_map
 from ai_semantic_mapper import improve_template_map_with_ai
+from openai_content import generate_curated_content_with_openai
 from template_profiles import get_template_profile
 
 
@@ -32,7 +33,16 @@ class ContentGenerator:
         sentences = _split_sentences(cleaned)
         topic = _format_topic((topic or _guess_topic(cleaned) or "Generated Profile").strip())
 
-        curated = self._curate_content(topic, paragraphs, sentences)
+        fallback_curated = self._curate_content(topic, paragraphs, sentences)
+        curated, openai_metadata = generate_curated_content_with_openai(
+            topic=topic,
+            source_text=cleaned,
+            profile=self.profile,
+            template_id=self.template_id,
+            template_map=self.template_map,
+            fallback_curated=fallback_curated,
+        )
+        curated = curated or fallback_curated
         updates = self._build_updates(curated)
         filled = self._apply_updates(updates)
 
@@ -41,6 +51,7 @@ class ContentGenerator:
             "curatedContent": curated,
             "updates": updates,
             "mapperSource": self.mapper_source,
+            "contentSource": openai_metadata,
             "filledTemplateJson": filled,
         }
 

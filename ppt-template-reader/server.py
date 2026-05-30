@@ -17,6 +17,7 @@ GENERATED_PREVIEW_DIR = WEB_DIR / "generated-previews"
 TEMPLATE_DIR = ROOT / "templates"
 TEMPLATE_PREVIEW_DIR = WEB_DIR / "template-previews"
 TEMPLATE_REGISTRY_PATH = ROOT / "outputs" / "template-registry.json"
+LOCAL_ENV_PATH = ROOT / ".env"
 BUILTIN_TEMPLATES = {
     "profile": {
         "name": "Profile",
@@ -110,9 +111,30 @@ BUILTIN_TEMPLATES = {
     },
 }
 DEFAULT_TEMPLATE_ID = "profile"
+
+
+def _load_local_env() -> None:
+    if not LOCAL_ENV_PATH.exists():
+        return
+
+    for line in LOCAL_ENV_PATH.read_text(encoding="utf-8").splitlines():
+        raw = line.strip()
+        if not raw or raw.startswith("#") or "=" not in raw:
+            continue
+
+        key, value = raw.split("=", 1)
+        key = key.strip()
+        value = value.strip().strip('"').strip("'")
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_local_env()
+
 sys.path.insert(0, str(ROOT / "src"))
 
 from content_generator import ContentGenerator  # noqa: E402
+from openai_content import openai_runtime_status  # noqa: E402
 from pptx_exporter import PptxExporter  # noqa: E402
 from template_converter import convert_pptx_to_json  # noqa: E402
 
@@ -140,6 +162,16 @@ class AppHandler(SimpleHTTPRequestHandler):
 
         if parsed.path == "/health":
             self._send_json({"ok": True})
+            return
+
+        if parsed.path == "/api/status":
+            self._send_json(
+                {
+                    "ok": True,
+                    "openai": openai_runtime_status(),
+                    "defaultTemplateId": DEFAULT_TEMPLATE_ID,
+                }
+            )
             return
 
         if parsed.path == "/api/template-summary":
@@ -202,6 +234,7 @@ class AppHandler(SimpleHTTPRequestHandler):
                     "templateId": template_id,
                     "templateName": template_config["name"],
                     "mapperSource": result["mapperSource"],
+                    "contentSource": result["contentSource"],
                     "curatedContent": result["curatedContent"],
                     "updates": result["updates"],
                     "textFit": result.get("textFit"),

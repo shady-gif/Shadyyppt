@@ -9,7 +9,7 @@
     "text:fit": "node src-node/cli/fit-text-operations.js",
     "text:fit:rewrite": "node src-node/cli/fit-text-operations-rewrite.js",
     "text:fit-updates": "node src-node/cli/fit-template-updates.js",
-    "test:python": "python3 -m compileall -q server.py src",
+    "test:python": "python3 -m compileall -q server.py src tests && python3 -m unittest discover -s tests",
     "test:node": "node --test tests-node/*.test.js"
   },
   "dependencies": {

@@ -7,6 +7,10 @@ services:
     startCommand: HOST=0.0.0.0 python3 server.py
     healthCheckPath: /health
     envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: "gpt-5-nano"
       - key: DISABLE_OLLAMA_MAPPER
         value: "1"
       - key: CORS_ORIGIN
