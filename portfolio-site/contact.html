@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Studio Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav scrolled">
+    <div class="nav__inner container">
+      <a href="index.html" class="logo">Studio<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary">Contact me</a>
+      <button class="nav__toggle" aria-label="Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <h1 class="reveal">Let's build something <em style="font-family: var(--font-display); font-style: italic;">great</em></h1>
+      <p class="reveal reveal-delay-1">
+        Tell me about your product, timeline, and goals — I'll reply within 48 hours.
+      </p>
+    </section>
+
+    <section class="container contact-layout" style="padding-top: 0;">
+      <div>
+        <div class="section-header reveal" style="margin-bottom: 2rem;">
+          <h2>Process</h2>
+          <p>From exploration to execution — a framework that aligns with user needs.</p>
+        </div>
+        <div class="process-grid reveal">
+          <div class="process-step">
+            <div class="process-step__num">01 — Discover</div>
+            <h3>Discover</h3>
+            <p>Brainstorming sessions to align on needs and company goals.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">02 — Define</div>
+            <h3>Define</h3>
+            <p>Market research, ideal client profiles, and design sprints.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">03 — Develop</div>
+            <h3>Develop</h3>
+            <p>UX flows and prototypes that inform real user behavior.</p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">04 — Deliver</div>
+            <h3>Deliver</h3>
+            <p>Design systems, templates, and dev handoff with testing.</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal reveal-delay-1" action="#" method="post">
+        <label>
+          Name
+          <input type="text" name="name" required placeholder="Your name" />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required placeholder="you@company.com" />
+        </label>
+        <label>
+          Project details
+          <textarea name="message" required placeholder="What are you building?"></textarea>
+        </label>
+        <button type="submit" class="btn btn--primary">Send message</button>
+      </form>
+    </section>
+
+    <section class="container">
+      <div class="section-header reveal">
+        <h2>Common queries</h2>
+        <p>Quick answers before we jump on a call.</p>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item open">
+          <button type="button">
+            What is your design process?
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Research, design, prototype, and test — gathering user insights, creating wireframes and visuals, building interactive models, then refining with real feedback.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button">
+            What tools do you use?
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Figma for design, Framer and Webflow for no-code builds, Notion for docs, and Hotjar for behavior analytics — plus modern AI-assisted tools when they speed delivery.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button type="button">
+            How do you measure UX success?
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+          </button>
+          <div class="faq-item__answer">
+            <p>Task completion rates, time-on-task, NPS, conversion lifts, and qualitative interview themes — tied to business goals we define together upfront.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo">Studio<span>.</span></a>
+      <nav class="footer__social">
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Dribbble</a>
+      </nav>
+      <p class="footer__copy">© 2026 Studio. Inspired by Athos 2.0.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kurawa | Design Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/kurawa.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 4v16M4 12h16"/></svg></span>
+        Kurawa
+      </a>
+      <nav class="nav__center">
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About Us</a>
+        <a href="#blog">Blog</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="#pricing" class="btn btn--outline">See pricing</a>
+        <a href="about.html#contact" class="btn btn--dark">Book a call</a>
+      </div>
+      <button class="nav__burger" aria-label="Menu"><svg width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero__social-proof" data-reveal>
+        <div class="avatars">
+          <span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="rating-badge">
+          <span class="stars">★★★★★</span>
+          <span>4.9</span>
+          <span style="color: var(--text-muted); font-weight: 400;">Over 500+ reviews</span>
+        </div>
+      </div>
+      <h1 data-reveal>Your design team,<br />onboarded today.</h1>
+      <p class="hero__sub" data-reveal>
+        Replace scattered workflows with one reliable system. Subscription for ongoing work, custom for bigger needs.
+      </p>
+      <div class="hero__cta" data-reveal>
+        <a href="#pricing" class="btn btn--dark btn--lg">See pricing</a>
+        <a href="about.html#contact" class="btn btn--outline btn--lg">Book a Call</a>
+      </div>
+      <div class="hero__carousel" data-blur-in>
+        <div class="hero__carousel-inner">
+          <div class="hero__slide hero__slide--1">Rama — Brand identity</div>
+          <div class="hero__slide hero__slide--2">Kresna — AI platform</div>
+          <div class="hero__slide hero__slide--3">Sanjaya — Writing tool</div>
+        </div>
+        <div class="hero__carousel-nav">
+          <button type="button" class="carousel-prev" aria-label="Previous">←</button>
+          <button type="button" class="carousel-next" aria-label="Next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="logos-bar">
+      <p>Trusted by the best.</p>
+      <div class="logos-marquee-wrap" style="overflow:hidden;">
+        <div class="logos-marquee">
+          <span>Continental</span><span>Levi9</span><span>3Lateral</span><span>Logitech</span><span>Shinta</span><span>Rama</span>
+          <span>Continental</span><span>Levi9</span><span>3Lateral</span><span>Logitech</span><span>Shinta</span><span>Rama</span>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>Too many vendors, not enough clarity</p>
+      <div class="split-section">
+        <div data-reveal>
+          <h2 class="section-title">When design becomes<br />the bottleneck.</h2>
+          <ul class="pain-list" data-reveal-stagger>
+            <li>Inconsistent quality across projects</li>
+            <li>Slow turnaround kills momentum</li>
+            <li>Hiring in-house isn’t practical (yet)</li>
+            <li>Hard to maintain a strong visual direction</li>
+            <li>Endless revisions with no real progress</li>
+          </ul>
+        </div>
+        <div class="benefit-cards">
+          <article class="benefit-card" data-reveal>
+            <h3>Fast, without the trade-offs.</h3>
+            <p>Consistent, high-quality design delivered faster — move quicker while keeping costs predictable.</p>
+          </article>
+          <article class="benefit-card" data-reveal>
+            <h3>A dedicated design team, on demand.</h3>
+            <p>No hiring, no long-term commitment. A reliable team ready when you need it, scaling with your workflow.</p>
+          </article>
+        </div>
+      </div>
+      <div class="stats-row" data-reveal-stagger>
+        <div class="stat-block">
+          <div class="stat-block__value"><span data-counter="120" data-suffix="+">0+</span></div>
+          <div class="stat-block__label">Audience Increased</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-block__value"><span data-counter="98" data-suffix="%">0%</span></div>
+          <div class="stat-block__label">Conversion rate</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>Projects</p>
+      <div class="projects-header">
+        <div data-reveal>
+          <h2 class="section-title">Recent work,<br />built to perform.</h2>
+          <p class="section-desc">Actionable ideas to design better, move faster, and build smarter.</p>
+        </div>
+        <a href="projects.html" class="btn btn--outline" data-reveal>View all projects</a>
+      </div>
+      <div class="project-grid" data-reveal-stagger>
+        <a href="projects.html" class="project-card">
+          <div class="project-card__img-wrap"><div class="project-card__img project-card__img--rama"></div></div>
+          <div class="project-card__body">
+            <h3>Rama</h3>
+            <p>Brand identity for a spiritual coaching practice</p>
+            <div class="project-tags"><span>Web Design</span><span>Branding</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="project-card">
+          <div class="project-card__img-wrap"><div class="project-card__img project-card__img--kresna"></div></div>
+          <div class="project-card__body">
+            <h3>Kresna</h3>
+            <p>Designing a clear AI platform brand for enterprise</p>
+            <div class="project-tags"><span>Web Design</span><span>Branding</span></div>
+          </div>
+        </a>
+        <a href="projects.html" class="project-card">
+          <div class="project-card__img-wrap"><div class="project-card__img project-card__img--sanjaya"></div></div>
+          <div class="project-card__body">
+            <h3>Sanjaya</h3>
+            <p>Positioning an AI writing tool in a saturated market</p>
+            <div class="project-tags"><span>Web Design</span><span>Branding</span></div>
+          </div>
+        </a>
+      </div>
+      <div class="cta-band" data-reveal>
+        <h2>Let’s build yours next.</h2>
+        <p>Work with Kurawa to bring your branding, website, or social presence to life.</p>
+        <a href="about.html#contact" class="btn btn--dark btn--lg">Let's work together</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>Our Services</p>
+      <h2 class="section-title" data-reveal>Everything you need,<br />one subscription.</h2>
+      <div class="services-list" data-reveal>
+        <div class="service-item">
+          <div class="service-num"><span class="slash">/</span> 01 <span class="slash">.</span></div>
+          <div><h3>Branding</h3><ul><li>Logo design & visual identity</li><li>Brand guidelines & systems</li><li>Naming & positioning support</li><li>Marketing assets & collaterals</li></ul></div>
+        </div>
+        <div class="service-item">
+          <div class="service-num"><span class="slash">/</span> 02 <span class="slash">.</span></div>
+          <div><h3>Website Design</h3><ul><li>Landing pages & full websites</li><li>Framer development</li></ul></div>
+        </div>
+        <div class="service-item">
+          <div class="service-num"><span class="slash">/</span> 03 <span class="slash">.</span></div>
+          <div><h3>Social Media Design</h3><ul><li>Social media templates</li><li>Campaign visuals</li><li>Short-form content design</li><li>Ongoing creative support</li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>How it works</p>
+      <h2 class="section-title" data-reveal>Simple steps to go live.</h2>
+      <div class="steps-grid" data-reveal-stagger>
+        <div class="step-card"><div class="step-card__label">/01.</div><h3>Subscribe</h3><p>Start the monthly plan and get instant access to our design team.</p></div>
+        <div class="step-card"><div class="step-card__label">/02.</div><h3>Add task</h3><p>Submit requests from quick tweaks to full design work.</p></div>
+        <div class="step-card"><div class="step-card__label">/03.</div><h3>Receive</h3><p>Fast turnaround and quality you can rely on.</p></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <h2 class="section-title" data-reveal>What our customers say.</h2>
+      <div class="testimonials-grid" data-reveal-stagger>
+        <blockquote class="testimonial-card"><h4>"Our rebrand finally feels complete."</h4><p>They brought brand visuals and website together. Clients take us more seriously now.</p><cite><strong>Dwi Bhagaskara</strong><span>CEO of Rama</span></cite></blockquote>
+        <blockquote class="testimonial-card"><h4>"Faster than any agency we've worked with."</h4><p>Tasks picked up quickly, delivered on time, minimal feedback needed.</p><cite><strong>Saraswati</strong><span>Founder of Shinta</span></cite></blockquote>
+      </div>
+    </section>
+
+    <section class="container" id="pricing">
+      <p class="eyebrow" data-reveal>Pricing</p>
+      <h2 class="section-title" data-reveal>Simple plans, straight to work.</h2>
+      <p class="section-desc" data-reveal>Subscription for ongoing work, custom for bigger needs.</p>
+      <div class="pricing-grid" data-reveal-stagger>
+        <div class="pricing-card pricing-card--featured">
+          <div class="pricing-card__type">Monthly Subs</div>
+          <div class="pricing-card__price">$4,999</div>
+          <div class="pricing-card__period">Per month · Billed monthly</div>
+          <ul class="pricing-features">
+            <li>One active request at a time</li>
+            <li>Branding, social media, or web design</li>
+            <li>Fast turnaround</li>
+            <li>Unlimited revisions</li>
+            <li>Pause/cancel anytime</li>
+          </ul>
+          <a href="#" class="btn btn--dark" style="background:#fff;color:#111;">Subscribe monthly</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__type">Custom Project</div>
+          <div class="pricing-card__price">$10K <small>+</small></div>
+          <div class="pricing-card__period">Starts from</div>
+          <ul class="pricing-features">
+            <li>One active request at a time</li>
+            <li>Branding, social media, or web design</li>
+            <li>Fast turnaround</li>
+            <li>Unlimited revisions</li>
+            <li>Pause/cancel anytime</li>
+          </ul>
+          <a href="about.html#contact" class="btn btn--outline">Get inquiry</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="tweets-section">
+      <h2 data-reveal>Loved by the community.</h2>
+      <div style="overflow:hidden;">
+        <div class="tweet-row tweet-row--left">
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Nadya Putri</div><div class="tweet-card__handle">@nadyap</div></div></div><p>ok this is the kind of branding i like. simple but hits.</p></div>
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Kevin Hartono</div><div class="tweet-card__handle">@kevinh</div></div></div><p>this feels expensive in a good way, good job!.</p></div>
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Fajar Nugroho</div><div class="tweet-card__handle">@fajarn</div></div></div><p>how are you guys this fast?? looks solid.</p></div>
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Dinda Aulia</div><div class="tweet-card__handle">@dindaa</div></div></div><p>wait this is actually clean. love the direction.</p></div>
+        </div>
+        <div class="tweet-row tweet-row--right">
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Rian Prakoso</div><div class="tweet-card__handle">@rianp</div></div></div><p>this goes hard.</p></div>
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Melisa Tan</div><div class="tweet-card__handle">@melisat</div></div></div><p>clean work as always 👀</p></div>
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Bagas Aditya</div><div class="tweet-card__handle">@bagasa</div></div></div><p>didn’t know subscription design could look this good.</p></div>
+          <div class="tweet-card"><div class="tweet-card__user"><div class="tweet-card__avatar"></div><div><div class="tweet-card__name">Cindy Halim</div><div class="tweet-card__handle">@cindyh</div></div></div><p>this is super polished.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="blog">
+      <p class="eyebrow" data-reveal>Articles</p>
+      <div class="projects-header">
+        <h2 class="section-title" data-reveal>Latest Insights</h2>
+        <a href="#" class="btn btn--outline" data-reveal>Browse all</a>
+      </div>
+      <div class="blog-grid" data-reveal-stagger>
+        <article class="blog-card">
+          <div class="blog-card__thumb project-card__img--blog1"></div>
+          <div class="blog-card__body">
+            <p class="blog-card__cat">Announcement</p>
+            <h3>A Better Way to Submit and Track Requests</h3>
+            <p>How modern teams keep up without sacrificing quality or clarity.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb project-card__img--blog2"></div>
+          <div class="blog-card__body">
+            <p class="blog-card__cat">Inspiration</p>
+            <h3>Why Most Creative Work Slows Down</h3>
+            <p>Breaking down the bottlenecks that quietly kill momentum.</p>
+          </div>
+        </article>
+        <article class="blog-card">
+          <div class="blog-card__thumb project-card__img--blog3"></div>
+          <div class="blog-card__body">
+            <p class="blog-card__cat">Tips & Tricks</p>
+            <h3>From Request to Result in Days, Not Weeks</h3>
+            <p>Rethinking how design workflows should operate today.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>FAQ</p>
+      <h2 class="section-title" data-reveal>All common questions</h2>
+      <div class="faq-list" style="margin-top:2rem;" data-reveal>
+        <div class="faq-item is-open">
+          <button type="button">How does the subscription work?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__body"><p>You subscribe to a monthly plan and can request design tasks anytime. We work on them one by one. You can pause or cancel anytime.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button">What kind of tasks can I request?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__body"><p>Landing pages, full websites, UI sections, template customization, and small design tweaks in Framer.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button">How fast is the turnaround?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__body"><p>Most tasks are completed within 1 to 3 days depending on complexity. Smaller requests are usually done faster.</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="ship-cta">
+    <div class="container">
+      <p class="ship-cta__prefix">It's time to ship</p>
+      <div class="ship-cta__words">
+        <span class="ship-cta__word is-active ship-cta__rotating">Website</span>
+      </div>
+      <a href="about.html#contact" class="btn btn--dark btn--lg" style="background:#fff;color:#111;">Book a call</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="index.html" class="logo" style="margin-bottom:1rem;"><span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 4v16M4 12h16"/></svg></span> Kurawa</a>
+        <p style="font-size:0.85rem;color:var(--text-muted);">©2025 Kurawa</p>
+      </div>
+      <div>
+        <h4>/ Navigation</h4>
+        <ul>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>/ Legal</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms and Condition</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get in touch</h4>
+        <p class="footer__email">hello@kurawa.co</p>
+        <p style="color:var(--text-muted);font-size:0.9rem;">+123 456 789</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>MADE BY Velox Themes</span>
+    </div>
+  </footer>
+
+  <script src="js/kurawa.js"></script>
+</body>
+</html>

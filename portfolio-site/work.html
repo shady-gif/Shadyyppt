@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Studio Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="nav scrolled">
+    <div class="nav__inner container">
+      <a href="index.html" class="logo">Studio<span>.</span></a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="work.html" class="active">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="btn btn--primary">Contact me</a>
+      <button class="nav__toggle" aria-label="Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <h1 class="reveal">Selected <em style="font-family: var(--font-display); font-style: italic;">work</em></h1>
+      <p class="reveal reveal-delay-1">
+        Case studies spanning fintech, crypto, community apps, and design systems — each built with a user-centered approach.
+      </p>
+    </section>
+
+    <section class="container" style="padding-top: 0;">
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-card__visual project-card__visual--1"></div>
+          <div class="project-card__body">
+            <h3>Budget Planner Finance App</h3>
+            <p>Effortless financial management with gamification and clear visual hierarchy.</p>
+            <div class="tags">
+              <span class="tag">Digital Brand</span>
+              <span class="tag">UX/UI</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal reveal-delay-1">
+          <div class="project-card__visual project-card__visual--2"></div>
+          <div class="project-card__body">
+            <h3>Bitbo — Bitcoin Stats & Data</h3>
+            <p>Research-led interface for real-time crypto analytics and platform migration.</p>
+            <div class="tags">
+              <span class="tag">Research</span>
+              <span class="tag">Framer Dev</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal reveal-delay-2">
+          <div class="project-card__visual project-card__visual--3"></div>
+          <div class="project-card__body">
+            <h3>Digital Product Design Solution</h3>
+            <p>UX audit, design system, and high-fidelity prototyping for enterprise scale.</p>
+            <div class="tags">
+              <span class="tag">Design System</span>
+              <span class="tag">Prototyping</span>
+            </div>
+          </div>
+        </article>
+        <article class="project-card reveal reveal-delay-3">
+          <div class="project-card__visual project-card__visual--4"></div>
+          <div class="project-card__body">
+            <h3>Internet Sharing App</h3>
+            <p>User research, testing, and polished UI for community-first sharing.</p>
+            <div class="tags">
+              <span class="tag">User Research</span>
+              <span class="tag">User Testing</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="section-header reveal">
+        <h2>What clients say</h2>
+        <p>Reviews from teams who shipped faster with clearer design direction.</p>
+      </div>
+      <div class="projects-grid" style="grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));">
+        <figure class="testimonial reveal">
+          <blockquote>“Innovative UI designs and seamless development elevated our product.”</blockquote>
+          <cite><strong>Joakim Korsgaard</strong><span>CEO, Tech Innovations</span></cite>
+        </figure>
+        <figure class="testimonial reveal reveal-delay-1">
+          <blockquote>“Visually stunning and user-friendly — designs brought to life effortlessly.”</blockquote>
+          <cite><strong>Maria Septimus</strong><span>Lead Designer, Dynamics</span></cite>
+        </figure>
+        <figure class="testimonial reveal reveal-delay-2">
+          <blockquote>“UI/UX exceeded expectations. True professionals in user experience.”</blockquote>
+          <cite><strong>Giana Kenter</strong><span>Founder, Mobile Dynamics</span></cite>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="logo">Studio<span>.</span></a>
+      <nav class="footer__social">
+        <a href="#">LinkedIn</a>
+        <a href="#">Twitter</a>
+        <a href="#">Dribbble</a>
+      </nav>
+      <p class="footer__copy">© 2026 Studio. Inspired by Athos 2.0.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>On Track — Lando Norris</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/lando.css" />
+</head>
+<body>
+  <div class="loader">
+    <div class="loader__text">LOAD NORRIS</div>
+    <div class="loader__bar"><span></span></div>
+  </div>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">LN</a>
+      <ul class="nav__links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="on-track.html" class="is-active">On Track</a></li>
+        <li><a href="off-track.html">Off Track</a></li>
+      </ul>
+      <div class="nav__right">
+        <a href="#" class="nav__store">Store</a>
+        <button class="nav__burger" type="button">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="marquee-strip">
+    <div class="marquee-strip__track">
+      <span>mclaren f1 <span class="lime">since 2019</span></span>
+      <span>mclaren f1 <span class="lime">since 2019</span></span>
+      <span>mclaren f1 <span class="lime">since 2019</span></span>
+      <span>mclaren f1 <span class="lime">since 2019</span></span>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <p class="hero__meta" data-reveal>On Track</p>
+      <h1 data-reveal>
+        <span class="line lime">ON</span>
+        <span class="line">TRACK</span>
+      </h1>
+      <p class="page-hero__desc" data-reveal>
+        Most recent results, career stats and photos from trackside.
+      </p>
+    </section>
+
+    <div class="stats-grid" data-reveal>
+      <div class="stat-cell">
+        <div class="stat-cell__value"><span data-count="1">0</span></div>
+        <div class="stat-cell__label">Race Wins</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-cell__value"><span data-count="24">0</span></div>
+        <div class="stat-cell__label">Podiums</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-cell__value"><span data-count="7">0</span></div>
+        <div class="stat-cell__label">Pole Positions</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-cell__value">WDC</div>
+        <div class="stat-cell__label">2025 Champion</div>
+      </div>
+    </div>
+
+    <section class="results-section">
+      <p class="section-label" data-reveal>2025 Season</p>
+      <h2 class="section-heading" data-reveal>Recent Results</h2>
+      <ul class="results-list" data-reveal>
+        <li>
+          <span class="gp">MON</span>
+          <span>Monaco GP</span>
+          <span>McLaren</span>
+          <span class="pos">P1</span>
+        </li>
+        <li>
+          <span class="gp">GBR</span>
+          <span>British GP</span>
+          <span>Silverstone</span>
+          <span class="pos">P2</span>
+        </li>
+        <li>
+          <span class="gp">ESP</span>
+          <span>Spanish GP</span>
+          <span>Barcelona</span>
+          <span class="pos">P3</span>
+        </li>
+        <li>
+          <span class="gp">AUS</span>
+          <span>Australian GP</span>
+          <span>Melbourne</span>
+          <span class="pos">P1</span>
+        </li>
+        <li>
+          <span class="gp">BHR</span>
+          <span>Bahrain GP</span>
+          <span>Sakhir</span>
+          <span class="pos">P4</span>
+        </li>
+        <li>
+          <span class="gp">JPN</span>
+          <span>Japanese GP</span>
+          <span>Suzuka</span>
+          <span class="pos">P2</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="h-scroll">
+      <div class="h-scroll__header" data-reveal>
+        <p class="section-label">Trackside</p>
+        <h2 class="section-heading">Race Weekends</h2>
+      </div>
+      <div class="h-scroll__track">
+        <article class="gallery-card">
+          <div class="gallery-card__img gallery-card__img--1"></div>
+          <p class="gallery-card__caption">US, 2024 — Victory</p>
+        </article>
+        <article class="gallery-card">
+          <div class="gallery-card__img gallery-card__img--2"></div>
+          <p class="gallery-card__caption">Austria, 2020</p>
+        </article>
+        <article class="gallery-card">
+          <div class="gallery-card__img gallery-card__img--3"></div>
+          <p class="gallery-card__caption">Miami GP, 2024</p>
+        </article>
+        <article class="gallery-card">
+          <div class="gallery-card__img gallery-card__img--4"></div>
+          <p class="gallery-card__caption">Britain, 2025</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="results-section">
+      <p class="section-label" data-reveal>Helmets</p>
+      <h2 class="section-heading" data-reveal>Hall of Fame</h2>
+      <div class="helmet-grid" data-reveal>
+        <div class="helmet-card" style="--helmet-color:#d4ff28"><h3>Season</h3><span>2025</span></div>
+        <div class="helmet-card" style="--helmet-color:#ff69b4"><h3>Discoball</h3><span>2025</span></div>
+        <div class="helmet-card" style="--helmet-color:#222"><h3>Dark Glitter</h3><span>2025</span></div>
+        <div class="helmet-card" style="--helmet-color:#f0f0f0"><h3>Porcelain</h3><span>2024</span></div>
+        <div class="helmet-card" style="--helmet-color:#e60012"><h3>Japan</h3><span>2024</span></div>
+        <div class="helmet-card" style="--helmet-color:#39ff14"><h3>GIF</h3><span>2024</span></div>
+        <div class="helmet-card" style="--helmet-color:#1a1a1a"><h3>Dark Mode</h3><span>2024</span></div>
+        <div class="helmet-card" style="--helmet-color:#c0c0c0"><h3>Chrome</h3><span>2023</span></div>
+        <div class="helmet-card" style="--helmet-color:#ff6b35"><h3>Beachball</h3><span>2023</span></div>
+        <div class="helmet-card" style="--helmet-color:#ff9500"><h3>Basketball</h3><span>2022</span></div>
+        <div class="helmet-card" style="--helmet-color:#00a651"><h3>Silverstone</h3><span>2020</span></div>
+        <div class="helmet-card" style="--helmet-color:#ff8700"><h3>Season</h3><span>2019</span></div>
+      </div>
+    </section>
+
+    <section class="quote-strip" data-reveal>
+      <p>Redefining limits, fighting for wins, bringing it all in all ways.</p>
+      <p class="signature">Lando</p>
+    </section>
+
+    <section class="store-cta" data-reveal>
+      <h2>On Track Collection</h2>
+      <p>Official merch from race weekends and championship moments.</p>
+      <a href="#" class="btn">Visit the store</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <h3>Always bringing the fight.</h3>
+      <div class="footer__cols">
+        <div>
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="on-track.html">On Track</a></li>
+            <li><a href="off-track.html">Off Track</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow On</h4>
+          <div class="footer__social">
+            <a href="#">TikTok</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Lando Norris</span>
+      <span><a href="#">Privacy</a> · <a href="#">Terms</a></span>
+    </div>
+  </footer>
+
+  <script src="js/lando.js"></script>
+</body>
+</html>

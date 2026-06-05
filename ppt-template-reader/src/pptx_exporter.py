@@ -18,8 +18,9 @@ for prefix, uri in NS.items():
 
 
 class PptxExporter:
-    def __init__(self, source_pptx: str | Path) -> None:
+    def __init__(self, source_pptx: str | Path, *, animate_text: bool = False) -> None:
         self.source_pptx = Path(source_pptx).expanduser().resolve()
+        self.animate_text = animate_text
 
     def export(self, filled_template: dict, output_path: str | Path) -> Path:
         if not self.source_pptx.exists():
@@ -45,7 +46,11 @@ class PptxExporter:
             for item in source.infolist():
                 data = source.read(item.filename)
                 if item.filename in replacements:
-                    data = _replace_slide_text(data, replacements[item.filename])
+                    data = _replace_slide_text(
+                        data,
+                        replacements[item.filename],
+                        animate_text=self.animate_text,
+                    )
                 target.writestr(item, data)
 
         return output_path
@@ -79,8 +84,9 @@ def _group_updates_by_slide(filled_template: dict, shape_metadata: dict[int, dic
     return grouped
 
 
-def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict]) -> bytes:
+def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict], *, animate_text: bool = False) -> bytes:
     root = ET.fromstring(xml_bytes)
+    animated_shape_ids = []
 
     for shape in root.findall(".//p:sp", NS):
         non_visual_props = shape.find("p:nvSpPr/p:cNvPr", NS)
@@ -98,8 +104,85 @@ def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict]) -> bytes:
             update.get("geometry", {}),
             update.get("originalText", ""),
         )
+        if animate_text and update["newText"].strip() and shape.find("p:txBody", NS) is not None:
+            animated_shape_ids.append(shape_id)
+
+    if animated_shape_ids:
+        _add_text_pop_animations(root, animated_shape_ids)
 
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
+
+
+def _add_text_pop_animations(root: ET.Element, shape_ids: list[str]) -> None:
+    for existing in root.findall("p:timing", NS):
+        root.remove(existing)
+
+    timing = ET.Element(_q("p", "timing"))
+    tn_list = ET.SubElement(timing, _q("p", "tnLst"))
+    root_par = ET.SubElement(tn_list, _q("p", "par"))
+    root_ctn = ET.SubElement(
+        root_par,
+        _q("p", "cTn"),
+        {"id": "1", "dur": "indefinite", "restart": "never", "nodeType": "tmRoot"},
+    )
+    root_children = ET.SubElement(root_ctn, _q("p", "childTnLst"))
+    main_seq = ET.SubElement(root_children, _q("p", "seq"), {"concurrent": "1", "nextAc": "seek"})
+    main_ctn = ET.SubElement(main_seq, _q("p", "cTn"), {"id": "2", "dur": "indefinite", "nodeType": "mainSeq"})
+    main_children = ET.SubElement(main_ctn, _q("p", "childTnLst"))
+
+    next_id = 3
+    for order, shape_id in enumerate(dict.fromkeys(shape_ids)):
+        next_id = _append_pop_effect(main_children, next_id, shape_id, delay_ms=order * 120)
+
+    root.append(timing)
+
+
+def _append_pop_effect(parent: ET.Element, next_id: int, shape_id: str, *, delay_ms: int) -> int:
+    effect_par = ET.SubElement(parent, _q("p", "par"))
+    effect_ctn = ET.SubElement(
+        effect_par,
+        _q("p", "cTn"),
+        {
+            "id": str(next_id),
+            "presetID": "10",
+            "presetClass": "entr",
+            "presetSubtype": "0",
+            "fill": "hold",
+            "grpId": "0",
+            "nodeType": "withEffect",
+        },
+    )
+    next_id += 1
+    st_cond = ET.SubElement(effect_ctn, _q("p", "stCondLst"))
+    ET.SubElement(st_cond, _q("p", "cond"), {"delay": str(delay_ms)})
+    child_tn = ET.SubElement(effect_ctn, _q("p", "childTnLst"))
+
+    set_anim = ET.SubElement(child_tn, _q("p", "set"))
+    set_behavior = ET.SubElement(set_anim, _q("p", "cBhvr"))
+    ET.SubElement(set_behavior, _q("p", "cTn"), {"id": str(next_id), "dur": "1", "fill": "hold"})
+    next_id += 1
+    _append_animation_target(set_behavior, shape_id)
+    attr_list = ET.SubElement(set_behavior, _q("p", "attrNameLst"))
+    ET.SubElement(attr_list, _q("p", "attrName")).text = "style.visibility"
+    set_to = ET.SubElement(set_anim, _q("p", "to"))
+    ET.SubElement(set_to, _q("p", "strVal"), {"val": "visible"})
+
+    fade = ET.SubElement(child_tn, _q("p", "animEffect"), {"transition": "in", "filter": "fade"})
+    fade_behavior = ET.SubElement(fade, _q("p", "cBhvr"))
+    ET.SubElement(fade_behavior, _q("p", "cTn"), {"id": str(next_id), "dur": "420", "fill": "hold"})
+    next_id += 1
+    _append_animation_target(fade_behavior, shape_id)
+
+    return next_id
+
+
+def _append_animation_target(parent: ET.Element, shape_id: str) -> None:
+    target = ET.SubElement(parent, _q("p", "tgtEl"))
+    ET.SubElement(target, _q("p", "spTgt"), {"spid": shape_id})
+
+
+def _q(prefix: str, tag: str) -> str:
+    return f"{{{NS[prefix]}}}{tag}"
 
 
 def _replace_shape_text(shape: ET.Element, new_text: str, geometry: dict, original_text: str) -> None:

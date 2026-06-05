@@ -225,7 +225,10 @@ class AppHandler(SimpleHTTPRequestHandler):
                 encoding="utf-8",
             )
             pptx_path = GENERATED_DIR / f"{output_stem}-filled-deck.pptx"
-            PptxExporter(template_config["pptxPath"]).export(result["filledTemplateJson"], pptx_path)
+            PptxExporter(
+                template_config["pptxPath"],
+                animate_text=template_id == DEFAULT_TEMPLATE_ID,
+            ).export(result["filledTemplateJson"], pptx_path)
             pptx_preview_path = _render_pptx_preview(pptx_path)
 
             self._send_json(

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Kurawa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/kurawa.css" />
+</head>
+<body>
+  <header class="nav is-scrolled">
+    <div class="nav__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 4v16M4 12h16"/></svg></span>
+        Kurawa
+      </a>
+      <nav class="nav__center">
+        <a href="projects.html">Projects</a>
+        <a href="about.html" class="is-active">About Us</a>
+        <a href="index.html#blog">Blog</a>
+      </nav>
+      <div class="nav__actions">
+        <a href="index.html#pricing" class="btn btn--outline">See pricing</a>
+        <a href="#contact" class="btn btn--dark">Book a call</a>
+      </div>
+      <button class="nav__burger" aria-label="Menu"><svg width="24" height="24" stroke="currentColor" fill="none" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero container">
+      <p class="eyebrow" data-reveal>About</p>
+      <h1 data-reveal>Who we are.</h1>
+    </section>
+
+    <section class="container" style="padding-top:0;">
+      <div class="about-split">
+        <div class="about-text" data-reveal>
+          <p><strong>A small team, built for speed, obsessed with the details.</strong></p>
+          <p>We keep things simple on purpose. No bloated process. No unnecessary layers. Just clear communication, fast turnaround, and design you can rely on.</p>
+          <p>We're not trying to be the biggest studio. We're here to be the one you can depend on.</p>
+          <p>The team you come back to. The team that just gets it.</p>
+          <p class="signature">— Kurawa Team</p>
+        </div>
+        <div class="about-visual" data-blur-in aria-hidden="true">✋</div>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>Impact</p>
+      <h2 class="section-title" data-reveal>By creatives,<br />delivering for impact.</h2>
+      <p class="section-desc" data-reveal>
+        Founded by a creative duo behind 30+ shipped projects, that helped founders secure $5M+ in funding.
+      </p>
+      <div class="team-grid" data-reveal-stagger>
+        <div class="team-card">
+          <div class="team-card__photo"></div>
+          <p class="team-card__role">Creative Director</p>
+          <h3>Aditya Rahman</h3>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo"></div>
+          <p class="team-card__role">Brand Strategist</p>
+          <h3>Clara Santoso</h3>
+        </div>
+      </div>
+      <div class="stats-row" data-reveal style="margin-top:3rem;">
+        <div class="stat-block">
+          <div class="stat-block__value"><span data-counter="30" data-suffix="+">0+</span></div>
+          <div class="stat-block__label">Shipped projects</div>
+        </div>
+        <div class="stat-block">
+          <div class="stat-block__value">$5M+</div>
+          <div class="stat-block__label">Funding secured for clients</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>Beyond visuals</p>
+      <h2 class="section-title" data-reveal>Built for real business impact.</h2>
+      <p class="section-desc" data-reveal>
+        We don't design for aesthetics alone. Every output supports your goals — growth, conversion, or clarity.
+      </p>
+      <div class="benefit-cards" style="margin-top:2rem;">
+        <article class="benefit-card" data-reveal>
+          <h3>Fast, without the trade-offs.</h3>
+          <p>Consistent, high-quality design delivered faster — predictable costs, no surprises.</p>
+        </article>
+        <article class="benefit-card" data-reveal>
+          <h3>A dedicated design team, on demand.</h3>
+          <p>No hiring. No long-term commitment. Scale with your workflow when you need us.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <p class="eyebrow" data-reveal>Contact</p>
+      <h2 class="section-title" data-reveal>Let's work together.</h2>
+      <p class="section-desc" data-reveal">Book a call or send a message — we'll get back within 24 hours.</p>
+      <div class="cta-band" data-reveal style="text-align:left;">
+        <p class="footer__email" style="margin-bottom:0.5rem;">hello@kurawa.co</p>
+        <p style="color:var(--text-muted);margin-bottom:1.5rem;">+123 456 789</p>
+        <a href="#" class="btn btn--dark btn--lg">Book a call</a>
+      </div>
+    </section>
+
+    <section class="container">
+      <p class="eyebrow" data-reveal>FAQ</p>
+      <h2 class="section-title" data-reveal>Common questions</h2>
+      <div class="faq-list" style="margin-top:2rem;" data-reveal>
+        <div class="faq-item is-open">
+          <button type="button">How does the subscription work?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__body"><p>Subscribe monthly, request tasks anytime. We work one at a time. Pause or cancel whenever.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button">What if I don't like the design?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__body"><p>Unlimited revisions until it feels right for you.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button">Do you offer custom projects?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__body"><p>Yes — for larger or one-off needs, reach out and we'll scope it together.</p></div>
+        </div>
+        <div class="faq-item">
+          <button type="button">How fast is turnaround?<span class="faq-item__icon">+</span></button>
+          <div class="faq-item__body"><p>Most tasks in 1–3 days depending on complexity.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="newsletter-block" data-reveal style="padding:2.5rem;background:var(--bg-white);border:1px solid var(--border);border-radius:var(--radius-lg);">
+        <h3 style="font-size:1.1rem;font-weight:600;margin-bottom:0.35rem;">Get Special Offer and Latest Updates</h3>
+        <p style="font-size:0.9rem;color:var(--text-muted);margin-bottom:1rem;">New work, process breakdowns, and updates from the Kurawa team.</p>
+        <form class="newsletter" onsubmit="event.preventDefault();alert('Thanks!');">
+          <input type="email" placeholder="Email" required />
+          <button type="submit" class="btn btn--dark">Count me in!</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <section class="ship-cta">
+    <div class="container">
+      <p class="ship-cta__prefix">It's time to ship</p>
+      <div class="ship-cta__words"><span class="ship-cta__word is-active ship-cta__rotating">Website</span></div>
+      <a href="#contact" class="btn btn--dark btn--lg" style="background:#fff;color:#111;">Book a call</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div><a href="index.html" class="logo"><span class="logo__mark"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><path d="M12 4v16M4 12h16"/></svg></span> Kurawa</a><p style="font-size:0.85rem;color:var(--text-muted);margin-top:0.5rem;">©2025 Kurawa</p></div>
+      <div><h4>/ Navigation</h4><ul><li><a href="projects.html">Projects</a></li><li><a href="about.html">About Us</a></li><li><a href="index.html#blog">Blog</a></li></ul></div>
+      <div><h4>/ Legal</h4><ul><li><a href="#">Privacy Policy</a></li><li><a href="#">Terms</a></li></ul></div>
+      <div><h4>Get in touch</h4><p class="footer__email">hello@kurawa.co</p><p style="color:var(--text-muted);">+123 456 789</p></div>
+    </div>
+  </footer>
+  <script src="js/kurawa.js"></script>
+</body>
+</html>
