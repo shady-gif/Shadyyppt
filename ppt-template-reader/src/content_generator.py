@@ -20,18 +20,45 @@ class ContentGenerator:
         self.template_map, self.mapper_source = improve_template_map_with_ai(template, rule_map)
 
     def generate(self, raw_text: str, topic: str | None = None) -> dict:
+        structured_slides = _parse_structured_slides(raw_text)
         cleaned = _clean_text(raw_text)
         if not cleaned:
             raise ValueError("Please paste some text before generating.")
         word_count = _word_count(cleaned)
-        if word_count < 150:
+        if word_count < 150 and not structured_slides:
             raise ValueError(f"Please paste at least 150 words. Current source text has {word_count} words.")
         if word_count > 3000:
             raise ValueError(f"Please keep source text under 3000 words. Current source text has {word_count} words.")
 
         paragraphs = _split_paragraphs(cleaned)
         sentences = _split_sentences(cleaned)
-        topic = _format_topic((topic or _guess_topic(cleaned) or "Generated Profile").strip())
+        topic = _format_topic((topic or _topic_from_structured_slides(structured_slides) or _guess_topic(cleaned) or "Generated Profile").strip())
+
+        if structured_slides:
+            curated = _curated_from_structured_slides(
+                topic,
+                structured_slides,
+                self.template,
+                self.template_map,
+                self.profile,
+            )
+            curated = _expand_curated_for_template(curated, self.template_map, self.profile)
+            updates = self._build_updates(curated)
+            filled = self._apply_updates(updates)
+
+            return {
+                "topic": topic,
+                "curatedContent": curated,
+                "updates": updates,
+                "mapperSource": self.mapper_source,
+                "contentSource": {
+                    "source": "structured_input",
+                    "enabled": True,
+                    "mode": "slide_outline",
+                    "slides": len(structured_slides),
+                },
+                "filledTemplateJson": filled,
+            }
 
         fallback_curated = self._curate_content(topic, paragraphs, sentences)
         fallback_curated = _expand_curated_for_template(
@@ -312,6 +339,303 @@ def _template_text_box_inventory(template: dict) -> list[dict]:
         if text_boxes:
             inventory.append({"index": slide_index, "textBoxes": text_boxes})
     return inventory
+
+
+def _parse_structured_slides(raw_text: str) -> dict[int, dict]:
+    normalized = raw_text.replace("\r\n", "\n").replace("\r", "\n")
+    normalized = re.sub(r"^\s*[⸻—–-]+\s*$", "", normalized, flags=re.M)
+    matches = list(re.finditer(r"^\s*Slide\s+(\d{1,2})\s*:\s*(.*?)\s*$", normalized, flags=re.I | re.M))
+    if len(matches) < 2:
+        return {}
+
+    slides = {}
+    for index, match in enumerate(matches):
+        slide_number = int(match.group(1))
+        header_title = _clean_text(match.group(2))
+        start = match.end()
+        end = matches[index + 1].start() if index + 1 < len(matches) else len(normalized)
+        lines = [
+            line.strip()
+            for line in normalized[start:end].splitlines()
+            if line.strip() and not re.fullmatch(r"[⸻—–-]+", line.strip())
+        ]
+        if not lines and not header_title:
+            continue
+
+        title = header_title
+        subtitle = ""
+        generic_headers = {"title slide", "section slide", "closing slide", "agenda"}
+        if (not title or title.lower() in generic_headers) and lines:
+            title = _clean_text(_strip_bullet(lines.pop(0)))
+        elif lines and not _is_bullet_line(lines[0]):
+            subtitle = _clean_text(_strip_bullet(lines.pop(0)))
+
+        bullets = []
+        section_labels = []
+        groups = {}
+        conclusion = ""
+        pending_label = ""
+        for line in lines:
+            stripped = _strip_bullet(line)
+            if not stripped:
+                continue
+            if re.match(r"^conclusion\s*:", stripped, flags=re.I):
+                conclusion = _clean_text(re.sub(r"^conclusion\s*:\s*", "", stripped, flags=re.I))
+                pending_label = "Conclusion"
+                continue
+            if pending_label == "Conclusion" and not _is_bullet_line(line):
+                conclusion = _clean_text(f"{conclusion} {stripped}".strip())
+                continue
+            if not _is_bullet_line(line) and len(stripped.split()) <= 4:
+                pending_label = stripped.rstrip(":")
+                section_labels.append(pending_label)
+                groups.setdefault(pending_label, [])
+                continue
+            if pending_label and pending_label.lower() not in {"conclusion"}:
+                bullets.append(f"{pending_label}: {stripped}")
+                groups.setdefault(pending_label, []).append(stripped)
+            else:
+                bullets.append(stripped)
+
+        slides[slide_number] = {
+            "title": title or f"Slide {slide_number}",
+            "subtitle": subtitle,
+            "bullets": bullets,
+            "sectionLabels": section_labels,
+            "groups": groups,
+            "conclusion": conclusion,
+        }
+
+    return slides if len(slides) >= 2 else {}
+
+
+def _is_bullet_line(line: str) -> bool:
+    return bool(re.match(r"^\s*(?:[*•\-–]|\d+[.)])\s+", line))
+
+
+def _strip_bullet(line: str) -> str:
+    return re.sub(r"^\s*(?:[*•\-–]|\d+[.)])\s+", "", line).strip()
+
+
+def _topic_from_structured_slides(slides: dict[int, dict]) -> str | None:
+    first = slides.get(1) or {}
+    title = first.get("title") or ""
+    if ":" in title:
+        return title.split(":", 1)[0].strip()
+    match = re.match(r"([A-Z][\w'-]+(?:\s+[A-Z][\w'-]+){0,3})", title)
+    return match.group(1).strip() if match else None
+
+
+def _curated_from_structured_slides(
+    topic: str,
+    structured_slides: dict[int, dict],
+    template: dict,
+    template_map: dict,
+    profile: dict,
+) -> dict:
+    budgets = _field_budgets(template, template_map)
+    curated = {
+        "deckTitle": topic,
+        "subtitle": _structured_cover_subtitle(topic, structured_slides.get(1, {}), profile),
+        "byline": _structured_cover_byline(structured_slides.get(1, {})),
+        "year": str(date.today().year),
+        "unusedFacts": _structured_fact_sequence(structured_slides),
+        "slides": {},
+    }
+
+    for slide_number in sorted(structured_slides):
+        slide_data = structured_slides[slide_number]
+        fields = (template_map.get(str(slide_number)) or {}).get("fields") or {}
+        if not fields:
+            continue
+        curated["slides"][str(slide_number)] = _structured_slide_fields(
+            topic,
+            slide_number,
+            slide_data,
+            fields,
+            budgets.get(slide_number, {}),
+            curated,
+        )
+
+    return curated
+
+
+def _field_budgets(template: dict, template_map: dict) -> dict[int, dict[str, int]]:
+    inventory_by_slide = {
+        int(slide["index"]): {
+            str(text_box["shapeId"]): int(text_box.get("maxChars") or 120)
+            for text_box in slide.get("textBoxes", [])
+        }
+        for slide in _template_text_box_inventory(template)
+    }
+    budgets = {}
+    for slide_index, slide_map in template_map.items():
+        slide_number = int(slide_index)
+        budgets[slide_number] = {}
+        for field_name, shape_id in (slide_map.get("fields") or {}).items():
+            raw_budget = inventory_by_slide.get(slide_number, {}).get(str(shape_id), 120)
+            budgets[slide_number][field_name] = max(raw_budget, _minimum_field_budget(field_name))
+    return budgets
+
+
+def _minimum_field_budget(field_name: str) -> int:
+    if field_name == "title":
+        return 24
+    if field_name in {"section", "headline", "subtitle"}:
+        return 44
+    if field_name.startswith("heading") or field_name.startswith("line"):
+        return 64
+    if field_name.startswith("body"):
+        return 145
+    return 80
+
+
+def _structured_cover_subtitle(topic: str, slide: dict, profile: dict) -> str:
+    title = slide.get("title") or topic
+    if ":" in title:
+        return _fit_structured_text(title.split(":", 1)[1].strip(), 48)
+    return _fit_structured_text(slide.get("subtitle") or profile.get("subtitle", "profile"), 48)
+
+
+def _structured_cover_byline(slide: dict) -> str:
+    bullets = slide.get("bullets") or []
+    return _fit_structured_text(bullets[0] if bullets else slide.get("subtitle", ""), 70, sentence=True)
+
+
+def _structured_fact_sequence(slides: dict[int, dict]) -> list[str]:
+    facts = []
+    for slide_number in sorted(slides):
+        slide = slides[slide_number]
+        for value in [slide.get("title"), slide.get("subtitle"), *(slide.get("bullets") or []), slide.get("conclusion")]:
+            value = _clean_text(value or "")
+            if value:
+                facts.append(_shorten(value, 145))
+    return facts
+
+
+def _structured_slide_fields(
+    topic: str,
+    slide_number: int,
+    slide: dict,
+    fields: dict,
+    budgets: dict[str, int],
+    curated: dict,
+) -> dict:
+    if slide_number == 1:
+        return {
+            "title": _fit_structured_text(topic, budgets.get("title", 28)),
+            "subtitle": _fit_structured_text(curated.get("subtitle", ""), budgets.get("subtitle", 48)),
+            "byline": _fit_structured_text(curated.get("byline", ""), budgets.get("byline", 70), sentence=True),
+            "year": curated.get("year", str(date.today().year)),
+        }
+
+    title = slide.get("title") or f"Slide {slide_number}"
+    subtitle = slide.get("subtitle") or title
+    bullets = slide.get("bullets") or []
+    conclusion = slide.get("conclusion") or ""
+    content = {}
+
+    if "section" in fields and "headline" in fields:
+        first, second = _split_structured_heading(subtitle or title)
+        content["headline"] = _fit_structured_text(first, budgets.get("headline", 48))
+        content["section"] = _fit_structured_text(second, budgets.get("section", 48))
+    elif "section" in fields:
+        content["section"] = _fit_structured_text(subtitle or title, budgets.get("section", 48))
+    elif "headline" in fields:
+        content["headline"] = _fit_structured_text(subtitle or title, budgets.get("headline", 48))
+
+    body_fields = [field for field in fields if field.startswith("body")]
+    body_fields.sort(key=lambda field: (field != "body", _field_number(field)))
+    if body_fields:
+        chunks = _bullet_chunks(bullets, len(body_fields), conclusion)
+        for field_name, chunk in zip(body_fields, chunks):
+            content[field_name] = _fit_structured_text(chunk, budgets.get(field_name, 145), sentence=True)
+
+    heading_fields = sorted([field for field in fields if field.startswith("heading")], key=_field_number)
+    if heading_fields:
+        if not body_fields:
+            heading_values = _structured_group_values(slide, heading_fields, bullets, conclusion)
+        else:
+            heading_values = _structured_heading_values(slide, heading_fields, bullets, conclusion)
+        for field_name, value in zip(heading_fields, heading_values):
+            content[field_name] = _fit_structured_text(value, budgets.get(field_name, 70), sentence=not body_fields)
+
+    line_fields = sorted([field for field in fields if field.startswith("line")], key=_field_number)
+    if line_fields:
+        values = [topic, *bullets, conclusion]
+        for field_name, value in zip(line_fields, values):
+            content[field_name] = _fit_structured_text(value, budgets.get(field_name, 90), sentence=field_name != "line1")
+
+    return content
+
+
+def _split_structured_heading(value: str) -> tuple[str, str]:
+    value = _clean_text(value)
+    if "&" in value:
+        left, right = [part.strip() for part in value.split("&", 1)]
+        return left or value, right or value
+    parts = value.split()
+    if len(parts) <= 1:
+        return value, ""
+    if len(parts) == 2:
+        return parts[0], parts[1]
+    midpoint = max(1, len(parts) // 2)
+    return " ".join(parts[:midpoint]), " ".join(parts[midpoint:])
+
+
+def _fit_structured_text(value: str, max_chars: int, *, sentence: bool = False) -> str:
+    value = _clean_text(value)
+    if len(value) > max_chars:
+        value = value[: max_chars - 1].rsplit(" ", 1)[0]
+    value = re.sub(r"\b(and|or|the|a|an|of|for|to|with|in|on|at|by)$", "", value, flags=re.I)
+    value = re.sub(r"\s+[&:;,/-]\s*$", "", value).strip(" ,;:-")
+    if not sentence:
+        return value
+    return _polish_sentence(value)
+
+
+def _bullet_chunks(bullets: list[str], count: int, conclusion: str = "") -> list[str]:
+    values = bullets[:]
+    if conclusion:
+        values.append(f"Conclusion: {conclusion}")
+    if not values:
+        values = ["Key point"]
+    chunks = [[] for _ in range(count)]
+    for index, bullet in enumerate(values):
+        chunks[index % count].append(bullet)
+    return ["; ".join(chunk) for chunk in chunks]
+
+
+def _structured_heading_values(slide: dict, heading_fields: list[str], bullets: list[str], conclusion: str) -> list[str]:
+    labels = slide.get("sectionLabels") or []
+    values = labels[:]
+    for bullet in bullets:
+        if ":" in bullet:
+            values.append(bullet.split(":", 1)[0])
+        else:
+            values.append(_heading_from_fact(bullet))
+    if conclusion:
+        values.append("Conclusion")
+    while len(values) < len(heading_fields):
+        values.append(slide.get("subtitle") or slide.get("title") or "Key Point")
+    return values[: len(heading_fields)]
+
+
+def _structured_group_values(slide: dict, heading_fields: list[str], bullets: list[str], conclusion: str) -> list[str]:
+    groups = {
+        label: values
+        for label, values in (slide.get("groups") or {}).items()
+        if values
+    }
+    if groups:
+        values = []
+        for label, group_bullets in groups.items():
+            values.append(f"{label}: {'; '.join(group_bullets)}")
+        if conclusion:
+            values.append(f"Conclusion: {conclusion}")
+        return values[: len(heading_fields)]
+
+    return _bullet_chunks(bullets, len(heading_fields), conclusion)
 
 
 def _font_size(text_box: dict) -> float:
