@@ -119,6 +119,12 @@ body::before {
   gap: 10px;
 }
 
+.previewActions {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .topbar {
   margin-bottom: 34px;
 }
@@ -174,11 +180,18 @@ a[download] {
   border: 1px solid var(--line-strong);
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.72);
+  box-shadow: none;
   color: var(--ink);
   font-size: 14px;
   font-weight: 760;
   padding: 0 16px;
   text-decoration: none;
+}
+
+button.secondaryAction:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 28px rgba(37, 42, 55, 0.1);
+  color: var(--ink);
 }
 
 button:hover,
@@ -366,6 +379,85 @@ textarea {
 
 .generatedPreview {
   margin-bottom: 18px;
+}
+
+.slideEditor {
+  margin-bottom: 18px;
+}
+
+.editorToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.editorToolbar label {
+  flex: 0 0 auto;
+}
+
+.editorToolbar select {
+  max-width: 180px;
+  padding: 10px 12px;
+}
+
+.editorStage {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  border: 1px solid rgba(35, 40, 52, 0.16);
+  border-radius: 8px;
+  background:
+    linear-gradient(rgba(30, 34, 44, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30, 34, 44, 0.045) 1px, transparent 1px),
+    linear-gradient(135deg, #ffffff, #f3f5f7);
+  background-size: 24px 24px, 24px 24px, auto;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86), var(--shadow-tight);
+  touch-action: none;
+}
+
+.editorBox {
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  min-height: 0;
+  border: 1px solid rgba(17, 96, 101, 0.5);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 8px 24px rgba(22, 90, 96, 0.14);
+  color: #1d2b31;
+  cursor: grab;
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.22;
+  padding: 7px;
+  text-align: left;
+  touch-action: none;
+  user-select: none;
+}
+
+.editorBox span {
+  display: block;
+  margin-bottom: 3px;
+  color: #167077;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.editorBox:hover,
+.editorBox:focus {
+  border-color: rgba(17, 96, 101, 0.86);
+  outline: none;
+}
+
+.editorBox.isDragging {
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 16px 38px rgba(22, 90, 96, 0.24);
+  cursor: grabbing;
 }
 
 .slides {

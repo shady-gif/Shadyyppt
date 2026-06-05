@@ -52,7 +52,10 @@
             <p class="eyebrow">Output</p>
             <h2>Generated Slides</h2>
           </div>
-          <a id="downloadPptxLink" download hidden>Download PPTX</a>
+          <div class="previewActions">
+            <button id="applyLayoutBtn" type="button" class="secondaryAction" hidden>Apply Layout</button>
+            <a id="downloadPptxLink" download hidden>Download PPTX</a>
+          </div>
         </header>
 
         <p id="status" class="status">Paste text and generate.</p>
@@ -60,6 +63,14 @@
         <figure id="generatedPreview" class="generatedPreview" hidden>
           <img id="generatedPreviewImage" alt="Generated PowerPoint preview" />
         </figure>
+
+        <section id="slideEditor" class="slideEditor" hidden aria-label="Drag slide elements">
+          <div class="editorToolbar">
+            <label for="editorSlideSelect">Edit slide</label>
+            <select id="editorSlideSelect"></select>
+          </div>
+          <div id="editorStage" class="editorStage" aria-label="Generated slide layout editor"></div>
+        </section>
 
         <div id="slides" class="slides" aria-live="polite"></div>
       </section>

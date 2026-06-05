@@ -9,9 +9,15 @@ const generatedPreview = document.querySelector("#generatedPreview");
 const generatedPreviewImage = document.querySelector("#generatedPreviewImage");
 const slidesEl = document.querySelector("#slides");
 const downloadPptxLink = document.querySelector("#downloadPptxLink");
+const applyLayoutBtn = document.querySelector("#applyLayoutBtn");
+const slideEditor = document.querySelector("#slideEditor");
+const editorSlideSelect = document.querySelector("#editorSlideSelect");
+const editorStage = document.querySelector("#editorStage");
 const apiBase = (window.PPT_API_BASE || "").replace(/\/$/, "");
 let templates = [];
 let templatesReady = false;
+let currentDeck = null;
+let layoutUpdates = new Map();
 
 loadTemplates();
 
@@ -94,7 +100,11 @@ generateBtn.addEventListener("click", async () => {
 
   setStatus("Generating...");
   slidesEl.innerHTML = "";
+  currentDeck = null;
+  layoutUpdates = new Map();
   downloadPptxLink.hidden = true;
+  applyLayoutBtn.hidden = true;
+  slideEditor.hidden = true;
   generatedPreview.hidden = true;
   generatedPreviewImage.removeAttribute("src");
   generateBtn.disabled = true;
@@ -126,7 +136,14 @@ generateBtn.addEventListener("click", async () => {
 
     const slideCount = Object.keys(payload.curatedContent.slides).length;
     setStatus(generationStatus(slideCount, payload.contentSource), generationTone(payload.contentSource));
+    currentDeck = {
+      templateId: payload.templateId,
+      filledTemplatePath: payload.downloadPath,
+      pptxDownloadPath: payload.pptxDownloadPath,
+      slidePreview: payload.slidePreview || [],
+    };
     renderSlides(payload.curatedContent.slides, payload.templateMap, payload.slidePreview);
+    renderSlideEditor(currentDeck.slidePreview);
 
     if (payload.pptxPreviewPath) {
       generatedPreviewImage.src = assetUrl(payload.pptxPreviewPath);
@@ -143,6 +160,62 @@ generateBtn.addEventListener("click", async () => {
   } finally {
     delete generateBtn.dataset.busy;
     generateBtn.disabled = !templatesReady;
+  }
+});
+
+editorSlideSelect.addEventListener("change", () => {
+  renderEditorStage(Number(editorSlideSelect.value));
+});
+
+applyLayoutBtn.addEventListener("click", async () => {
+  if (!currentDeck || layoutUpdates.size === 0) {
+    setStatus("Drag a text box before applying layout.", "warning");
+    return;
+  }
+
+  applyLayoutBtn.disabled = true;
+  applyLayoutBtn.dataset.busy = "true";
+  setStatus("Applying layout changes...");
+
+  try {
+    const response = await fetch(apiUrl("/api/apply-layout"), {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        templateId: currentDeck.templateId,
+        filledTemplatePath: currentDeck.filledTemplatePath,
+        layoutUpdates: Array.from(layoutUpdates.values()),
+      }),
+    });
+    const payload = await readJson(response);
+    if (!response.ok) {
+      setStatus(payload.error || "Layout update failed.", "error");
+      return;
+    }
+
+    currentDeck.filledTemplatePath = payload.downloadPath;
+    currentDeck.pptxDownloadPath = payload.pptxDownloadPath;
+    currentDeck.slidePreview = payload.slidePreview || currentDeck.slidePreview;
+    layoutUpdates = new Map();
+    applyLayoutBtn.hidden = true;
+
+    if (payload.pptxPreviewPath) {
+      generatedPreviewImage.src = assetUrl(payload.pptxPreviewPath);
+      generatedPreview.hidden = false;
+    }
+    if (payload.pptxDownloadPath) {
+      downloadPptxLink.href = assetUrl(payload.pptxDownloadPath);
+      downloadPptxLink.textContent = "Download Edited PPTX";
+      downloadPptxLink.hidden = false;
+    }
+
+    renderSlideEditor(currentDeck.slidePreview, Number(editorSlideSelect.value));
+    setStatus("Layout applied. Download the edited PPTX when ready.", "success");
+  } catch (error) {
+    setStatus("Layout API unavailable. Check that the backend is running.", "error");
+  } finally {
+    delete applyLayoutBtn.dataset.busy;
+    applyLayoutBtn.disabled = false;
   }
 });
 
@@ -175,6 +248,110 @@ function renderSlides(slides, templateMap = {}, slidePreview = []) {
       `;
     })
     .join("");
+}
+
+function renderSlideEditor(slidePreview = [], selectedIndex = null) {
+  const editableSlides = slidePreview.filter((slide) => Array.isArray(slide.elements) && slide.elements.length);
+  if (!editableSlides.length) {
+    slideEditor.hidden = true;
+    applyLayoutBtn.hidden = true;
+    return;
+  }
+
+  slideEditor.hidden = false;
+  editorSlideSelect.innerHTML = editableSlides
+    .map((slide) => `<option value="${escapeHtml(slide.index)}">Slide ${escapeHtml(slide.index)}</option>`)
+    .join("");
+  const nextIndex = selectedIndex && editableSlides.some((slide) => Number(slide.index) === Number(selectedIndex))
+    ? selectedIndex
+    : editableSlides[0].index;
+  editorSlideSelect.value = String(nextIndex);
+  renderEditorStage(Number(nextIndex));
+}
+
+function renderEditorStage(slideIndex) {
+  if (!currentDeck) {
+    return;
+  }
+
+  const slide = currentDeck.slidePreview.find((item) => Number(item.index) === Number(slideIndex));
+  if (!slide) {
+    editorStage.innerHTML = "";
+    return;
+  }
+
+  editorStage.innerHTML = slide.elements
+    .map((element) => {
+      const key = layoutKey(slide.index, element.shapeId);
+      const moved = layoutUpdates.get(key);
+      const box = moved || element;
+      return `
+        <button
+          type="button"
+          class="editorBox"
+          data-slide-index="${escapeHtml(slide.index)}"
+          data-shape-id="${escapeHtml(element.shapeId)}"
+          style="left:${box.x}%; top:${box.y}%; width:${box.w}%; height:${box.h}%;"
+          title="${escapeHtml(element.field || element.shapeId)}"
+        >
+          <span>${escapeHtml(element.field || "text")}</span>
+          ${escapeHtml(element.text)}
+        </button>
+      `;
+    })
+    .join("");
+
+  editorStage.querySelectorAll(".editorBox").forEach((box) => {
+    box.addEventListener("pointerdown", startDrag);
+  });
+}
+
+function startDrag(event) {
+  const box = event.currentTarget;
+  const stageRect = editorStage.getBoundingClientRect();
+  const startRect = box.getBoundingClientRect();
+  const slideIndex = Number(box.dataset.slideIndex);
+  const shapeId = box.dataset.shapeId;
+  const startX = event.clientX;
+  const startY = event.clientY;
+  const originalLeft = ((startRect.left - stageRect.left) / stageRect.width) * 100;
+  const originalTop = ((startRect.top - stageRect.top) / stageRect.height) * 100;
+  const width = (startRect.width / stageRect.width) * 100;
+  const height = (startRect.height / stageRect.height) * 100;
+
+  box.setPointerCapture(event.pointerId);
+  box.classList.add("isDragging");
+
+  function move(pointerEvent) {
+    const dx = ((pointerEvent.clientX - startX) / stageRect.width) * 100;
+    const dy = ((pointerEvent.clientY - startY) / stageRect.height) * 100;
+    const x = clamp(originalLeft + dx, 0, 100 - width);
+    const y = clamp(originalTop + dy, 0, 100 - height);
+    box.style.left = `${x}%`;
+    box.style.top = `${y}%`;
+    layoutUpdates.set(layoutKey(slideIndex, shapeId), { slideIndex, shapeId, x, y, w: width, h: height });
+    applyLayoutBtn.hidden = false;
+  }
+
+  function stop(pointerEvent) {
+    box.releasePointerCapture(pointerEvent.pointerId);
+    box.classList.remove("isDragging");
+    box.removeEventListener("pointermove", move);
+    box.removeEventListener("pointerup", stop);
+    box.removeEventListener("pointercancel", stop);
+  }
+
+  box.addEventListener("pointermove", move);
+  box.addEventListener("pointerup", stop);
+  box.addEventListener("pointercancel", stop);
+}
+
+function layoutKey(slideIndex, shapeId) {
+  return `${slideIndex}:${shapeId}`;
+}
+
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
 }
 
 function formatPurpose(value) {

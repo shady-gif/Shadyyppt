@@ -202,6 +202,9 @@ class AppHandler(SimpleHTTPRequestHandler):
         if parsed.path == "/api/upload-template":
             self._handle_template_upload()
             return
+        if parsed.path == "/api/apply-layout":
+            self._handle_apply_layout()
+            return
 
         if parsed.path != "/api/generate":
             self.send_error(404, "Not found")
@@ -297,6 +300,46 @@ class AppHandler(SimpleHTTPRequestHandler):
             self._send_json({"error": str(exc)}, status=400)
         except Exception as exc:
             self._send_json({"error": f"Upload failed: {exc}"}, status=500)
+
+    def _handle_apply_layout(self) -> None:
+        try:
+            body = self._read_json_body()
+            template_id = body.get("templateId") or DEFAULT_TEMPLATE_ID
+            template_config = _template_config(template_id)
+            filled_path = _generated_json_path(body.get("filledTemplatePath"))
+            filled_template = json.loads(filled_path.read_text(encoding="utf-8"))
+            layout_updates = _layout_updates_from_payload(
+                filled_template,
+                body.get("layoutUpdates") or [],
+            )
+            if not layout_updates:
+                raise ValueError("Move at least one text box before applying layout.")
+
+            _apply_layout_updates(filled_template, layout_updates)
+
+            output_stem = filled_path.stem.replace("-filled-template", "")
+            edited_json_path = GENERATED_DIR / f"{output_stem}-edited-template.json"
+            edited_pptx_path = GENERATED_DIR / f"{output_stem}-edited-deck.pptx"
+            edited_json_path.write_text(json.dumps(filled_template, indent=2), encoding="utf-8")
+            PptxExporter(
+                template_config["pptxPath"],
+                animate_text=template_id == DEFAULT_TEMPLATE_ID,
+            ).export(filled_template, edited_pptx_path)
+            pptx_preview_path = _render_pptx_preview(edited_pptx_path)
+
+            self._send_json(
+                {
+                    "downloadPath": f"outputs/generated/{edited_json_path.name}",
+                    "pptxDownloadPath": f"outputs/generated/{edited_pptx_path.name}",
+                    "pptxPreviewPath": pptx_preview_path,
+                    "slidePreview": _slide_preview(filled_template),
+                    "layoutUpdates": layout_updates,
+                }
+            )
+        except ValueError as exc:
+            self._send_json({"error": str(exc)}, status=400)
+        except Exception as exc:
+            self._send_json({"error": f"Layout update failed: {exc}"}, status=500)
 
     def _read_json_body(self) -> dict:
         length = int(self.headers.get("Content-Length", "0"))
@@ -426,6 +469,128 @@ def _apply_fitted_updates(filled_template: dict, updates: list[dict]) -> dict:
     if "generation" in filled_template:
         filled_template["generation"]["updates"] = updates
     return filled_template
+
+
+def _generated_json_path(path_value: str | None) -> Path:
+    if not path_value:
+        raise ValueError("Missing generated deck reference.")
+
+    path = Path(str(path_value).lstrip("/"))
+    if path.parts[:2] != ("outputs", "generated") or path.suffix != ".json":
+        raise ValueError("Invalid generated deck reference.")
+
+    resolved = (ROOT / path).resolve()
+    generated_root = GENERATED_DIR.resolve()
+    if generated_root not in resolved.parents:
+        raise ValueError("Invalid generated deck reference.")
+    if not resolved.exists():
+        raise ValueError("Generated deck data was not found. Regenerate the deck and try again.")
+    return resolved
+
+
+def _layout_updates_from_payload(filled_template: dict, payload_updates: list[dict]) -> list[dict]:
+    size = filled_template.get("presentation", {}).get("size", {})
+    slide_width = float(size.get("widthInches") or 20)
+    slide_height = float(size.get("heightInches") or 11.25)
+    shape_lookup = _shape_geometry_lookup(filled_template)
+    updates = []
+
+    for raw_update in payload_updates:
+        slide_index = raw_update.get("slideIndex")
+        shape_id = raw_update.get("shapeId")
+        if slide_index is None or shape_id is None:
+            continue
+
+        key = (int(slide_index), str(shape_id))
+        original = shape_lookup.get(key)
+        if original is None:
+            continue
+
+        x_percent = _clamped_float(raw_update.get("x"), 0, 100)
+        y_percent = _clamped_float(raw_update.get("y"), 0, 100)
+        width_percent = _clamped_float(raw_update.get("w", original.get("widthPercent")), 0.1, 100)
+        height_percent = _clamped_float(raw_update.get("h", original.get("heightPercent")), 0.1, 100)
+
+        x_inches = round((x_percent / 100) * slide_width, 4)
+        y_inches = round((y_percent / 100) * slide_height, 4)
+        width_inches = round((width_percent / 100) * slide_width, 4)
+        height_inches = round((height_percent / 100) * slide_height, 4)
+
+        updates.append(
+            {
+                "slideIndex": key[0],
+                "shapeId": key[1],
+                "x": round(x_percent, 4),
+                "y": round(y_percent, 4),
+                "w": round(width_percent, 4),
+                "h": round(height_percent, 4),
+                "xInches": x_inches,
+                "yInches": y_inches,
+                "widthInches": width_inches,
+                "heightInches": height_inches,
+            }
+        )
+
+    return updates
+
+
+def _shape_geometry_lookup(filled_template: dict) -> dict[tuple[int, str], dict]:
+    size = filled_template.get("presentation", {}).get("size", {})
+    slide_width = float(size.get("widthInches") or 20)
+    slide_height = float(size.get("heightInches") or 11.25)
+    lookup = {}
+
+    for slide in filled_template.get("slides", []):
+        slide_index = int(slide.get("index"))
+        for shape in slide.get("shapes", []):
+            shape_id = str(shape.get("shapeId"))
+            geometry = shape.get("geometry") or {}
+            if not shape_id or not geometry:
+                continue
+            lookup[(slide_index, shape_id)] = {
+                **geometry,
+                "widthPercent": _percent(geometry.get("widthInches"), slide_width),
+                "heightPercent": _percent(geometry.get("heightInches"), slide_height),
+            }
+    return lookup
+
+
+def _apply_layout_updates(filled_template: dict, layout_updates: list[dict]) -> None:
+    update_lookup = {
+        (int(update["slideIndex"]), str(update["shapeId"])): update
+        for update in layout_updates
+    }
+
+    for slide in filled_template.get("slides", []):
+        slide_index = int(slide.get("index"))
+        for shape in slide.get("shapes", []):
+            key = (slide_index, str(shape.get("shapeId")))
+            update = update_lookup.get(key)
+            if not update:
+                continue
+            geometry = shape.setdefault("geometry", {})
+            geometry["xInches"] = update["xInches"]
+            geometry["yInches"] = update["yInches"]
+            geometry["widthInches"] = update["widthInches"]
+            geometry["heightInches"] = update["heightInches"]
+
+    generation = filled_template.setdefault("generation", {})
+    existing = {
+        (int(update.get("slideIndex")), str(update.get("shapeId"))): update
+        for update in generation.get("layoutUpdates", [])
+        if update.get("slideIndex") is not None and update.get("shapeId") is not None
+    }
+    for update in layout_updates:
+        existing[(int(update["slideIndex"]), str(update["shapeId"]))] = update
+    generation["layoutUpdates"] = list(existing.values())
+
+
+def _clamped_float(value: object, minimum: float, maximum: float) -> float:
+    try:
+        number = float(value)
+    except (TypeError, ValueError):
+        number = minimum
+    return min(max(number, minimum), maximum)
 
 
 def _replace_text_box_text(text_box: dict, new_text: str) -> None:

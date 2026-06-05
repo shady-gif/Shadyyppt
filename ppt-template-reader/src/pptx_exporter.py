@@ -12,6 +12,7 @@ NS = {
     "p": "http://schemas.openxmlformats.org/presentationml/2006/main",
     "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
 }
+EMU_PER_INCH = 914400
 TEXT_POP_DURATION_MS = "90"
 
 for prefix, uri in NS.items():
@@ -32,24 +33,30 @@ class PptxExporter:
 
         shape_metadata = _extract_shape_metadata(filled_template)
         updates_by_slide = _group_updates_by_slide(filled_template, shape_metadata)
+        layouts_by_slide = _group_layout_updates_by_slide(filled_template)
         slide_paths = {
             slide["index"]: slide["path"]
             for slide in filled_template.get("slides", [])
             if slide.get("index") and slide.get("path")
         }
-        replacements = {
-            slide_paths[slide_index]: updates
-            for slide_index, updates in updates_by_slide.items()
+        slide_operations = {
+            slide_paths[slide_index]: {
+                "updates": updates_by_slide.get(slide_index, {}),
+                "layouts": layouts_by_slide.get(slide_index, {}),
+            }
+            for slide_index in set(updates_by_slide) | set(layouts_by_slide)
             if slide_index in slide_paths
         }
 
         with ZipFile(self.source_pptx, "r") as source, ZipFile(output_path, "w", ZIP_DEFLATED) as target:
             for item in source.infolist():
                 data = source.read(item.filename)
-                if item.filename in replacements:
+                if item.filename in slide_operations:
+                    operations = slide_operations[item.filename]
                     data = _replace_slide_text(
                         data,
-                        replacements[item.filename],
+                        operations["updates"],
+                        layout_updates=operations["layouts"],
                         animate_text=self.animate_text,
                     )
                 target.writestr(item, data)
@@ -85,9 +92,27 @@ def _group_updates_by_slide(filled_template: dict, shape_metadata: dict[int, dic
     return grouped
 
 
-def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict], *, animate_text: bool = False) -> bytes:
+def _group_layout_updates_by_slide(filled_template: dict) -> dict[int, dict[str, dict]]:
+    grouped = defaultdict(dict)
+    for update in filled_template.get("generation", {}).get("layoutUpdates", []):
+        slide_index = update.get("slideIndex")
+        shape_id = update.get("shapeId")
+        if slide_index is None or shape_id is None:
+            continue
+        grouped[int(slide_index)][str(shape_id)] = update
+    return grouped
+
+
+def _replace_slide_text(
+    xml_bytes: bytes,
+    updates: dict[str, dict],
+    *,
+    layout_updates: dict[str, dict] | None = None,
+    animate_text: bool = False,
+) -> bytes:
     root = ET.fromstring(xml_bytes)
     animated_shape_ids = []
+    layout_updates = layout_updates or {}
 
     for shape in root.findall(".//p:sp", NS):
         non_visual_props = shape.find("p:nvSpPr/p:cNvPr", NS)
@@ -95,6 +120,9 @@ def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict], *, animate_t
             continue
 
         shape_id = non_visual_props.attrib.get("id")
+        if shape_id in layout_updates:
+            _apply_shape_layout(shape, layout_updates[shape_id])
+
         if shape_id not in updates:
             continue
 
@@ -112,6 +140,36 @@ def _replace_slide_text(xml_bytes: bytes, updates: dict[str, dict], *, animate_t
         _add_text_pop_animations(root, animated_shape_ids)
 
     return ET.tostring(root, encoding="utf-8", xml_declaration=True)
+
+
+def _apply_shape_layout(shape: ET.Element, layout: dict) -> None:
+    transform = shape.find("p:spPr/a:xfrm", NS)
+    if transform is None:
+        shape_props = shape.find("p:spPr", NS)
+        if shape_props is None:
+            return
+        transform = ET.SubElement(shape_props, _q("a", "xfrm"))
+
+    offset = transform.find("a:off", NS)
+    if offset is None:
+        offset = ET.SubElement(transform, _q("a", "off"))
+
+    extent = transform.find("a:ext", NS)
+    if extent is None:
+        extent = ET.SubElement(transform, _q("a", "ext"))
+
+    if layout.get("xInches") is not None:
+        offset.set("x", str(_inches_to_emu(layout["xInches"])))
+    if layout.get("yInches") is not None:
+        offset.set("y", str(_inches_to_emu(layout["yInches"])))
+    if layout.get("widthInches") is not None:
+        extent.set("cx", str(_inches_to_emu(layout["widthInches"])))
+    if layout.get("heightInches") is not None:
+        extent.set("cy", str(_inches_to_emu(layout["heightInches"])))
+
+
+def _inches_to_emu(value: float | int | str) -> int:
+    return int(round(float(value) * EMU_PER_INCH))
 
 
 def _add_text_pop_animations(root: ET.Element, shape_ids: list[str]) -> None:
