@@ -444,7 +444,7 @@ textarea {
 
 .editorStage.hasSlideImage::after {
   background: rgba(255, 255, 255, 0.58);
-  content: "Slide preview";
+  content: "Slide canvas";
 }
 
 .editorBox {

@@ -18,6 +18,7 @@ let templates = [];
 let templatesReady = false;
 let currentDeck = null;
 let layoutUpdates = new Map();
+const slideBackgroundTemplates = new Set(["profile"]);
 
 loadTemplates();
 
@@ -282,12 +283,10 @@ function renderEditorStage(slideIndex) {
     return;
   }
 
-  const previewImage = currentDeck.pptxPreviewPath && Number(slideIndex) === 1
-    ? assetUrl(currentDeck.pptxPreviewPath)
-    : "";
+  const previewImage = templateSlideBackgroundPath(currentDeck.templateId, slideIndex);
   editorStage.classList.toggle("hasSlideImage", Boolean(previewImage));
   editorStage.style.backgroundImage = previewImage ? `url("${previewImage}")` : "";
-  editorStage.dataset.previewState = previewImage ? "Slide preview" : "Layout guide";
+  editorStage.dataset.previewState = previewImage ? "Slide canvas" : "Layout guide";
 
   editorStage.innerHTML = slide.elements
     .map((element) => {
@@ -357,6 +356,13 @@ function startDrag(event) {
 
 function layoutKey(slideIndex, shapeId) {
   return `${slideIndex}:${shapeId}`;
+}
+
+function templateSlideBackgroundPath(templateId, slideIndex) {
+  if (!slideBackgroundTemplates.has(templateId)) {
+    return "";
+  }
+  return assetUrl(`template-slide-backgrounds/${templateId}/slide-${slideIndex}.png`);
 }
 
 function clamp(value, min, max) {
