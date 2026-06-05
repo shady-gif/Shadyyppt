@@ -140,6 +140,7 @@ generateBtn.addEventListener("click", async () => {
       templateId: payload.templateId,
       filledTemplatePath: payload.downloadPath,
       pptxDownloadPath: payload.pptxDownloadPath,
+      pptxPreviewPath: payload.pptxPreviewPath,
       slidePreview: payload.slidePreview || [],
     };
     renderSlides(payload.curatedContent.slides, payload.templateMap, payload.slidePreview);
@@ -195,6 +196,7 @@ applyLayoutBtn.addEventListener("click", async () => {
 
     currentDeck.filledTemplatePath = payload.downloadPath;
     currentDeck.pptxDownloadPath = payload.pptxDownloadPath;
+    currentDeck.pptxPreviewPath = payload.pptxPreviewPath || currentDeck.pptxPreviewPath;
     currentDeck.slidePreview = payload.slidePreview || currentDeck.slidePreview;
     layoutUpdates = new Map();
     applyLayoutBtn.hidden = true;
@@ -279,6 +281,13 @@ function renderEditorStage(slideIndex) {
     editorStage.innerHTML = "";
     return;
   }
+
+  const previewImage = currentDeck.pptxPreviewPath && Number(slideIndex) === 1
+    ? assetUrl(currentDeck.pptxPreviewPath)
+    : "";
+  editorStage.classList.toggle("hasSlideImage", Boolean(previewImage));
+  editorStage.style.backgroundImage = previewImage ? `url("${previewImage}")` : "";
+  editorStage.dataset.previewState = previewImage ? "Slide preview" : "Layout guide";
 
   editorStage.innerHTML = slide.elements
     .map((element) => {

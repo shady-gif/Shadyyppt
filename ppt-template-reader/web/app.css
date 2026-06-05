@@ -413,8 +413,38 @@ textarea {
     linear-gradient(90deg, rgba(30, 34, 44, 0.045) 1px, transparent 1px),
     linear-gradient(135deg, #ffffff, #f3f5f7);
   background-size: 24px 24px, 24px 24px, auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px 24px, 24px 24px, auto;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.86), var(--shadow-tight);
   touch-action: none;
+}
+
+.editorStage.hasSlideImage {
+  background-color: #f8f9fb;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.editorStage::after {
+  position: absolute;
+  right: 10px;
+  bottom: 8px;
+  z-index: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: rgba(52, 61, 72, 0.62);
+  content: attr(data-preview-state);
+  font-size: 10px;
+  font-weight: 800;
+  padding: 5px 8px;
+  pointer-events: none;
+}
+
+.editorStage.hasSlideImage::after {
+  background: rgba(255, 255, 255, 0.58);
+  content: "Slide preview";
 }
 
 .editorBox {
@@ -422,11 +452,12 @@ textarea {
   display: block;
   overflow: hidden;
   min-height: 0;
-  border: 1px solid rgba(17, 96, 101, 0.5);
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.72);
-  box-shadow: 0 8px 24px rgba(22, 90, 96, 0.14);
-  color: #1d2b31;
+  z-index: 1;
+  border: 1.5px solid rgba(25, 132, 139, 0.72);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.34);
+  color: rgba(15, 23, 30, 0.78);
   cursor: grab;
   font-size: 11px;
   font-weight: 650;
@@ -438,24 +469,29 @@ textarea {
 }
 
 .editorBox span {
-  display: block;
-  margin-bottom: 3px;
+  display: inline-flex;
+  margin: -2px 0 3px -2px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.76);
   color: #167077;
   font-size: 9px;
   font-weight: 850;
   letter-spacing: 0.06em;
+  padding: 2px 4px;
   text-transform: uppercase;
 }
 
 .editorBox:hover,
 .editorBox:focus {
   border-color: rgba(17, 96, 101, 0.86);
+  background: rgba(255, 255, 255, 0.22);
   outline: none;
 }
 
 .editorBox.isDragging {
   z-index: 5;
-  background: rgba(255, 255, 255, 0.9);
+  border-color: rgba(20, 115, 222, 0.95);
+  background: rgba(255, 255, 255, 0.18);
   box-shadow: 0 16px 38px rgba(22, 90, 96, 0.24);
   cursor: grabbing;
 }
