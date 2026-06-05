@@ -52,11 +52,12 @@ class PptxExporterTests(unittest.TestCase):
         self.assertIsNotNone(timing)
 
         targets = [node.attrib["spid"] for node in root.findall(".//p:spTgt", NS)]
-        self.assertEqual(targets, ["10", "10"])
+        self.assertEqual(targets, ["10", "10", "10", "10"])
 
         effect = root.find(".//p:cTn[@presetClass='entr']", NS)
         self.assertIsNotNone(effect)
         self.assertEqual(effect.attrib["nodeType"], "withEffect")
+        self.assertIsNotNone(root.find(".//p:cond[@evt='onBegin']", NS))
 
     def test_replace_slide_text_leaves_timing_out_when_animation_disabled(self) -> None:
         xml = _replace_slide_text(

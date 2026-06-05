@@ -12,6 +12,7 @@ NS = {
     "p": "http://schemas.openxmlformats.org/presentationml/2006/main",
     "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships",
 }
+TEXT_POP_DURATION_MS = "90"
 
 for prefix, uri in NS.items():
     ET.register_namespace(prefix, uri)
@@ -130,9 +131,27 @@ def _add_text_pop_animations(root: ET.Element, shape_ids: list[str]) -> None:
     main_ctn = ET.SubElement(main_seq, _q("p", "cTn"), {"id": "2", "dur": "indefinite", "nodeType": "mainSeq"})
     main_children = ET.SubElement(main_ctn, _q("p", "childTnLst"))
 
-    next_id = 3
-    for order, shape_id in enumerate(dict.fromkeys(shape_ids)):
-        next_id = _append_pop_effect(main_children, next_id, shape_id, delay_ms=order * 120)
+    auto_group = ET.SubElement(main_children, _q("p", "par"))
+    auto_group_ctn = ET.SubElement(auto_group, _q("p", "cTn"), {"id": "3", "fill": "hold"})
+    auto_group_conditions = ET.SubElement(auto_group_ctn, _q("p", "stCondLst"))
+    ET.SubElement(auto_group_conditions, _q("p", "cond"), {"delay": "0"})
+    begin_condition = ET.SubElement(auto_group_conditions, _q("p", "cond"), {"evt": "onBegin", "delay": "0"})
+    ET.SubElement(begin_condition, _q("p", "tn"), {"val": "2"})
+    auto_group_children = ET.SubElement(auto_group_ctn, _q("p", "childTnLst"))
+
+    next_id = 4
+    for shape_id in dict.fromkeys(shape_ids):
+        next_id = _append_pop_effect(auto_group_children, next_id, shape_id, delay_ms=0)
+
+    prev_conditions = ET.SubElement(main_seq, _q("p", "prevCondLst"))
+    prev_condition = ET.SubElement(prev_conditions, _q("p", "cond"), {"evt": "onPrev", "delay": "0"})
+    prev_target = ET.SubElement(prev_condition, _q("p", "tgtEl"))
+    ET.SubElement(prev_target, _q("p", "sldTgt"))
+
+    next_conditions = ET.SubElement(main_seq, _q("p", "nextCondLst"))
+    next_condition = ET.SubElement(next_conditions, _q("p", "cond"), {"evt": "onNext", "delay": "0"})
+    next_target = ET.SubElement(next_condition, _q("p", "tgtEl"))
+    ET.SubElement(next_target, _q("p", "sldTgt"))
 
     root.append(timing)
 
@@ -144,11 +163,10 @@ def _append_pop_effect(parent: ET.Element, next_id: int, shape_id: str, *, delay
         _q("p", "cTn"),
         {
             "id": str(next_id),
-            "presetID": "10",
+            "presetID": "53",
             "presetClass": "entr",
-            "presetSubtype": "0",
+            "presetSubtype": "16",
             "fill": "hold",
-            "grpId": "0",
             "nodeType": "withEffect",
         },
     )
@@ -159,17 +177,39 @@ def _append_pop_effect(parent: ET.Element, next_id: int, shape_id: str, *, delay
 
     set_anim = ET.SubElement(child_tn, _q("p", "set"))
     set_behavior = ET.SubElement(set_anim, _q("p", "cBhvr"))
-    ET.SubElement(set_behavior, _q("p", "cTn"), {"id": str(next_id), "dur": "1", "fill": "hold"})
+    set_ctn = ET.SubElement(set_behavior, _q("p", "cTn"), {"id": str(next_id), "dur": "1", "fill": "hold"})
     next_id += 1
+    set_conditions = ET.SubElement(set_ctn, _q("p", "stCondLst"))
+    ET.SubElement(set_conditions, _q("p", "cond"), {"delay": "0"})
     _append_animation_target(set_behavior, shape_id)
     attr_list = ET.SubElement(set_behavior, _q("p", "attrNameLst"))
     ET.SubElement(attr_list, _q("p", "attrName")).text = "style.visibility"
     set_to = ET.SubElement(set_anim, _q("p", "to"))
     ET.SubElement(set_to, _q("p", "strVal"), {"val": "visible"})
 
+    for attr_name in ("ppt_w", "ppt_h"):
+        scale = ET.SubElement(child_tn, _q("p", "anim"), {"calcmode": "lin", "valueType": "num"})
+        scale_behavior = ET.SubElement(scale, _q("p", "cBhvr"))
+        ET.SubElement(
+            scale_behavior,
+            _q("p", "cTn"),
+            {"id": str(next_id), "dur": TEXT_POP_DURATION_MS, "fill": "hold"},
+        )
+        next_id += 1
+        _append_animation_target(scale_behavior, shape_id)
+        scale_attrs = ET.SubElement(scale_behavior, _q("p", "attrNameLst"))
+        ET.SubElement(scale_attrs, _q("p", "attrName")).text = attr_name
+        tav_list = ET.SubElement(scale, _q("p", "tavLst"))
+        start_tav = ET.SubElement(tav_list, _q("p", "tav"), {"tm": "0"})
+        start_value = ET.SubElement(start_tav, _q("p", "val"))
+        ET.SubElement(start_value, _q("p", "fltVal"), {"val": "0"})
+        end_tav = ET.SubElement(tav_list, _q("p", "tav"), {"tm": "100000"})
+        end_value = ET.SubElement(end_tav, _q("p", "val"))
+        ET.SubElement(end_value, _q("p", "strVal"), {"val": f"#{attr_name}"})
+
     fade = ET.SubElement(child_tn, _q("p", "animEffect"), {"transition": "in", "filter": "fade"})
     fade_behavior = ET.SubElement(fade, _q("p", "cBhvr"))
-    ET.SubElement(fade_behavior, _q("p", "cTn"), {"id": str(next_id), "dur": "420", "fill": "hold"})
+    ET.SubElement(fade_behavior, _q("p", "cTn"), {"id": str(next_id), "dur": TEXT_POP_DURATION_MS})
     next_id += 1
     _append_animation_target(fade_behavior, shape_id)
 
